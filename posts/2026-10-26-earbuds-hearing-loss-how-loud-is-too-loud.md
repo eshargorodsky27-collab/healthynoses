@@ -4,6 +4,10 @@ description: "A WHO-backed review estimates that up to 1.35 billion young people
 date: 2026-10-26
 category: ears-hearing
 type: general
+image: "/images/earbuds-case.jpg"
+imageAlt: "Wireless earbuds and charging case on a red and blue background"
+imageCredit: "Unsplash"
+imageCreditUrl: "https://unsplash.com"
 keywords: [earbuds hearing loss, safe listening volume, how loud is too loud headphones, noise induced hearing loss teenagers, WHO safe listening]
 takeaways:
   - "A 2022 meta-analysis found about 1 in 4 young people listen to personal devices at unsafe levels."
@@ -46,11 +50,17 @@ The findings:
 - An estimated **48 percent** were exposed to unsafe levels at loud entertainment venues.
 - Worldwide, that adds up to somewhere between **0.67 and 1.35 billion** young people who could be at risk of hearing loss.
 
+
+<figure><img src="/images/concert-crowd.jpg" alt="Crowd with raised hands at a brightly lit concert" loading="lazy"><figcaption>An estimated 48 percent of young people are exposed to unsafe levels at loud venues. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
+
 ## Why "loud" is about time, not just volume
 
 Hearing damage from noise works like sun exposure. A short burst of very loud sound can do harm, but so can moderate loudness over many hours. Your inner ear contains tiny hair cells that turn vibration into nerve signals. Overwork them and they can be permanently damaged. They do not grow back.
 
 That is why the WHO and the International Telecommunication Union built their safe listening standard around a **weekly sound allowance** rather than a single maximum volume. Roughly, an adult can listen at about 80 decibels for up to 40 hours a week. Children get a lower reference of 75 decibels. Every few decibels louder cuts the safe time dramatically, because the decibel scale is logarithmic.
+
+
+<figure class="wide"><img src="/images/diagram-decibel-scale.svg" alt="Decibel scale from a 30 dB whisper to a 115 dB concert, with the 80 dB WHO-ITU reference marked" loading="lazy"></figure>
 
 For reference, normal conversation is around 60 decibels. Many phones can push earbuds past 100.
 
@@ -59,6 +69,9 @@ For reference, normal conversation is around 60 decibels. Many phones can push e
 **Turn on your phone's built-in tools.** Most phones now track headphone exposure and can cap the maximum volume. On iPhone this is under hearing or headphone safety settings, and Android phones have similar volume warnings and limits.
 
 **Use the 60/60 habit.** Listening at no more than 60 percent volume for no more than 60 minutes at a stretch is an easy rule that keeps most people in a safe zone.
+
+
+<figure><img src="/images/headphones-commute.jpg" alt="Person wearing over-ear headphones on a train platform" loading="lazy"><figcaption>Noise-cancelling headphones let you hear clearly at lower volume. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
 
 **Block noise instead of overpowering it.** On a train or plane, people crank the volume to drown out background noise. Noise-cancelling or well-sealed earbuds let you hear clearly at lower volume.
 

@@ -4,6 +4,10 @@ description: "A randomized crossover trial compared pure sesame oil with saline 
 date: 2026-10-24
 category: research
 type: research
+image: "/images/oil-bottle.jpg"
+imageAlt: "Hand holding a small amber oil bottle"
+imageCredit: "Unsplash"
+imageCreditUrl: "https://unsplash.com"
 keywords: [sesame oil for dry nose, sesame oil nasal spray study, saline vs oil nasal dryness, nasal oil research, rhinitis sicca]
 takeaways:
   - "79 adults with dry noses each tried pure sesame oil for 14 days and saline for 14 days, in random order."
@@ -36,6 +40,9 @@ Researchers at the County Hospital in Skellefteå, in northern Sweden, wanted to
 
 Skellefteå made a good test site. During the study, from mid-March to the end of May 2000, the outdoor absolute humidity was low, so participants were dealing with real seasonal dryness.
 
+
+<figure><img src="/images/lab-research.jpg" alt="Researcher in gloves pipetting samples in a lab" loading="lazy"><figcaption>Crossover trials let each person act as their own comparison. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
+
 ## How the study worked
 
 The team enrolled 79 people with nasal mucosa dryness and used a crossover design:
@@ -46,6 +53,9 @@ The team enrolled 79 people with nasal mucosa dryness and used a crossover desig
 Because everyone tried both, each person acted as their own comparison. That cuts out a lot of the noise that comes from comparing different people.
 
 Every evening, participants rated three symptoms on a visual scale: dryness, stuffiness and crusting.
+
+
+<figure class="wide"><img src="/images/diagram-crossover-trial.svg" alt="Diagram of the crossover design: two groups each used sesame oil and saline for 14 days in opposite order; about 8 in 10 improved with oil versus 3 in 10 with saline" loading="lazy"></figure>
 
 ## What they found
 
@@ -59,6 +69,9 @@ Every evening, participants rated three symptoms on a visual scale: dryness, stu
 All three differences were statistically strong. Adverse events were described as few and temporary.
 
 The authors concluded that for nasal dryness caused by a dry winter climate, pure sesame oil was significantly more effective than saline.
+
+
+<figure><img src="/images/sesame-seeds.jpg" alt="Close-up of golden sesame seeds" loading="lazy"><figcaption>Sesame oil, pressed from these seeds, forms a thin film that slows moisture loss. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
 
 ## Why oil might make the difference
 

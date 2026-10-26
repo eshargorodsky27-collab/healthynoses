@@ -4,6 +4,10 @@ description: "Cold outdoor air and radiator heat strip moisture from the lining 
 date: 2026-10-22
 category: nose-care
 type: product
+image: "/images/winter-frost-window.jpg"
+imageAlt: "Frost crystals on a cold window"
+imageCredit: "Unsplash"
+imageCreditUrl: "https://unsplash.com"
 keywords: [dry nose in winter, dry nasal passages, nosebleeds dry air, nasal moisturizer, humidifier for dry nose]
 takeaways:
   - "Your nose warms and humidifies every breath. Cold, dry air makes that job harder and can leave the lining dry, crusty and sore."
@@ -42,11 +46,17 @@ Every breath you take passes over a surprisingly hard-working surface. The linin
 
 The result is the familiar winter nose: tight, itchy, crusty in the morning, and occasionally bloody when you blow it.
 
+
+<figure><img src="/images/tissues-cold.jpg" alt="Person holding tissues up to their nose" loading="lazy"><figcaption>Winter dryness often shows up as a sore, crusty nose that bleeds when you blow it. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
+
 ## What dry air does to the inside of your nose
 
 The front of the nasal passage, just inside the nostril, takes the brunt of it. This area is covered by a thin layer of moist tissue with a dense network of small blood vessels close to the surface. When that tissue dries out it loses flexibility, small cracks form, and crusts build up. Picking or forceful blowing then breaks the tiny vessels underneath.
 
 Cold air is part of the problem even before heating comes in. Cold air simply cannot hold much water, so even if outdoor relative humidity looks high on a weather app, the actual amount of moisture in the air is low. Warm that air up indoors and its relative humidity drops sharply.
+
+
+<figure class="wide"><img src="/images/diagram-heated-air.svg" alt="Diagram: outdoor air at 0°C and 80% humidity becomes about 21% humidity when heated to 21°C" loading="lazy"></figure>
 
 ## What the studies show about winter and nosebleeds
 
@@ -61,7 +71,13 @@ A large Stanford analysis of more than 180,000 children went further and found t
 
 None of these are complicated, and most people do best with a combination.
 
+
+<figure><img src="/images/humidifier-bedroom.jpg" alt="Blue humidifier releasing mist in a dim room" loading="lazy"><figcaption>A bedroom humidifier matters most, since you breathe that air all night. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
+
 **Add moisture where you sleep.** A cool-mist humidifier in the bedroom matters more than one in the living room, because you spend seven or eight hours breathing that air. Aim for roughly 40 to 50 percent relative humidity and clean the tank often.
+
+
+<figure><img src="/images/cat-on-radiator.jpg" alt="Cat stretched out on a warm white radiator" loading="lazy"><figcaption>Radiators feel great, but they bake the moisture out of indoor air. <span class="credit">Photo: <a href="https://unsplash.com" rel="nofollow noopener">Unsplash</a></span></figcaption></figure>
 
 **Drink enough water.** Hydration will not fix a dry nose by itself, but being dehydrated makes the lining dry faster.
 
