@@ -129,7 +129,9 @@ Return JSON with exactly these keys:
   "body": "Markdown article, 900-1400 words, starts with a 2-3 sentence intro paragraph (no H1), uses ## and ### headings",
   "faq": [{"q": "Real question people search", "a": "40-70 word direct answer"}],
   "pmids_cited": ["pmids you actually relied on"],
-  "image_query": "2-4 word stock photo search (people, home, nature; no medical gore, no text)",
+  "image_query": "2-4 word stock photo search for the cover (people, home, nature; no medical gore, no text, no brand logos)",
+  "image_query_2": "a different 2-4 word stock photo search for a photo inside the article",
+  "image_caption_2": "one-sentence caption for that second photo that ties it to the article",
   "image_alt": "Describe the kind of photo for alt text"
 }
 Give 3-4 FAQ items.`;
@@ -223,6 +225,18 @@ async function main() {
     imageLines = `image: ${yq('/' + file)}\nimageAlt: ${yq(article.image_alt || article.title)}\nimageCredit: ${yq(photo.credit)}\nimageCreditUrl: ${yq(photo.creditUrl)}\n`;
     state.usedPhotos = [...(state.usedPhotos || []), photo.id];
     log('Photo:', photo.credit);
+    // second photo, placed inside the article before the third section
+    const photo2 = await findPhoto(article.image_query_2 || item.topic, state.usedPhotos).catch(() => null);
+    if (photo2) {
+      const buf2 = Buffer.from(await (await fetch(photo2.download)).arrayBuffer());
+      fs.writeFileSync(path.join(ROOT, 'public', 'images', `${slug}-2.jpg`), buf2);
+      state.usedPhotos.push(photo2.id);
+      const figure = `\n<figure><img src="/images/${slug}-2.jpg" alt="${String(article.image_query_2 || '').replace(/"/g, '')}" loading="lazy"><figcaption>${String(article.image_caption_2 || '').replace(/</g, '')} <span class="credit">Photo: <a href="${photo2.creditUrl}" rel="nofollow noopener">${photo2.credit}</a></span></figcaption></figure>\n\n`;
+      const heads = [...article.body.matchAll(/^## /gm)];
+      const at = heads[2] ? heads[2].index : heads[1] ? heads[1].index : -1;
+      if (at > 0) article.body = article.body.slice(0, at) + figure + article.body.slice(at);
+      log('Second photo:', photo2.credit);
+    }
   } else log('No photo API key or match; the build will generate cover art');
 
   const category = cfg.categories[item.category] ? item.category : (slotType === 'research' ? 'research' : 'nose-care');
