@@ -3,7 +3,7 @@
 Auto-publishing health blog that sends readers to [Narisure](https://www.narisure.com/).
 
 A new article goes up **every other day**, rotating:
-nose care (mentions Narisure) → research digest → nose care → ears, hearing, sinus or sleep.
+nose care (mentions Narisure) → nose research digest → nose care → sinus, allergy, smell or nasal breathing.
 
 Every article is written from real PubMed studies, gets a photo (Pexels or Unsplash) or generated cover art,
 and passes a claims check that blocks "cures", "clinically proven", "FDA approved" and medical claims about Narisure.

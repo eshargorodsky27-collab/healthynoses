@@ -266,7 +266,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   <section class="list" aria-label="Recent articles">${rest.map((p) => postRow(p, imgs[p.slug])).join('')}</section>
   <div class="rail">${productBox('home', 'home-rail', true)}</div>
 </div>`;
-  write('index.html', layout({ title: `${cfg.name}: nose, sinus, ear and hearing health explained`, description: cfg.description, canonical: cfg.url + '/', og: lead ? imgs[lead.slug].og : null,
+  write('index.html', layout({ title: `${cfg.name}: dry nose, nosebleeds and sinus health explained`, description: cfg.description, canonical: cfg.url + '/', og: lead ? imgs[lead.slug].og : null,
     jsonld: [{ '@context': 'https://schema.org', '@type': 'WebSite', name: cfg.name, url: cfg.url, description: cfg.description, publisher: orgLd }], body: home }));
 
   // topic pages
@@ -278,10 +278,10 @@ ${lead ? `<section class="lead" aria-label="Latest article">
 
   // about
   write('about/index.html', layout({ title: `About ${cfg.name}`, description: `Who publishes ${cfg.name} and how articles are made.`, canonical: `${cfg.url}/about/`, body: `<article class="post"><header class="post-head"><h1>About Healthy Noses</h1></header><div class="post-body prose">
-<p>Healthy Noses is a plain-language library about the nose, sinuses, ears, hearing and the air we breathe at home.</p>
+<p>Healthy Noses is a plain-language library about the nose: dry nasal passages, nosebleeds, sinuses, allergies, smell, and the air we breathe at home.</p>
 <h2>Who publishes it</h2><p>The site is published by ${esc(cfg.publisher)}, the company behind <a href="${utm(cfg.product.url, 'about', 'about')}">Narisure</a>, a nasal moisturizing oil created by Johns Hopkins–trained sinus specialists. Articles that discuss nasal dryness may mention Narisure. We always say so plainly.</p>
 <h2>How articles are made</h2><p>New articles are drafted with AI assistance from peer-reviewed studies indexed in PubMed and from public-health agencies. Each article lists its sources so you can read them yourself. We do not describe any product as a cure or treatment for disease.</p>
-<h2>Not medical advice</h2><p>Nothing here replaces a visit to a clinician. Get care promptly for a nosebleed that will not stop after 20 minutes of firm pressure, bleeding after an injury, sudden hearing loss, or symptoms on only one side that keep getting worse.</p>
+<h2>Not medical advice</h2><p>Nothing here replaces a visit to a clinician. Get care promptly for a nosebleed that will not stop after 20 minutes of firm pressure, bleeding after an injury, a sudden loss of smell, or symptoms on only one side that keep getting worse.</p>
 </div></article>` }));
 
   // 404

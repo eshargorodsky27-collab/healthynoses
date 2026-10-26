@@ -3,9 +3,9 @@ module.exports = {
   name: 'Healthy Noses',
   domain: 'healthynoses.com',
   url: 'https://healthynoses.com',
-  tagline: 'Plain-language guides to the nose, sinuses, ears and the air you breathe.',
+  tagline: 'Plain-language guides to dry noses, nosebleeds, sinuses and the air you breathe.',
   description:
-    'Healthy Noses explains dry nose, nosebleeds, sinus and allergy problems, hearing and ear health in plain language, with every article linked to the research behind it.',
+    'Healthy Noses explains dry nose, nosebleeds, stuffy noses, sinus and allergy problems, smell and nasal breathing in plain language, with every article linked to the research behind it.',
   publisher: 'Healsdale, Inc.',
   language: 'en-US',
   indexNowKey: 'fc5e908f4457c1930dabcbc4c5e7b903',
@@ -26,9 +26,8 @@ module.exports = {
   categories: {
     'nose-care': { label: 'Nose care', color: '#1FA5A0', image: '/images/topic-nose-care.jpg', blurb: 'Dry air, crusts, nosebleeds and keeping the lining comfortable.' },
     research: { label: 'Research digest', color: '#C7607D', image: '/images/topic-research.jpg', blurb: 'New studies explained: how they worked and what they found.' },
-    'ears-hearing': { label: 'Ears & hearing', color: '#4C6FA8', image: '/images/topic-ears.jpg', blurb: 'Safe listening, earwax, ringing ears and ear pressure.' },
-    'sinus-allergy': { label: 'Sinus & allergy', color: '#6E8B3D', image: '/images/topic-sinus.jpg', blurb: 'Pollen season, sinus pressure, postnasal drip and smell.' },
-    'sleep-breathing': { label: 'Sleep & breathing', color: '#7A5BA6', image: '/images/topic-sleep.jpg', blurb: 'Snoring, mouth breathing, CPAP and better nights.' },
+    'sinus-allergy': { label: 'Sinus & allergy', color: '#6E8B3D', image: '/images/topic-sinus.jpg', blurb: 'Stuffy noses, pollen season, sinus pressure, postnasal drip and smell.' },
+    'sleep-breathing': { label: 'Sleep & breathing', color: '#7A5BA6', image: '/images/topic-sleep.jpg', blurb: 'Nighttime congestion, snoring, mouth breathing and CPAP dryness.' },
   },
 
   disclosure:
