@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect width="1200" height="560" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="76" font-size="34" font-weight="700" fill="#12302E">How to stop a nosebleed</text>
+  <text x="60" y="112" font-size="20" fill="#536866">The method recommended by ear, nose and throat doctors.</text>
+
+  <!-- step cards -->
+  <g font-size="20">
+    <!-- 1 -->
+    <g transform="translate(60,150)">
+      <rect width="250" height="340" rx="18" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+      <circle cx="36" cy="36" r="20" fill="#1FA5A0"/><text x="36" y="43" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+      <!-- head leaning forward -->
+      <g transform="translate(125,140)" fill="none" stroke="#12302E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-40 60 C-50 10 -30 -40 10 -45 C45 -48 60 -20 55 10 L70 30 L55 36 C55 52 45 62 30 64 L20 90"/>
+        <path d="M-40 60 L-45 95"/>
+        <path d="M60 50 l6 18 M64 54 l4 22" stroke="#C7607D" stroke-width="3"/>
+        <path d="M-70 -30 q-20 30 -5 70" stroke="#1FA5A0" stroke-width="3"/>
+        <path d="M-82 30 l7 12 l10 -9" stroke="#1FA5A0" stroke-width="3"/>
+      </g>
+      <text x="24" y="276" font-weight="700" fill="#12302E">Sit up, lean</text>
+      <text x="24" y="302" font-weight="700" fill="#12302E">forward</text>
+      <text x="24" y="328" font-size="16" fill="#536866">Never tilt your head back</text>
+    </g>
+    <!-- 2 -->
+    <g transform="translate(340,150)">
+      <rect width="250" height="340" rx="18" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+      <circle cx="36" cy="36" r="20" fill="#1FA5A0"/><text x="36" y="43" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+      <!-- nose front view with pinch -->
+      <g transform="translate(125,140)" fill="none" stroke="#12302E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-8 -70 C-10 -30 -22 0 -38 20 C-50 36 -36 52 -18 46 C-10 56 10 56 18 46 C36 52 50 36 38 20 C22 0 10 -30 8 -70"/>
+        <path d="M-56 2 h-30 M56 2 h30" stroke="#C7607D" stroke-width="10"/>
+        <path d="M-56 2 l14 0 M56 2 l-14 0" stroke="#C7607D" stroke-width="6"/>
+        <path d="M-22 -40 h44" stroke="#536866" stroke-width="2" stroke-dasharray="5 5"/>
+      </g>
+      <text x="196" y="94" font-size="13" fill="#536866" text-anchor="end">bone</text>
+      <text x="24" y="276" font-weight="700" fill="#12302E">Pinch the soft</text>
+      <text x="24" y="302" font-weight="700" fill="#12302E">part</text>
+      <text x="24" y="328" font-size="16" fill="#536866">Below the bony bridge</text>
+    </g>
+    <!-- 3 -->
+    <g transform="translate(620,150)">
+      <rect width="250" height="340" rx="18" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+      <circle cx="36" cy="36" r="20" fill="#1FA5A0"/><text x="36" y="43" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+      <!-- timer -->
+      <g transform="translate(125,130)">
+        <circle r="70" fill="#EEF4F3" stroke="#12302E" stroke-width="4"/>
+        <path d="M0 0 L0 -70 A70 70 0 0 1 60.6 35 Z" fill="#1FA5A0" fill-opacity=".85"/>
+        <rect x="-12" y="-92" width="24" height="12" rx="3" fill="#12302E"/>
+        <circle r="6" fill="#12302E"/>
+        <text y="98" font-size="18" font-weight="800" fill="#12302E" text-anchor="middle">10+ min</text>
+      </g>
+      <text x="24" y="276" font-weight="700" fill="#12302E">Hold, don't</text>
+      <text x="24" y="302" font-weight="700" fill="#12302E">peek</text>
+      <text x="24" y="328" font-size="16" fill="#536866">Breathe through your mouth</text>
+    </g>
+    <!-- 4 -->
+    <g transform="translate(900,150)">
+      <rect width="240" height="340" rx="18" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+      <circle cx="36" cy="36" r="20" fill="#1FA5A0"/><text x="36" y="43" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+      <!-- tissue with X -->
+      <g transform="translate(120,140)" fill="none" stroke="#12302E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-50 -40 h100 v80 h-100 z" fill="#EEF4F3"/>
+        <path d="M-50 -40 q50 -30 100 0"/>
+        <path d="M-70 -70 L70 70 M70 -70 L-70 70" stroke="#C7607D" stroke-width="6"/>
+      </g>
+      <text x="24" y="276" font-weight="700" fill="#12302E">Rest, no hard</text>
+      <text x="24" y="302" font-weight="700" fill="#12302E">blowing</text>
+      <text x="24" y="328" font-size="16" fill="#536866">For about a day</text>
+    </g>
+  </g>
+  <text x="60" y="530" font-size="16" fill="#536866">Get help if bleeding lasts past 20 minutes of pressure or follows a head injury. Source: AAO-HNS nosebleed guideline, 2020.</text>
+</svg>
