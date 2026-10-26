@@ -247,6 +247,13 @@ ${related.length ? `<section class="more" aria-label="More articles"><h2>Keep re
       return `<path d="M0 ${y} C 160 ${y}, 220 ${y + pull}, 300 ${y + pull} S 440 ${y}, 600 ${y}" fill="none" stroke="${i % 3 === 0 ? '#1FA5A0' : i === 7 ? '#C7607D' : '#12302E'}" stroke-opacity="${i % 3 === 0 || i === 7 ? 0.95 : 0.2}" stroke-width="${i % 3 === 0 || i === 7 ? 3 : 1.5}" stroke-linecap="round" style="--d:${i * 90}ms"/>`;
     }).join('')}</svg>
 </section>
+<section class="topics" aria-label="Browse by topic">
+  ${Object.entries(cfg.categories).map(([k, c]) => `<a class="topic-tile" href="/topics/${k}/" style="--c:${c.color}">
+    <img src="${c.image}" alt="" loading="lazy" width="800" height="1000">
+    <span class="topic-tile-label">${c.label}</span>
+    <span class="topic-tile-blurb">${esc(c.blurb)}</span>
+  </a>`).join('')}
+</section>
 ${lead ? `<section class="lead" aria-label="Latest article">
   <a class="lead-media" href="/${lead.slug}/" tabindex="-1" aria-hidden="true"><img src="${imgs[lead.slug].src}" alt="" width="1200" height="630"></a>
   <div class="lead-text">
@@ -266,7 +273,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   for (const [k, c] of Object.entries(cfg.categories)) {
     const list = posts.filter((p) => p.category === k);
     write(`topics/${k}/index.html`, layout({ title: `${c.label} | ${cfg.name}`, description: `${c.label} articles from ${cfg.name}.`, canonical: `${cfg.url}/topics/${k}/`,
-      body: `<header class="topic-head" style="--c:${c.color}"><h1>${c.label}</h1><p>${list.length} article${list.length === 1 ? '' : 's'}</p></header><section class="list list--wide">${list.length ? list.map((p) => postRow(p, imgs[p.slug])).join('') : '<p class="empty">Nothing here yet. New articles publish every other day.</p>'}</section>` }));
+      body: `<header class="topic-head topic-head--photo" style="--c:${c.color}"><div><h1>${c.label}</h1><p class="topic-blurb">${esc(c.blurb)}</p><p>${list.length} article${list.length === 1 ? '' : 's'}</p></div><img src="${c.image}" alt="" width="800" height="1000"></header><section class="list list--wide">${list.length ? list.map((p) => postRow(p, imgs[p.slug])).join('') : '<p class="empty">Nothing here yet. New articles publish every other day.</p>'}</section>` }));
   }
 
   // about

@@ -24,11 +24,11 @@ module.exports = {
   },
 
   categories: {
-    'nose-care': { label: 'Nose care', color: '#1FA5A0' },
-    research: { label: 'Research digest', color: '#C7607D' },
-    'ears-hearing': { label: 'Ears & hearing', color: '#4C6FA8' },
-    'sinus-allergy': { label: 'Sinus & allergy', color: '#6E8B3D' },
-    'sleep-breathing': { label: 'Sleep & breathing', color: '#7A5BA6' },
+    'nose-care': { label: 'Nose care', color: '#1FA5A0', image: '/images/topic-nose-care.jpg', blurb: 'Dry air, crusts, nosebleeds and keeping the lining comfortable.' },
+    research: { label: 'Research digest', color: '#C7607D', image: '/images/topic-research.jpg', blurb: 'New studies explained: how they worked and what they found.' },
+    'ears-hearing': { label: 'Ears & hearing', color: '#4C6FA8', image: '/images/topic-ears.jpg', blurb: 'Safe listening, earwax, ringing ears and ear pressure.' },
+    'sinus-allergy': { label: 'Sinus & allergy', color: '#6E8B3D', image: '/images/topic-sinus.jpg', blurb: 'Pollen season, sinus pressure, postnasal drip and smell.' },
+    'sleep-breathing': { label: 'Sleep & breathing', color: '#7A5BA6', image: '/images/topic-sleep.jpg', blurb: 'Snoring, mouth breathing, CPAP and better nights.' },
   },
 
   disclosure:
