@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="700" fill="#12302E">How the Swedish trial worked</text>
+  <text x="60" y="116" font-size="21" fill="#536866">79 people with dry noses each tried both treatments, in random order.</text>
+
+  <!-- timeline labels -->
+  <text x="330" y="170" font-size="18" font-weight="700" fill="#536866" text-anchor="middle">Days 1–14</text>
+  <text x="680" y="170" font-size="18" font-weight="700" fill="#536866" text-anchor="middle">Days 15–28</text>
+
+  <!-- group A -->
+  <text x="60" y="232" font-size="20" font-weight="700" fill="#12302E">Group A</text>
+  <rect x="170" y="196" width="320" height="58" rx="12" fill="#1FA5A0"/>
+  <text x="330" y="233" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">Sesame oil</text>
+  <rect x="520" y="196" width="320" height="58" rx="12" fill="#fff" stroke="#4C6FA8" stroke-width="3"/>
+  <text x="680" y="233" font-size="20" font-weight="700" fill="#4C6FA8" text-anchor="middle">Saline</text>
+
+  <!-- group B -->
+  <text x="60" y="312" font-size="20" font-weight="700" fill="#12302E">Group B</text>
+  <rect x="170" y="276" width="320" height="58" rx="12" fill="#fff" stroke="#4C6FA8" stroke-width="3"/>
+  <text x="330" y="313" font-size="20" font-weight="700" fill="#4C6FA8" text-anchor="middle">Saline</text>
+  <rect x="520" y="276" width="320" height="58" rx="12" fill="#1FA5A0"/>
+  <text x="680" y="313" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">Sesame oil</text>
+
+  <text x="880" y="252" font-size="18" fill="#536866">Every evening:</text>
+  <text x="880" y="280" font-size="18" fill="#536866">rate dryness,</text>
+  <text x="880" y="308" font-size="18" fill="#536866">stuffiness, crusts</text>
+
+  <!-- result -->
+  <line x1="60" y1="384" x2="1140" y2="384" stroke="#C9DAD7" stroke-width="2"/>
+  <text x="60" y="428" font-size="22" font-weight="700" fill="#12302E">People who said their nose felt better</text>
+
+  <text x="60" y="490" font-size="20" fill="#12302E">Sesame oil</text>
+  <rect x="210" y="462" width="720" height="40" rx="8" fill="#EEF4F3"/>
+  <rect x="210" y="462" width="576" height="40" rx="8" fill="#1FA5A0"/>
+  <text x="946" y="490" font-size="22" font-weight="800" fill="#12302E">about 8 in 10</text>
+
+  <text x="60" y="556" font-size="20" fill="#12302E">Saline</text>
+  <rect x="210" y="528" width="720" height="40" rx="8" fill="#EEF4F3"/>
+  <rect x="210" y="528" width="216" height="40" rx="8" fill="#4C6FA8"/>
+  <text x="440" y="556" font-size="22" font-weight="800" fill="#12302E">about 3 in 10</text>
+
+  <text x="60" y="612" font-size="16" fill="#536866">Source: Johnsen et al., Archives of Otolaryngology – Head &amp; Neck Surgery, 2001 (PMID 11701073).</text>
+</svg>

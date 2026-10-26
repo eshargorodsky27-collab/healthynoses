@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect width="1200" height="620" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="700" fill="#12302E">Why heated winter air feels so dry</text>
+  <text x="60" y="118" font-size="21" fill="#536866">The same water vapor, warmed up, becomes a much smaller share of what the air can hold.</text>
+
+  <!-- outdoor -->
+  <g transform="translate(60,160)">
+    <rect width="440" height="360" rx="20" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+    <text x="30" y="52" font-size="24" font-weight="700" fill="#4C6FA8">Outside: 0°C (32°F)</text>
+    <text x="30" y="84" font-size="18" fill="#536866">Air can hold about 4.8 g of water per m³</text>
+    <rect x="30" y="120" width="380" height="54" rx="10" fill="#EEF4F3" stroke="#C9DAD7"/>
+    <rect x="30" y="120" width="304" height="54" rx="10" fill="#4C6FA8"/>
+    <text x="46" y="155" font-size="20" font-weight="700" fill="#fff">3.9 g of water</text>
+    <text x="30" y="250" font-size="64" font-weight="800" fill="#12302E">80%</text>
+    <text x="30" y="286" font-size="20" fill="#536866">relative humidity</text>
+    <text x="30" y="326" font-size="18" fill="#536866">Feels damp and raw</text>
+  </g>
+
+  <!-- arrow -->
+  <g transform="translate(520,330)">
+    <path d="M0 0 H130" stroke="#C7607D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M118 -16 L146 0 L118 16" fill="none" stroke="#C7607D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="73" y="-30" font-size="18" font-weight="700" fill="#C7607D" text-anchor="middle">heating</text>
+    <text x="73" y="44" font-size="16" fill="#536866" text-anchor="middle">no water added</text>
+  </g>
+
+  <!-- indoor -->
+  <g transform="translate(700,160)">
+    <rect width="440" height="360" rx="20" fill="#fff" stroke="#C9DAD7" stroke-width="2"/>
+    <text x="30" y="52" font-size="24" font-weight="700" fill="#C7607D">Inside: 21°C (70°F)</text>
+    <text x="30" y="84" font-size="18" fill="#536866">Air can hold about 18.3 g of water per m³</text>
+    <rect x="30" y="120" width="380" height="54" rx="10" fill="#EEF4F3" stroke="#C9DAD7"/>
+    <rect x="30" y="120" width="81" height="54" rx="10" fill="#C7607D"/>
+    <text x="124" y="155" font-size="20" font-weight="700" fill="#12302E">same 3.9 g</text>
+    <text x="30" y="250" font-size="64" font-weight="800" fill="#12302E">21%</text>
+    <text x="30" y="286" font-size="20" fill="#536866">relative humidity</text>
+    <text x="30" y="326" font-size="18" fill="#536866">Drier than many deserts</text>
+  </g>
+
+  <text x="60" y="574" font-size="17" fill="#536866">Comfortable indoor target for most noses: about 40–50% relative humidity. Values computed from standard water-vapor saturation tables.</text>
+</svg>
