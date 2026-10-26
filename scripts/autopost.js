@@ -89,7 +89,7 @@ function parseJson(text) {
   return JSON.parse(text.slice(start, end + 1));
 }
 
-const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose, sinuses, ears, hearing and indoor air. It is published by the maker of Narisure, a nasal moisturizing oil (${cfg.product.pitch}).
+const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose only: nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing and indoor air. Never write about ears, hearing, throat or other body parts except where they directly affect the nose. It is published by the maker of Narisure, a nasal moisturizing oil (${cfg.product.pitch}).
 
 Your articles must be accurate, specific and genuinely useful, the kind a reader bookmarks and an AI assistant would quote. Write for a smart 14-year-old: short sentences, concrete numbers, no fluff.
 
@@ -148,6 +148,7 @@ function claimsProblems(a, slotType) {
     if (/narisure/i.test(sentence) && /\b(treat|treats|heal|heals|prevent|prevents|stops?|eliminat\w*)\b/i.test(sentence)) probs.push(`medical claim about Narisure: "${sentence.slice(0, 120)}"`);
   }
   if (a.body.split(/\s+/).length < 600) probs.push('article too short');
+  if (/\b(hearing|earbuds?|headphones|tinnitus|earwax|decibels?|ear canal|eardrum)\b/i.test(text)) probs.push('off-topic: this site is about noses only, remove ear and hearing content');
   return probs;
 }
 
@@ -186,8 +187,8 @@ async function main() {
   let item = bank[slotType].find((t) => !state.usedTopics.includes(t.topic));
   if (!item) {
     log(`Topic bank "${slotType}" used up, asking the writer for a fresh topic`);
-    const fresh = parseJson(await claude('You plan articles for a nose, sinus, ear and hearing health site. Return only JSON.',
-      `Existing titles: ${titles.join(' | ')}\nUsed topics: ${state.usedTopics.join(' | ')}\nPropose ONE new ${slotType === 'nose' ? 'nasal dryness / nose care' : slotType === 'research' ? 'research digest on nose, sinus, ear or hearing science' : 'ear, hearing, sinus, allergy or sleep-breathing'} topic people actively search for, not overlapping the above. JSON: {"topic": "...", "pubmed": "3-5 word PubMed search", "category": one of ${JSON.stringify(Object.keys(cfg.categories))}}`));
+    const fresh = parseJson(await claude('You plan articles for a nose-only health site (nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing). Never propose ear, hearing or throat topics. Return only JSON.',
+      `Existing titles: ${titles.join(' | ')}\nUsed topics: ${state.usedTopics.join(' | ')}\nPropose ONE new ${slotType === 'nose' ? 'nasal dryness / nose care' : slotType === 'research' ? 'research digest on nose, sinus, smell or nasal breathing science' : 'sinus, nasal allergy, smell or nasal breathing during sleep'} topic people actively search for, not overlapping the above. JSON: {"topic": "...", "pubmed": "3-5 word PubMed search", "category": one of ${JSON.stringify(Object.keys(cfg.categories))}}`));
     item = fresh;
   }
   log(`Slot "${slotType}", topic: ${item.topic}`);

@@ -1,5 +1,5 @@
 // Topic bank. The auto-poster rotates through four slots:
-//   nose (Narisure-relevant) -> research digest -> nose -> broader ENT (hearing, sinus, sleep, allergy)
+//   nose (Narisure-relevant) -> research digest -> nose -> broader nose topics (sinus, allergy, smell, nasal breathing)
 // Each topic has a PubMed search used to ground the article in real studies.
 // When a bucket runs out, the writer invents a fresh topic in the same spirit.
 module.exports = {
@@ -32,16 +32,16 @@ module.exports = {
     { topic: 'Mouth breathing vs nose breathing: what the research shows', pubmed: 'nasal breathing versus mouth breathing effects', category: 'research' },
     { topic: 'Studies on air pollution and nasal symptoms', pubmed: 'air pollution rhinitis nasal symptoms', category: 'research' },
     { topic: 'Research on climate, season and nosebleeds', pubmed: 'epistaxis season temperature humidity', category: 'research' },
-    { topic: 'What new studies say about noise and hearing in teenagers', pubmed: 'adolescents noise exposure hearing threshold', category: 'research' },
+    { topic: 'What research shows about how the nose filters and humidifies air', pubmed: 'nasal air conditioning humidification airflow', category: 'research' },
     { topic: 'Evidence on sesame oil and plant oils for nasal dryness', pubmed: 'sesame oil nasal', category: 'research' },
   ],
 
   ent: [
-    { topic: 'Earwax: what is normal and why cotton swabs backfire', pubmed: 'cerumen impaction management guideline', category: 'ears-hearing' },
-    { topic: 'Tinnitus: why your ears ring and what helps', pubmed: 'tinnitus management review', category: 'ears-hearing' },
-    { topic: 'Ear pressure on flights and how to equalize', pubmed: 'barotitis media air travel prevention', category: 'ears-hearing' },
-    { topic: 'Swimmer\'s ear: causes and prevention', pubmed: 'acute otitis externa prevention', category: 'ears-hearing' },
-    { topic: 'How hearing loss is linked to brain health as we age', pubmed: 'hearing loss dementia risk hearing aids', category: 'ears-hearing' },
+    { topic: 'Why one nostril is always more blocked: the nasal cycle', pubmed: 'nasal cycle physiology', category: 'sinus-allergy' },
+    { topic: 'Nasal saline rinses: how to do them safely', pubmed: 'nasal irrigation safety tap water', category: 'sinus-allergy' },
+    { topic: 'Stuffy nose with no cold: causes of nonallergic rhinitis', pubmed: 'nonallergic rhinitis review', category: 'sinus-allergy' },
+    { topic: 'Nasal polyps: symptoms and what they mean', pubmed: 'nasal polyps symptoms chronic rhinosinusitis', category: 'sinus-allergy' },
+    { topic: 'Nose pressure and congestion on flights', pubmed: 'air travel nasal congestion sinus barotrauma', category: 'sinus-allergy' },
     { topic: 'Sinus infection or cold? How to tell the difference', pubmed: 'acute rhinosinusitis viral bacterial diagnosis', category: 'sinus-allergy' },
     { topic: 'Seasonal allergies and your nose: a fall survival guide', pubmed: 'allergic rhinitis ragweed management', category: 'sinus-allergy' },
     { topic: 'Deviated septum: symptoms and when it matters', pubmed: 'nasal septal deviation symptoms septoplasty outcomes', category: 'sinus-allergy' },
