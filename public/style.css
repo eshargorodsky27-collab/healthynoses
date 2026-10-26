@@ -42,7 +42,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 @media (prefers-reduced-motion: reduce) { .hero-air path { animation: none; stroke-dashoffset: 0; } }
 
 /* topic photo row */
-.topics { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; padding: 32px 0; border-bottom: 1px solid var(--line); }
+.topics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; padding: 32px 0; border-bottom: 1px solid var(--line); }
 .topic-tile { display: flex; flex-direction: column; color: var(--ink); text-decoration: none; }
 .topic-tile img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 14px; border-bottom: 5px solid var(--c); transition: transform .25s ease; }
 .topic-tile:hover img { transform: translateY(-3px); }
