@@ -1,0 +1,66 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every other day at about 9:15am New York time (13:17 UTC)
+    - cron: '17 13 */2 * *'
+  workflow_dispatch:
+    inputs:
+      new_post:
+        description: 'Write a new article before publishing'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm install --no-audit --no-fund
+
+      - name: Write new article
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.new_post)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          node scripts/autopost.js
+          git config user.name "healthynoses-bot"
+          git config user.email "bot@healthynoses.com"
+          git add posts public/images data
+          git commit -m "New article $(date +%F)" || echo "Nothing to commit"
+          git push
+
+      - run: node build.js
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Notify search engines (IndexNow)
+        if: github.event_name != 'push'
+        run: node scripts/indexnow.js
