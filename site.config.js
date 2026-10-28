@@ -52,5 +52,5 @@ module.exports = {
   },
 
   disclosure:
-    'Healthy Noses is sponsored by Narisure. Articles are for general information, not medical advice. See a doctor for symptoms that are severe, persistent, or one-sided.',
+    'Articles are for general information, not medical advice. See a doctor for symptoms that are severe, persistent, or one-sided.',
 };
