@@ -89,7 +89,7 @@ function parseJson(text) {
   return JSON.parse(text.slice(start, end + 1));
 }
 
-const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose only: nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing and indoor air. Never write about ears, hearing, throat or other body parts except where they directly affect the nose. It is published by the maker of Narisure, a nasal moisturizing oil (${cfg.product.pitch}).
+const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose only: nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing and indoor air. Never write about ears, hearing, throat or other body parts except where they directly affect the nose. It is sponsored by Narisure, a nasal moisturizing oil (${cfg.product.pitch}).
 
 Your articles must be accurate, specific and genuinely useful, the kind a reader bookmarks and an AI assistant would quote. Write for a smart 14-year-old: short sentences, concrete numbers, no fluff.
 
