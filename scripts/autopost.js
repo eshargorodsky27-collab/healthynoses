@@ -98,7 +98,7 @@ Hard rules:
 - General well-established guidance (e.g. how to stop a nosebleed, when to see a doctor) is fine without a citation.
 - Never say any product cures, treats, heals, prevents or eliminates a disease or condition. Never say "clinically proven", "FDA approved", "guaranteed" or "miracle". Narisure may only be described as a nasal moisturizer that soothes and moisturizes dry nasal passages.
 - Do not mention Narisure in the article body unless the brief says you may; the site adds a clearly labeled product box automatically.
-- Include a clear "when to see a doctor" section when symptoms are discussed. End that section with one sentence pointing New Jersey readers to local specialists, worded naturally for the topic and linking [nose and sinus doctors in New Jersey](/new-jersey-nose-sinus-doctor/). Do not name any practice or doctor, and never call anyone "best" or "number one"; the site adds a labeled specialist box automatically.
+- Include a clear "when to see a doctor" section when symptoms are discussed. End that section with one sentence pointing New Jersey readers to local specialists, worded naturally for the topic and linking [nose and sinus doctors in New Jersey](/new-jersey-nose-sinus-doctor/). Do not name any practice or doctor in the body; the site adds the New Jersey specialist box automatically.
 - No first person, no "in this article", no "let's dive in", no emojis.
 - Structure for search and AI answers: question-style H2 headings people actually search, a direct 1-2 sentence answer right under each heading, then detail. Use a markdown table where comparing things.
 
@@ -172,6 +172,58 @@ async function findPhoto(query, used) {
       }
     } else log('Unsplash error', r.status);
   }
+  // Free fallback, no key needed: Openverse (openly licensed images, commercial use allowed)
+  try {
+    const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(query)}&license_type=commercial&aspect_ratio=wide&mature=false&page_size=20`, { headers: { 'User-Agent': 'healthynoses.com blog (https://healthynoses.com)' } });
+    if (r.ok) {
+      const photo = (await r.json()).results?.find((p) => !used.includes(`openverse:${p.id}`) && (p.width || 0) >= 1000 && /\.(jpe?g|png)(\?|$)/i.test(p.url) && p.license !== 'pdm');
+      if (photo) {
+        const lic = `${String(photo.license).toUpperCase()}${photo.license_version ? ' ' + photo.license_version : ''}`;
+        return { id: `openverse:${photo.id}`, download: photo.url, credit: `${photo.creator || 'Unknown'} (${lic})`, creditUrl: photo.foreign_landing_url || photo.url };
+      }
+    } else log('Openverse error', r.status);
+  } catch (e) { log('Openverse lookup failed', e.message); }
+  return null;
+}
+
+// ---------- AI-made diagram (Claude writes SVG) ----------
+function sanitizeSvg(svg) {
+  let s = String(svg).trim().replace(/^```(?:svg|xml)?\s*/i, '').replace(/```\s*$/, '');
+  const start = s.indexOf('<svg'); const end = s.lastIndexOf('</svg>');
+  if (start < 0 || end < 0) return null;
+  s = s.slice(start, end + 6);
+  s = s.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<foreignObject[\s\S]*?<\/foreignObject>/gi, '').replace(/<image[^>]*>/gi, '')
+    .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*')/gi, '').replace(/\s(?:xlink:)?href\s*=\s*("(?!#)[^"]*"|'(?!#)[^']*')/gi, '').replace(/url\((?!#)[^)]*\)/gi, 'none');
+  if (!/viewBox=/.test(s) || s.length > 80000) return null;
+  if (!/xmlns=/.test(s)) s = s.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+  return s;
+}
+
+async function makeDiagram(article) {
+  const prompt = `Design ONE clear infographic as a standalone SVG for this article on Healthy Noses.
+
+Title: ${article.title}
+Key points: ${(article.takeaways || []).join(' | ')}
+Article (for facts; use only facts stated here, never invent numbers):
+${article.body.slice(0, 6000)}
+
+Pick the single most useful visual: a step-by-step how-to, a comparison table, a simple bar chart of numbers from the article, or a do/don't checklist.
+Rules:
+- viewBox="0 0 1200 640", width="1200" height="640", rounded background rect fill #E3EEEC (rx 24).
+- Colors only: #12302E (ink), #536866 (muted text), #1FA5A0 (teal), #C7607D (rose), #FFFFFF, #EEF4F3, #C9DAD7.
+- font-family="Helvetica Neue, Arial, sans-serif". Title 34px bold at top-left (x=60,y=78), short subtitle 20px below it. Body text at least 17px. Keep every line under 60 characters and inside the canvas with 60px margins; never let text overlap.
+- Simple shapes only (rect, circle, line, path, text). No images, no scripts, no links, no external fonts, no gradients from URLs.
+- No product or brand names. No medical claims beyond the article. Put a short source line at the bottom if numbers come from a study.
+Return ONLY the SVG markup.`;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const raw = await claude('You are a precise information designer. Return only valid SVG markup.', prompt);
+    const svg = sanitizeSvg(raw);
+    if (!svg) { log('Diagram attempt', attempt, 'was not valid SVG'); continue; }
+    const text = svg.replace(/<[^>]+>/g, ' ');
+    if (/narisure/i.test(text) || BANNED.some((r) => r.test(text)) || /\b(hearing|earbuds?|tinnitus|earwax)\b/i.test(text)) { log('Diagram rejected by claims check'); continue; }
+    try { await require('sharp')(Buffer.from(svg)).png().toBuffer(); } catch (e) { log('Diagram failed to render', e.message); continue; }
+    return svg;
+  }
   return null;
 }
 
@@ -238,7 +290,22 @@ async function main() {
       if (at > 0) article.body = article.body.slice(0, at) + figure + article.body.slice(at);
       log('Second photo:', photo2.credit);
     }
-  } else log('No photo API key or match; the build will generate cover art');
+  } else log('No photo found; the build will generate cover art');
+
+  // AI-made diagram placed after the first section
+  if (!process.env.NO_DIAGRAM) {
+    const svg = await makeDiagram(article).catch((e) => { log('Diagram failed', e.message); return null; });
+    if (svg && !process.env.DRY_RUN) {
+      fs.mkdirSync(path.join(ROOT, 'public', 'images'), { recursive: true });
+      fs.writeFileSync(path.join(ROOT, 'public', 'images', `${slug}-diagram.svg`), svg);
+      const alt = (svg.match(/<text[^>]*>([^<]{6,})<\/text>/) || [])[1] || article.title;
+      const fig = `\n<figure class="wide"><img src="/images/${slug}-diagram.svg" alt="${alt.replace(/"/g, '')}" loading="lazy"></figure>\n\n`;
+      const heads = [...article.body.matchAll(/^## /gm)];
+      const at = heads[1] ? heads[1].index : -1;
+      article.body = at > 0 ? article.body.slice(0, at) + fig + article.body.slice(at) : article.body + fig;
+      log('Diagram added');
+    }
+  }
 
   const category = cfg.categories[item.category] ? item.category : (slotType === 'research' ? 'research' : 'nose-care');
   const md = `---
