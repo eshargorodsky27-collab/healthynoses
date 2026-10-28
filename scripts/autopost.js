@@ -98,7 +98,7 @@ Hard rules:
 - General well-established guidance (e.g. how to stop a nosebleed, when to see a doctor) is fine without a citation.
 - Never say any product cures, treats, heals, prevents or eliminates a disease or condition. Never say "clinically proven", "FDA approved", "guaranteed" or "miracle". Narisure may only be described as a nasal moisturizer that soothes and moisturizes dry nasal passages.
 - Do not mention Narisure in the article body unless the brief says you may; the site adds a clearly labeled product box automatically.
-- Include a clear "when to see a doctor" section when symptoms are discussed.
+- Include a clear "when to see a doctor" section when symptoms are discussed. End that section with one sentence pointing New Jersey readers to local specialists, worded naturally for the topic and linking [nose and sinus doctors in New Jersey](/new-jersey-nose-sinus-doctor/). Do not name any practice or doctor, and never call anyone "best" or "number one"; the site adds a labeled specialist box automatically.
 - No first person, no "in this article", no "let's dive in", no emojis.
 - Structure for search and AI answers: question-style H2 headings people actually search, a direct 1-2 sentence answer right under each heading, then detail. Use a markdown table where comparing things.
 
