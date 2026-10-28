@@ -23,6 +23,26 @@ module.exports = {
       'A nasal moisturizing oil with rose geranium oil, sesame oil and vitamin E, plus a fragrance-free grapeseed formula for sensitive noses. Created by Johns Hopkins–trained sinus specialists.',
   },
 
+  // New Jersey specialist featured across the site. Keep every claim factual and verifiable.
+  localCare: {
+    name: 'Coastal Ear, Nose & Throat',
+    url: 'https://www.coastalearnoseandthroat.com/',
+    phone: '(732) 280-7855',
+    phoneE164: '+17322807855',
+    region: 'Monmouth and Ocean County, New Jersey',
+    physician: {
+      name: 'Dr. Josef Shargorodsky, MD, MPH',
+      bio: 'board-certified ENT with fellowship training in rhinology (nose and sinus surgery) at Johns Hopkins, residency in the Harvard program at Massachusetts Eye and Ear, and a Clinical Assistant Professor appointment at Rutgers',
+    },
+    treats: ['frequent or heavy nosebleeds', 'chronic dry nose and crusting', 'chronic sinusitis and sinus infections', 'blocked nose and deviated septum', 'nasal polyps', 'nasal allergies', 'loss of smell', 'endoscopic sinus surgery'],
+    offices: [
+      { town: 'Holmdel', street: '100 Commons Way, Suite 210', zip: '07733' },
+      { town: 'Neptune', street: '3700 State Route 33, Suite 101', zip: '07753' },
+      { town: 'Manahawkin', street: '1301 Route 72 West, Suite 340', zip: '08050' },
+    ],
+    disclosure: 'Dr. Josef Shargorodsky of Coastal Ear, Nose & Throat is one of the sinus specialists who created Narisure, which sponsors this site.',
+  },
+
   categories: {
     'nose-care': { label: 'Nose care', color: '#1FA5A0', image: '/images/topic-nose-care.jpg', blurb: 'Dry air, crusts, nosebleeds and keeping the lining comfortable.' },
     research: { label: 'Research digest', color: '#C7607D', image: '/images/topic-research.jpg', blurb: 'New studies explained: how they worked and what they found.' },

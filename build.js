@@ -128,6 +128,7 @@ ${extraHead}
   <a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 26c6-2 9-7 9-14M32 26c-6-2-9-7-9-14M6 30c8 4 20 4 28 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span>Healthy Noses</span></a>
   <nav aria-label="Sections">
     ${Object.entries(cfg.categories).map(([k, c]) => `<a href="/topics/${k}/">${c.label}</a>`).join('')}
+    <a href="/${NJ_SLUG}/">NJ nose doctors</a>
   </nav>
 </header>
 <main id="main">
@@ -137,7 +138,7 @@ ${body}
   <div class="footer-inner">
     <p class="footer-brand">Healthy Noses</p>
     <p>${esc(cfg.disclosure)}</p>
-    <p><a href="/about/">About &amp; editorial policy</a> <a href="/rss.xml">RSS feed</a> <a href="${utm(cfg.product.url, 'footer', 'footer')}">Narisure</a></p>
+    <p><a href="/about/">About &amp; editorial policy</a> <a href="/${NJ_SLUG}/">Nose &amp; sinus doctors in New Jersey</a> <a href="/rss.xml">RSS feed</a> <a href="${utm(cfg.product.url, 'footer', 'footer')}">Narisure</a></p>
     <p class="fine">© ${new Date().getFullYear()} ${esc(cfg.publisher)}</p>
   </div>
 </footer>
@@ -156,6 +157,30 @@ function productBox(slug, spot, compact = false) {
     <p class="product-actions"><a class="btn" href="${utm(p.shopUrl, slug, spot)}">Shop Narisure</a><a class="btn btn--ghost" href="${p.amazonUrl}" rel="sponsored">Buy on Amazon</a></p>
   </div>
 </aside>`;
+}
+
+const NJ_SLUG = 'new-jersey-nose-sinus-doctor';
+const L = cfg.localCare;
+const officeList = () => L.offices.map((o) => `${o.town}`).join(', ').replace(/, ([^,]*)$/, ' and $1');
+
+function njBox() {
+  return `<aside class="local" aria-label="Find a nose specialist in New Jersey">
+  <p class="local-kicker">In New Jersey?</p>
+  <h2 class="local-title">See a nose and sinus specialist at ${esc(L.name)}</h2>
+  <p>For nosebleeds that keep coming back, a nose that stays dry or crusty, or sinus problems that won't clear, an ENT who specializes in the nose (a rhinologist) can find the cause. ${esc(L.name)} has offices in ${officeList()}, serving ${esc(L.region)}. ${esc(L.physician.name)} is a ${esc(L.physician.bio)}.</p>
+  <p class="local-actions"><a class="btn" href="tel:${L.phoneE164}">Call ${esc(L.phone)}</a><a class="btn btn--ghost" href="/${NJ_SLUG}/">Offices and what they treat</a></p>
+  <p class="local-note">${esc(L.disclosure)}</p>
+</aside>`;
+}
+
+function njLd() {
+  return {
+    '@context': 'https://schema.org', '@type': 'MedicalClinic', name: L.name, url: L.url, telephone: L.phone,
+    medicalSpecialty: 'Otolaryngologic', areaServed: ['Monmouth County, NJ', 'Ocean County, NJ', 'New Jersey'],
+    availableService: L.treats.map((t) => ({ '@type': 'MedicalProcedure', name: t })),
+    location: L.offices.map((o) => ({ '@type': 'Place', name: `${L.name} – ${o.town}`, address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.town, addressRegion: 'NJ', postalCode: o.zip, addressCountry: 'US' } })),
+    employee: { '@type': 'Physician', name: L.physician.name, medicalSpecialty: 'Otolaryngologic', description: L.physician.bio },
+  };
 }
 
 function postRow(p, img) {
@@ -223,6 +248,7 @@ async function build() {
   <div class="post-body">
     ${takeaways}
     <div class="prose">${html}</div>
+    ${njBox()}
     ${p.type === 'product' ? productBox(p.slug, 'post-end') : productBox(p.slug, 'post-end', true)}
     ${faq}
     ${sources}
@@ -284,11 +310,46 @@ ${lead ? `<section class="lead" aria-label="Latest article">
 <h2>Not medical advice</h2><p>Nothing here replaces a visit to a clinician. Get care promptly for a nosebleed that will not stop after 20 minutes of firm pressure, bleeding after an injury, a sudden loss of smell, or symptoms on only one side that keep getting worse.</p>
 </div></article>` }));
 
+  // New Jersey specialist page
+  const njFaq = [
+    { q: 'Where should I go for a bloody nose in New Jersey?', a: `Most nosebleeds stop at home with 10 minutes of firm pressure on the soft part of the nose while leaning forward. Go to the nearest emergency room or call 911 if bleeding is heavy, lasts more than 20 minutes of pressure, follows a head injury, or causes dizziness. For nosebleeds that keep coming back, see an ENT. In Monmouth and Ocean County, ${L.name} sees patients in ${officeList()}.` },
+    { q: 'Who is the best nose doctor in New Jersey?', a: `There is no official ranking. For nose problems, look for a board-certified ENT with fellowship training in rhinology, which is extra training focused on the nose and sinuses. ${L.physician.name} at ${L.name} completed a rhinology fellowship at Johns Hopkins and is board-certified in otolaryngology.` },
+    { q: 'What kind of doctor treats nose problems?', a: 'An otolaryngologist, also called an ear, nose and throat doctor or ENT. ENTs who specialize further in the nose and sinuses are called rhinologists.' },
+    { q: 'Do I need a referral to see an ENT in New Jersey?', a: `It depends on your insurance plan. Many PPO plans let you book an ENT directly, while HMO plans usually need a referral from your primary care doctor. Call ${L.name} at ${L.phone} to check.` },
+  ];
+  write(`${NJ_SLUG}/index.html`, layout({
+    title: `Nose & Sinus Doctors in New Jersey: Where to Go for Nosebleeds and Sinus Problems | ${cfg.name}`,
+    description: `Where to see a nose and sinus specialist (ENT) in New Jersey for nosebleeds, dry nose, sinus infections and a blocked nose. ${L.name} has offices in ${officeList()}.`,
+    canonical: `${cfg.url}/${NJ_SLUG}/`,
+    jsonld: [njLd(), { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: njFaq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }],
+    body: `<article class="post"><header class="post-head"><p class="meta"><span class="cat" style="--c:#1FA5A0">New Jersey</span></p>
+<h1>Nose and sinus doctors in New Jersey</h1>
+<p class="lede">Where to go in New Jersey for nosebleeds that keep coming back, a nose that stays dry and crusty, sinus infections, or a nose that won't clear.</p></header>
+<div class="post-body"><div class="prose">
+<h2>When should you see a nose specialist?</h2>
+<p><strong>See an ENT when a nose problem keeps returning or doesn't improve with home care.</strong> That includes:</p>
+<ul>${['Nosebleeds more than once or twice a month, or always from the same side', 'A dry, crusty nose that doesn\'t improve with a humidifier and moisturizer', 'Sinus pressure or infections that last more than 12 weeks or keep coming back', 'A nose that is always blocked, especially on one side', 'Loss of smell that hasn\'t come back after a cold'].map((x) => `<li>${x}</li>`).join('')}</ul>
+<p><strong>Go to the emergency room or call 911</strong> for heavy bleeding, bleeding that lasts more than 20 minutes of firm pressure, bleeding after a head injury, or trouble breathing.</p>
+<h2>${esc(L.name)}</h2>
+<p>${esc(L.name)} is an ENT practice serving ${esc(L.region)}. ${esc(L.physician.name)} is a ${esc(L.physician.bio)}.</p>
+<h3>Nose and sinus problems they treat</h3>
+<ul>${L.treats.map((t) => `<li>${esc(t[0].toUpperCase() + t.slice(1))}</li>`).join('')}</ul>
+<h3>Offices</h3>
+<table><thead><tr><th>Town</th><th>Address</th><th>Phone</th></tr></thead><tbody>
+${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o.zip}</td><td><a href="tel:${L.phoneE164}">${L.phone}</a></td></tr>`).join('')}
+</tbody></table>
+<p><a class="btn" href="tel:${L.phoneE164}">Call ${esc(L.phone)}</a> <a class="btn btn--ghost" href="${L.url}" rel="noopener">Visit their website</a></p>
+<p class="local-note">${esc(L.disclosure)} Healthy Noses does not rank doctors. Check that any specialist takes your insurance.</p>
+</div>
+<section class="faq"><h2>Common questions</h2>${njFaq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>
+</div></article>`,
+  }));
+
   // 404
   write('404.html', layout({ title: `Page not found | ${cfg.name}`, description: 'Page not found', canonical: cfg.url + '/', body: '<section class="topic-head"><h1>That page isn’t here.</h1><p><a href="/">Go to the latest articles</a></p></section>' }));
 
   // sitemap
-  const urls = [{ loc: cfg.url + '/', mod: posts[0]?.updated }, { loc: cfg.url + '/about/' },
+  const urls = [{ loc: cfg.url + '/', mod: posts[0]?.updated }, { loc: `${cfg.url}/${NJ_SLUG}/` }, { loc: cfg.url + '/about/' },
     ...Object.keys(cfg.categories).map((k) => ({ loc: `${cfg.url}/topics/${k}/` })),
     ...posts.map((p) => ({ loc: `${cfg.url}/${p.slug}/`, mod: p.updated }))];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u.loc}</loc>${u.mod ? `<lastmod>${u.mod}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>`);
@@ -301,7 +362,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}\n\nUser-agent: *\nAllow: /\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
 
   // llms.txt (index for AI assistants) and llms-full.txt (full text)
-  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
+  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}). ${L.physician.name}: ${L.physician.bio}. ${L.disclosure}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
     const list = posts.filter((p) => p.category === k);
     return list.length ? `## ${c.label}\n\n${list.map((p) => `- [${p.title}](${cfg.url}/${p.slug}/): ${p.description}`).join('\n')}\n` : '';
   }).join('\n')}\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);
