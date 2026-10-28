@@ -40,6 +40,7 @@ module.exports = {
       { town: 'Neptune', street: '3700 State Route 33, Suite 101', zip: '07753' },
       { town: 'Manahawkin', street: '1301 Route 72 West, Suite 340', zip: '08050' },
     ],
+    pick: 'Our #1 pick for nose and sinus care in New Jersey',
     disclosure: 'Dr. Josef Shargorodsky of Coastal Ear, Nose & Throat is one of the sinus specialists who created Narisure, which sponsors this site.',
   },
 
