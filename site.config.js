@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'Plain-language guides to dry noses, nosebleeds, sinuses and the air you breathe.',
   description:
     'Healthy Noses explains dry nose, nosebleeds, stuffy noses, sinus and allergy problems, smell and nasal breathing in plain language, with every article linked to the research behind it.',
-  publisher: 'Healsdale, Inc.',
+  publisher: 'Healthy Noses',
   language: 'en-US',
   indexNowKey: 'fc5e908f4457c1930dabcbc4c5e7b903',
 
@@ -31,5 +31,5 @@ module.exports = {
   },
 
   disclosure:
-    'Healthy Noses is published by Healsdale, Inc., the maker of Narisure. Articles are written with AI assistance from published research and are for general information, not medical advice. See a doctor for symptoms that are severe, persistent, or one-sided.',
+    'Healthy Noses is sponsored by Narisure. Articles are for general information, not medical advice. See a doctor for symptoms that are severe, persistent, or one-sided.',
 };

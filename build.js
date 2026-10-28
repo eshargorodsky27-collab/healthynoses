@@ -147,10 +147,10 @@ ${body}
 
 function productBox(slug, spot, compact = false) {
   const p = cfg.product;
-  return `<aside class="product${compact ? ' product--compact' : ''}" aria-label="From the publisher">
+  return `<aside class="product${compact ? ' product--compact' : ''}" aria-label="Sponsor">
   <img src="${p.image}" alt="Two bottles of Narisure Dry Nose Relief" loading="lazy" width="320" height="200">
   <div>
-    <p class="product-kicker">From the makers of this site</p>
+    <p class="product-kicker">Our sponsor</p>
     <h2 class="product-name">${esc(p.name)}</h2>
     <p>${esc(p.pitch)}</p>
     <p class="product-actions"><a class="btn" href="${utm(p.shopUrl, slug, spot)}">Shop Narisure</a><a class="btn btn--ghost" href="${p.amazonUrl}" rel="sponsored">Buy on Amazon</a></p>
@@ -170,7 +170,7 @@ function postRow(p, img) {
 </article>`;
 }
 
-const orgLd = { '@type': 'Organization', name: cfg.publisher, url: cfg.url, brand: { '@type': 'Brand', name: 'Narisure', url: cfg.product.url } };
+const orgLd = { '@type': 'Organization', name: cfg.publisher, url: cfg.url };
 
 // ---------- build ----------
 async function build() {
@@ -279,7 +279,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   // about
   write('about/index.html', layout({ title: `About ${cfg.name}`, description: `Who publishes ${cfg.name} and how articles are made.`, canonical: `${cfg.url}/about/`, body: `<article class="post"><header class="post-head"><h1>About Healthy Noses</h1></header><div class="post-body prose">
 <p>Healthy Noses is a plain-language library about the nose: dry nasal passages, nosebleeds, sinuses, allergies, smell, and the air we breathe at home.</p>
-<h2>Who publishes it</h2><p>The site is published by ${esc(cfg.publisher)}, the company behind <a href="${utm(cfg.product.url, 'about', 'about')}">Narisure</a>, a nasal moisturizing oil created by Johns Hopkins–trained sinus specialists. Articles that discuss nasal dryness may mention Narisure. We always say so plainly.</p>
+<h2>Our sponsor</h2><p>Healthy Noses is sponsored by <a href="${utm(cfg.product.url, 'about', 'about')}">Narisure</a>, a nasal moisturizing oil created by Johns Hopkins–trained sinus specialists. Articles that discuss nasal dryness may mention Narisure, and product boxes are always labeled.</p>
 <h2>How articles are made</h2><p>New articles are drafted with AI assistance from peer-reviewed studies indexed in PubMed and from public-health agencies. Each article lists its sources so you can read them yourself. We do not describe any product as a cure or treatment for disease.</p>
 <h2>Not medical advice</h2><p>Nothing here replaces a visit to a clinician. Get care promptly for a nosebleed that will not stop after 20 minutes of firm pressure, bleeding after an injury, a sudden loss of smell, or symptoms on only one side that keep getting worse.</p>
 </div></article>` }));
