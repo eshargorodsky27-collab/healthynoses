@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Indoor Humidity and Respiratory Infections</text>
+  <text x="60" y="112" font-size="20" fill="#536866">What three recent studies show, and what they cannot</text>
+
+  <!-- header -->
+  <rect x="60" y="136" width="1080" height="38" rx="8" fill="#12302E"/>
+  <text x="84" y="161" font-size="17" font-weight="bold" fill="#FFFFFF">Study</text>
+  <text x="340" y="161" font-size="17" font-weight="bold" fill="#FFFFFF">Main finding</text>
+  <text x="790" y="161" font-size="17" font-weight="bold" fill="#FFFFFF">Biggest limit</text>
+
+  <!-- row 1 -->
+  <rect x="60" y="182" width="1080" height="108" rx="10" fill="#FFFFFF"/>
+  <circle cx="90" cy="236" r="16" fill="#1FA5A0"/>
+  <text x="90" y="242" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="118" y="230" font-size="18" font-weight="bold" fill="#12302E">2020 lab study</text>
+  <text x="118" y="254" font-size="17" fill="#536866">Biryukov et al.</text>
+  <text x="340" y="215" font-size="17" fill="#12302E">On surfaces at 24°C, virus half-life was</text>
+  <text x="340" y="240" font-size="17" fill="#12302E">6.3 to 18.6 hours, depending on humidity.</text>
+  <text x="340" y="265" font-size="17" fill="#12302E">It decayed faster as humidity or heat rose.</text>
+  <line x1="770" y1="196" x2="770" y2="276" stroke="#C7607D" stroke-width="3"/>
+  <text x="790" y="228" font-size="17" fill="#12302E">One virus, hard surfaces,</text>
+  <text x="790" y="253" font-size="17" fill="#12302E">no people studied</text>
+
+  <!-- row 2 -->
+  <rect x="60" y="298" width="1080" height="108" rx="10" fill="#FFFFFF"/>
+  <circle cx="90" cy="352" r="16" fill="#1FA5A0"/>
+  <text x="90" y="358" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="118" y="346" font-size="18" font-weight="bold" fill="#12302E">2021 physics review</text>
+  <text x="118" y="370" font-size="17" fill="#536866">Božič and Kanduč</text>
+  <text x="340" y="331" font-size="17" fill="#12302E">Low humidity helps droplets evaporate and</text>
+  <text x="340" y="356" font-size="17" fill="#12302E">stay in the air as tiny aerosol for longer,</text>
+  <text x="340" y="381" font-size="17" fill="#12302E">such as indoors in winter or on aircraft.</text>
+  <line x1="770" y1="312" x2="770" y2="392" stroke="#C7607D" stroke-width="3"/>
+  <text x="790" y="344" font-size="17" fill="#12302E">Shows how droplets behave;</text>
+  <text x="790" y="369" font-size="17" fill="#12302E">does not count infections</text>
+
+  <!-- row 3 -->
+  <rect x="60" y="414" width="1080" height="108" rx="10" fill="#FFFFFF"/>
+  <circle cx="90" cy="468" r="16" fill="#1FA5A0"/>
+  <text x="90" y="474" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="118" y="462" font-size="18" font-weight="bold" fill="#12302E">2023 review</text>
+  <text x="118" y="486" font-size="17" fill="#536866">Guarnieri et al.</text>
+  <text x="340" y="447" font-size="17" fill="#12302E">Humidity changes mucus thickness and salt</text>
+  <text x="340" y="472" font-size="17" fill="#12302E">balance, which affects how well the nose</text>
+  <text x="340" y="497" font-size="17" fill="#12302E">clears germs.</text>
+  <line x1="770" y1="428" x2="770" y2="508" stroke="#C7607D" stroke-width="3"/>
+  <text x="790" y="460" font-size="17" fill="#12302E">Humidity is tangled up with</text>
+  <text x="790" y="485" font-size="17" fill="#12302E">other risk factors</text>
+
+  <!-- callout -->
+  <rect x="60" y="532" width="1080" height="64" rx="12" fill="#EEF4F3" stroke="#C7607D" stroke-width="2"/>
+  <text x="84" y="558" font-size="19" font-weight="bold" fill="#12302E">No study shows a humidifier lowers your chance of a cold.</text>
+  <text x="84" y="582" font-size="17" fill="#536866">Humidity is one possible factor among many.</text>
+
+  <text x="60" y="624" font-size="17" fill="#536866">Sources: PMID 32611701, 33564965, 37298409</text>
+</svg>

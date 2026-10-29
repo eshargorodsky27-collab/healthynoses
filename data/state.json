@@ -1,12 +1,13 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
-    "Dry nose from CPAP machines and how to stay comfortable"
+    "Dry nose from CPAP machines and how to stay comfortable",
+    "New research on indoor humidity and respiratory infections"
   ],
   "usedPhotos": [],
   "lastPost": {
-    "date": "2026-10-28",
-    "slug": "cpap-dry-nose-how-to-stay-comfortable",
-    "topic": "Dry nose from CPAP machines and how to stay comfortable"
+    "date": "2026-10-29",
+    "slug": "indoor-humidity-respiratory-infections-research",
+    "topic": "New research on indoor humidity and respiratory infections"
   }
 }
