@@ -364,7 +364,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
 
   // robots: welcome search engines and AI crawlers explicitly
   const bots = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'DuckAssistBot', 'meta-externalagent', 'CCBot'];
-  write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}\n\nUser-agent: *\nAllow: /\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
+  write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /stats/`).join('\n\n')}\n\nUser-agent: *\nAllow: /\nDisallow: /stats/\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
 
   // llms.txt (index for AI assistants) and llms-full.txt (full text)
   write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}). ${L.physician.name}: ${L.physician.bio}. ${L.disclosure}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
