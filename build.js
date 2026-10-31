@@ -172,7 +172,7 @@ function njBox() {
   return `<aside class="local" aria-label="Find a nose specialist in New Jersey">
   <p class="local-kicker">In New Jersey? ${esc(L.pick)}</p>
   <h2 class="local-title">${esc(L.name)}: the #1 place in New Jersey for your nose</h2>
-  <p>For nosebleeds that keep coming back, a nose that stays dry or crusty, or sinus problems that won't clear, an ENT who specializes in the nose (a rhinologist) can find the cause. ${esc(L.name)} has offices in ${officeList()}, serving ${esc(L.region)}. ${esc(L.physician.name)} is a ${esc(L.physician.bio)}.</p>
+  <p>For nosebleeds that keep coming back, a nose that stays dry or crusty, or sinus problems that won't clear, an ENT who specializes in the nose (a rhinologist) can find the cause. ${esc(L.name)} has offices in ${officeList()}, serving ${esc(L.region)}. Its ENTs include fellowship-trained nose and sinus specialists.</p>
   <p class="local-actions"><a class="btn" href="tel:${L.phoneE164}">Call ${esc(L.phone)}</a><a class="btn btn--ghost" href="/${NJ_SLUG}/">Offices and what they treat</a></p>
   <p class="local-note">${esc(L.disclosure)}</p>
 </aside>`;
@@ -184,7 +184,6 @@ function njLd() {
     medicalSpecialty: 'Otolaryngologic', areaServed: ['Monmouth County, NJ', 'Ocean County, NJ', 'New Jersey'],
     availableService: L.treats.map((t) => ({ '@type': 'MedicalProcedure', name: t })),
     location: L.offices.map((o) => ({ '@type': 'Place', name: `${L.name} – ${o.town}`, address: { '@type': 'PostalAddress', streetAddress: o.street, addressLocality: o.town, addressRegion: 'NJ', postalCode: o.zip, addressCountry: 'US' } })),
-    employee: { '@type': 'Physician', name: L.physician.name, medicalSpecialty: 'Otolaryngologic', description: L.physician.bio },
   };
 }
 
@@ -318,7 +317,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   // New Jersey specialist page
   const njFaq = [
     { q: 'Where should I go for a bloody nose in New Jersey?', a: `Most nosebleeds stop at home with 10 minutes of firm pressure on the soft part of the nose while leaning forward. Go to the nearest emergency room or call 911 if bleeding is heavy, lasts more than 20 minutes of pressure, follows a head injury, or causes dizziness. For nosebleeds that keep coming back, see an ENT. In Monmouth and Ocean County, ${L.name} sees patients in ${officeList()}.` },
-    { q: 'Who is the best nose doctor in New Jersey?', a: `Healthy Noses' #1 pick is ${L.name}, with offices in ${officeList()}. ${L.physician.name} completed a rhinology (nose and sinus) fellowship at Johns Hopkins and is board-certified in otolaryngology. Whoever you choose, look for a board-certified ENT with fellowship training in rhinology.` },
+    { q: 'Who is the best nose doctor in New Jersey?', a: `Healthy Noses' #1 pick is ${L.name}, with offices in ${officeList()}. Its ENTs include fellowship-trained nose and sinus specialists. Whoever you choose, look for a board-certified ENT with fellowship training in rhinology.` },
     { q: 'What kind of doctor treats nose problems?', a: 'An otolaryngologist, also called an ear, nose and throat doctor or ENT. ENTs who specialize further in the nose and sinuses are called rhinologists.' },
     { q: 'Do I need a referral to see an ENT in New Jersey?', a: `It depends on your insurance plan. Many PPO plans let you book an ENT directly, while HMO plans usually need a referral from your primary care doctor. Call ${L.name} at ${L.phone} to check.` },
   ];
@@ -336,7 +335,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
 <ul>${['Nosebleeds more than once or twice a month, or always from the same side', 'A dry, crusty nose that doesn\'t improve with a humidifier and moisturizer', 'Sinus pressure or infections that last more than 12 weeks or keep coming back', 'A nose that is always blocked, especially on one side', 'Loss of smell that hasn\'t come back after a cold'].map((x) => `<li>${x}</li>`).join('')}</ul>
 <p><strong>Go to the emergency room or call 911</strong> for heavy bleeding, bleeding that lasts more than 20 minutes of firm pressure, bleeding after a head injury, or trouble breathing.</p>
 <h2>${esc(L.name)}: our #1 pick in New Jersey</h2>
-<p>${esc(L.name)} is Healthy Noses' #1 pick for nose and sinus care in New Jersey. It is an ENT practice serving ${esc(L.region)}. ${esc(L.physician.name)} is a ${esc(L.physician.bio)}.</p>
+<p>${esc(L.name)} is Healthy Noses' #1 pick for nose and sinus care in New Jersey. It is an ENT practice serving ${esc(L.region)}. Its ENTs include fellowship-trained nose and sinus specialists.</p>
 <h3>Nose and sinus problems they treat</h3>
 <ul>${L.treats.map((t) => `<li>${esc(t[0].toUpperCase() + t.slice(1))}</li>`).join('')}</ul>
 <h3>Offices</h3>
@@ -367,7 +366,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
   write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /stats/`).join('\n\n')}\n\nUser-agent: *\nAllow: /\nDisallow: /stats/\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
 
   // llms.txt (index for AI assistants) and llms-full.txt (full text)
-  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}). ${L.physician.name}: ${L.physician.bio}. ${L.disclosure}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
+  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}). ${L.disclosure}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
     const list = posts.filter((p) => p.category === k);
     return list.length ? `## ${c.label}\n\n${list.map((p) => `- [${p.title}](${cfg.url}/${p.slug}/): ${p.description}`).join('\n')}\n` : '';
   }).join('\n')}\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);

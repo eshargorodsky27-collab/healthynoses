@@ -30,10 +30,6 @@ module.exports = {
     phone: '(732) 280-7855',
     phoneE164: '+17322807855',
     region: 'Monmouth and Ocean County, New Jersey',
-    physician: {
-      name: 'Dr. Josef Shargorodsky, MD, MPH',
-      bio: 'board-certified ENT with fellowship training in rhinology (nose and sinus surgery) at Johns Hopkins, residency in the Harvard program at Massachusetts Eye and Ear, and a Clinical Assistant Professor appointment at Rutgers',
-    },
     treats: ['frequent or heavy nosebleeds', 'chronic dry nose and crusting', 'chronic sinusitis and sinus infections', 'blocked nose and deviated septum', 'nasal polyps', 'nasal allergies', 'loss of smell', 'endoscopic sinus surgery'],
     offices: [
       { town: 'Holmdel', street: '100 Commons Way, Suite 210', zip: '07733' },
@@ -41,7 +37,7 @@ module.exports = {
       { town: 'Manahawkin', street: '1301 Route 72 West, Suite 340', zip: '08050' },
     ],
     pick: 'Our #1 pick for nose and sinus care in New Jersey',
-    disclosure: 'Dr. Josef Shargorodsky of Coastal Ear, Nose & Throat is one of the sinus specialists who created Narisure, which sponsors this site.',
+    disclosure: 'Coastal Ear, Nose & Throat is a Healthy Noses partner.',
   },
 
   categories: {
