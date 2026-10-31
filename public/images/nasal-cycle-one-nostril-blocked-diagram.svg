@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E" textLength="1060" lengthAdjust="spacingAndGlyphs">Why One Nostril Is Always Blocked: The Nasal Cycle Explained</text>
+<text x="60" y="112" font-size="20" fill="#536866">Normal cycle or a real problem? Compare the signs.</text>
+
+<!-- header -->
+<rect x="60" y="136" width="300" height="40" fill="#12302E"/>
+<rect x="360" y="136" width="380" height="40" fill="#1FA5A0"/>
+<rect x="740" y="136" width="400" height="40" fill="#C7607D"/>
+<text x="78" y="163" font-size="18" font-weight="bold" fill="#FFFFFF">Sign</text>
+<text x="378" y="163" font-size="18" font-weight="bold" fill="#FFFFFF">Likely nasal cycle</text>
+<text x="758" y="163" font-size="18" font-weight="bold" fill="#FFFFFF">Possible other cause</text>
+
+<!-- rows -->
+<rect x="60" y="176" width="1080" height="50" fill="#FFFFFF"/>
+<rect x="60" y="226" width="1080" height="50" fill="#EEF4F3"/>
+<rect x="60" y="276" width="1080" height="50" fill="#FFFFFF"/>
+<rect x="60" y="326" width="1080" height="50" fill="#EEF4F3"/>
+<rect x="60" y="376" width="1080" height="50" fill="#FFFFFF"/>
+<rect x="60" y="426" width="1080" height="50" fill="#EEF4F3"/>
+<line x1="360" y1="176" x2="360" y2="476" stroke="#C9DAD7" stroke-width="2"/>
+<line x1="740" y1="176" x2="740" y2="476" stroke="#C9DAD7" stroke-width="2"/>
+<line x1="60" y1="476" x2="1140" y2="476" stroke="#C9DAD7" stroke-width="2"/>
+
+<g font-size="18" fill="#12302E">
+<text x="78" y="207" font-weight="bold">Which side is blocked</text>
+<text x="78" y="257" font-weight="bold">Pain or pressure</text>
+<text x="78" y="307" font-weight="bold">Discharge</text>
+<text x="78" y="357" font-weight="bold">Smell</text>
+<text x="78" y="407" font-weight="bold">Breathing overall</text>
+<text x="78" y="457" font-weight="bold">Timing</text>
+
+<circle cx="378" cy="201" r="7" fill="#1FA5A0"/>
+<text x="396" y="207">Changes over hours</text>
+<circle cx="378" cy="251" r="7" fill="#1FA5A0"/>
+<text x="396" y="257">None</text>
+<circle cx="378" cy="301" r="7" fill="#1FA5A0"/>
+<text x="396" y="307">None or clear</text>
+<circle cx="378" cy="351" r="7" fill="#1FA5A0"/>
+<text x="396" y="357">Normal</text>
+<circle cx="378" cy="401" r="7" fill="#1FA5A0"/>
+<text x="396" y="407">Fine through one side</text>
+<circle cx="378" cy="451" r="7" fill="#1FA5A0"/>
+<text x="396" y="457">Always been there</text>
+
+<circle cx="758" cy="201" r="7" fill="#C7607D"/>
+<text x="776" y="207">Same side all the time, for weeks</text>
+<circle cx="758" cy="251" r="7" fill="#C7607D"/>
+<text x="776" y="257">Sinus infection or inflammation</text>
+<circle cx="758" cy="301" r="7" fill="#C7607D"/>
+<text x="776" y="307">Thick, colored, bloody or one-sided</text>
+<circle cx="758" cy="351" r="7" fill="#C7607D"/>
+<text x="776" y="357">Reduced or lost</text>
+<circle cx="758" cy="401" r="7" fill="#C7607D"/>
+<text x="776" y="407">Cannot breathe well through either side</text>
+<circle cx="758" cy="451" r="7" fill="#C7607D"/>
+<text x="776" y="457">New, worsening or after an injury</text>
+</g>
+
+<!-- bottom boxes -->
+<rect x="60" y="498" width="530" height="84" rx="12" fill="#FFFFFF"/>
+<rect x="60" y="498" width="10" height="84" fill="#C7607D"/>
+<text x="90" y="531" font-size="18" font-weight="bold" fill="#12302E">See a doctor if one side never switches</text>
+<text x="90" y="561" font-size="18" fill="#12302E">or comes with pain, bleeding or smell loss.</text>
+
+<rect x="610" y="498" width="530" height="84" rx="12" fill="#FFFFFF"/>
+<rect x="610" y="498" width="10" height="84" fill="#1FA5A0"/>
+<text x="640" y="531" font-size="18" font-weight="bold" fill="#12302E">Decongestant sprays: about 3 days at most</text>
+<text x="640" y="561" font-size="18" fill="#12302E">Longer use can make stuffiness rebound.</text>
+
+<text x="60" y="617" font-size="17" fill="#536866">Source: StatPearls review on nasal physiology (Freeman et al., 2023)</text>
+</svg>
