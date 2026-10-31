@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Kids' Winter Nosebleeds: Causes and What Parents Can Do</text>
+  <text x="60" y="110" font-size="20" fill="#536866">How to stop a nosebleed, and when to call a doctor</text>
+
+  <!-- Step cards -->
+  <g>
+    <rect x="60" y="140" width="200" height="220" rx="14" fill="#FFFFFF"/>
+    <rect x="60" y="140" width="200" height="6" rx="3" fill="#1FA5A0"/>
+    <circle cx="92" cy="182" r="18" fill="#1FA5A0"/>
+    <text x="92" y="189" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="76" y="228" font-size="18" font-weight="bold" fill="#12302E">Sit up and</text>
+    <text x="76" y="251" font-size="18" font-weight="bold" fill="#12302E">lean forward</text>
+    <text x="76" y="288" font-size="17" fill="#536866">Don't tip the head</text>
+    <text x="76" y="311" font-size="17" fill="#536866">back: blood may run</text>
+    <text x="76" y="334" font-size="17" fill="#536866">down the throat.</text>
+  </g>
+  <g>
+    <rect x="280" y="140" width="200" height="220" rx="14" fill="#FFFFFF"/>
+    <rect x="280" y="140" width="200" height="6" rx="3" fill="#1FA5A0"/>
+    <circle cx="312" cy="182" r="18" fill="#1FA5A0"/>
+    <text x="312" y="189" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="296" y="228" font-size="18" font-weight="bold" fill="#12302E">Pinch the</text>
+    <text x="296" y="251" font-size="18" font-weight="bold" fill="#12302E">soft part</text>
+    <text x="296" y="288" font-size="17" fill="#536866">Just below the</text>
+    <text x="296" y="311" font-size="17" fill="#536866">bony bridge, with</text>
+    <text x="296" y="334" font-size="17" fill="#536866">thumb and finger.</text>
+  </g>
+  <g>
+    <rect x="500" y="140" width="200" height="220" rx="14" fill="#FFFFFF"/>
+    <rect x="500" y="140" width="200" height="6" rx="3" fill="#1FA5A0"/>
+    <circle cx="532" cy="182" r="18" fill="#1FA5A0"/>
+    <text x="532" y="189" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="516" y="228" font-size="18" font-weight="bold" fill="#12302E">Hold 10 to</text>
+    <text x="516" y="251" font-size="18" font-weight="bold" fill="#12302E">15 minutes</text>
+    <text x="516" y="288" font-size="17" fill="#536866">Use a timer.</text>
+    <text x="516" y="311" font-size="17" fill="#536866">Checking early</text>
+    <text x="516" y="334" font-size="17" fill="#536866">restarts bleeding.</text>
+  </g>
+  <g>
+    <rect x="720" y="140" width="200" height="220" rx="14" fill="#FFFFFF"/>
+    <rect x="720" y="140" width="200" height="6" rx="3" fill="#1FA5A0"/>
+    <circle cx="752" cy="182" r="18" fill="#1FA5A0"/>
+    <text x="752" y="189" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="736" y="228" font-size="18" font-weight="bold" fill="#12302E">Breathe through</text>
+    <text x="736" y="251" font-size="18" font-weight="bold" fill="#12302E">the mouth</text>
+    <text x="736" y="288" font-size="17" fill="#536866">Spit out any</text>
+    <text x="736" y="311" font-size="17" fill="#536866">blood that</text>
+    <text x="736" y="334" font-size="17" fill="#536866">collects.</text>
+  </g>
+  <g>
+    <rect x="940" y="140" width="200" height="220" rx="14" fill="#FFFFFF"/>
+    <rect x="940" y="140" width="200" height="6" rx="3" fill="#1FA5A0"/>
+    <circle cx="972" cy="182" r="18" fill="#1FA5A0"/>
+    <text x="972" y="189" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="956" y="228" font-size="18" font-weight="bold" fill="#12302E">Go easy</text>
+    <text x="956" y="251" font-size="18" font-weight="bold" fill="#12302E">afterward</text>
+    <text x="956" y="288" font-size="17" fill="#536866">Don't blow, pick</text>
+    <text x="956" y="311" font-size="17" fill="#536866">or rub the nose</text>
+    <text x="956" y="334" font-size="17" fill="#536866">for several hours.</text>
+  </g>
+
+  <!-- Causes panel -->
+  <rect x="60" y="384" width="530" height="186" rx="14" fill="#EEF4F3"/>
+  <text x="84" y="418" font-size="20" font-weight="bold" fill="#12302E">Common causes in kids</text>
+  <circle cx="90" cy="445" r="5" fill="#1FA5A0"/>
+  <text x="106" y="451" font-size="17" fill="#12302E">Inflammation: colds, sinus infections, allergies</text>
+  <circle cx="90" cy="573" r="0" fill="#1FA5A0"/>
+  <circle cx="90" cy="575" r="0" fill="#1FA5A0"/>
+  <circle cx="90" cy="472" r="5" fill="#1FA5A0"/>
+  <text x="106" y="478" font-size="17" fill="#12302E">Environment: dry heated air, cold weather</text>
+  <circle cx="90" cy="499" r="5" fill="#1FA5A0"/>
+  <text x="106" y="505" font-size="17" fill="#12302E">Injury: picking, rubbing, a bump to the face</text>
+  <circle cx="90" cy="526" r="5" fill="#1FA5A0"/>
+  <text x="106" y="532" font-size="17" fill="#12302E">Nasal spray misuse: too often or aimed wrong</text>
+
+  <!-- Doctor panel -->
+  <rect x="610" y="384" width="530" height="186" rx="14" fill="#FFFFFF"/>
+  <rect x="610" y="384" width="8" height="186" rx="4" fill="#C7607D"/>
+  <text x="640" y="418" font-size="20" font-weight="bold" fill="#C7607D">See a doctor if the bleeding:</text>
+  <circle cx="646" cy="445" r="5" fill="#C7607D"/>
+  <text x="662" y="451" font-size="17" fill="#12302E">Is frequent</text>
+  <circle cx="646" cy="472" r="5" fill="#C7607D"/>
+  <text x="662" y="478" font-size="17" fill="#12302E">Is heavy</text>
+  <circle cx="646" cy="499" r="5" fill="#C7607D"/>
+  <text x="662" y="505" font-size="17" fill="#12302E">Lasts more than 20 minutes with pressure</text>
+  <circle cx="646" cy="526" r="5" fill="#C7607D"/>
+  <text x="662" y="532" font-size="17" fill="#12302E">Comes with other symptoms</text>
+
+  <text x="60" y="604" font-size="17" fill="#536866">Sources: AAO-HNSF 2020 guideline; Pediatrics in Review, 2024</text>
+</svg>

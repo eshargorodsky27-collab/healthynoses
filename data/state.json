@@ -1,13 +1,16 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
-    "New research on indoor humidity and respiratory infections"
+    "New research on indoor humidity and respiratory infections",
+    "Nosebleeds in kids during winter: causes and what parents can do"
   ],
-  "usedPhotos": [],
+  "usedPhotos": [
+    "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa"
+  ],
   "lastPost": {
-    "date": "2026-10-29",
-    "slug": "indoor-humidity-respiratory-infections-research",
-    "topic": "New research on indoor humidity and respiratory infections"
+    "date": "2026-10-31",
+    "slug": "kids-winter-nosebleeds-causes-parents-can-do",
+    "topic": "Nosebleeds in kids during winter: causes and what parents can do"
   }
 }
