@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Dry Nose on Airplanes: Why Cabin Air Dries You Out</text>
+<text x="60" y="112" font-size="20" fill="#536866">Dry air, not low pressure, is the cause. Five steps help.</text>
+
+<line x1="162" y1="165" x2="1038" y2="165" stroke="#C9DAD7" stroke-width="4"/>
+
+<!-- Card 1 -->
+<rect x="60" y="196" width="204" height="236" rx="14" fill="#FFFFFF"/>
+<circle cx="162" cy="165" r="18" fill="#1FA5A0"/>
+<text x="162" y="172" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="76" y="232" font-size="20" font-weight="bold" fill="#12302E">Day before</text>
+<text x="76" y="266" font-size="17" fill="#12302E">Drink water as</text>
+<text x="76" y="290" font-size="17" fill="#12302E">usual. Saline rinse</text>
+<text x="76" y="314" font-size="17" fill="#12302E">or spray.</text>
+<rect x="72" y="376" width="180" height="40" rx="10" fill="#EEF4F3"/>
+<text x="82" y="402" font-size="17" font-weight="bold" fill="#1FA5A0">Why: starts moist</text>
+
+<!-- Card 2 -->
+<rect x="279" y="196" width="204" height="236" rx="14" fill="#FFFFFF"/>
+<circle cx="381" cy="165" r="18" fill="#1FA5A0"/>
+<text x="381" y="172" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="295" y="232" font-size="20" font-weight="bold" fill="#12302E">At the airport</text>
+<text x="295" y="266" font-size="17" fill="#12302E">Refill your water</text>
+<text x="295" y="290" font-size="17" fill="#12302E">bottle after</text>
+<text x="295" y="314" font-size="17" fill="#12302E">security.</text>
+<rect x="291" y="376" width="180" height="40" rx="10" fill="#EEF4F3"/>
+<text x="301" y="402" font-size="17" font-weight="bold" fill="#1FA5A0">Why: fluids on hand</text>
+
+<!-- Card 3 -->
+<rect x="498" y="196" width="204" height="236" rx="14" fill="#FFFFFF"/>
+<circle cx="600" cy="165" r="18" fill="#1FA5A0"/>
+<text x="600" y="172" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="514" y="232" font-size="20" font-weight="bold" fill="#12302E">After boarding</text>
+<text x="514" y="266" font-size="17" fill="#12302E">Thin layer of nasal</text>
+<text x="514" y="290" font-size="17" fill="#12302E">moisturizer at the</text>
+<text x="514" y="314" font-size="17" fill="#12302E">front of nostril.</text>
+<rect x="510" y="376" width="180" height="40" rx="10" fill="#EEF4F3"/>
+<text x="520" y="402" font-size="17" font-weight="bold" fill="#1FA5A0">Why: slows drying</text>
+
+<!-- Card 4 -->
+<rect x="717" y="196" width="204" height="236" rx="14" fill="#FFFFFF"/>
+<circle cx="819" cy="165" r="18" fill="#1FA5A0"/>
+<text x="819" y="172" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="733" y="232" font-size="20" font-weight="bold" fill="#12302E">Every 1 to 2 hrs</text>
+<text x="733" y="266" font-size="17" fill="#12302E">Sip water. Saline</text>
+<text x="733" y="290" font-size="17" fill="#12302E">spray if needed.</text>
+<rect x="729" y="376" width="180" height="40" rx="10" fill="#EEF4F3"/>
+<text x="739" y="402" font-size="17" font-weight="bold" fill="#1FA5A0">Why: refills lining</text>
+
+<!-- Card 5 -->
+<rect x="936" y="196" width="204" height="236" rx="14" fill="#FFFFFF"/>
+<circle cx="1038" cy="165" r="18" fill="#1FA5A0"/>
+<text x="1038" y="172" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="952" y="232" font-size="20" font-weight="bold" fill="#12302E">After landing</text>
+<text x="952" y="266" font-size="17" fill="#12302E">Rinse or spray with</text>
+<text x="952" y="290" font-size="17" fill="#12302E">saline. Drink water.</text>
+<rect x="948" y="376" width="180" height="40" rx="10" fill="#EEF4F3"/>
+<text x="958" y="402" font-size="17" font-weight="bold" fill="#1FA5A0">Why: clears crusts</text>
+
+<!-- Humidity panel -->
+<rect x="60" y="450" width="530" height="142" rx="14" fill="#FFFFFF"/>
+<text x="80" y="478" font-size="18" font-weight="bold" fill="#12302E">Humidity: cabin air vs home air</text>
+<text x="80" y="517" font-size="17" fill="#12302E">Cabin</text>
+<text x="80" y="552" font-size="17" fill="#12302E">Many homes</text>
+<rect x="200" y="500" width="300" height="22" rx="6" fill="#EEF4F3"/>
+<rect x="200" y="535" width="300" height="22" rx="6" fill="#EEF4F3"/>
+<rect x="230" y="500" width="30" height="22" rx="4" fill="#C7607D"/>
+<rect x="290" y="535" width="60" height="22" rx="4" fill="#1FA5A0"/>
+<text x="272" y="517" font-size="17" font-weight="bold" fill="#C7607D">10 to 20%</text>
+<text x="362" y="552" font-size="17" font-weight="bold" fill="#1FA5A0">30 to 50%</text>
+<text x="200" y="581" font-size="17" fill="#536866">0%</text>
+<text x="500" y="581" font-size="17" fill="#536866" text-anchor="end">100%</text>
+
+<!-- Nosebleed panel -->
+<rect x="610" y="450" width="530" height="142" rx="14" fill="#FFFFFF"/>
+<rect x="610" y="450" width="8" height="142" rx="4" fill="#C7607D"/>
+<text x="636" y="478" font-size="18" font-weight="bold" fill="#12302E">Nosebleed in flight?</text>
+<text x="636" y="506" font-size="17" fill="#12302E">Sit up, lean forward, pinch the soft nose.</text>
+<text x="636" y="530" font-size="17" fill="#12302E">Hold steady pressure for 10 full minutes.</text>
+<text x="636" y="558" font-size="17" font-weight="bold" fill="#C7607D">Not stopped after about 20 minutes?</text>
+<text x="636" y="582" font-size="17" fill="#12302E">Tell the crew, and see a doctor.</text>
+
+<text x="60" y="620" font-size="17" fill="#536866">Humidity ranges are commonly reported and vary by flight.</text>
+</svg>

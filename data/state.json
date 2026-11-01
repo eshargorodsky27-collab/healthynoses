@@ -1,17 +1,18 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
     "Nosebleeds in kids during winter: causes and what parents can do",
-    "Why one nostril is always more blocked: the nasal cycle"
+    "Why one nostril is always more blocked: the nasal cycle",
+    "Dry nose on airplanes: why cabin air dries you out"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa"
   ],
   "lastPost": {
-    "date": "2026-10-31",
-    "slug": "nasal-cycle-one-nostril-blocked",
-    "topic": "Why one nostril is always more blocked: the nasal cycle"
+    "date": "2026-11-01",
+    "slug": "dry-nose-on-airplanes-cabin-air",
+    "topic": "Dry nose on airplanes: why cabin air dries you out"
   }
 }
