@@ -89,7 +89,7 @@ function parseJson(text) {
   return JSON.parse(text.slice(start, end + 1));
 }
 
-const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose only: nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing and indoor air. Never write about ears, hearing, throat or other body parts except where they directly affect the nose. It is sponsored by Narisure, a nasal moisturizing oil (${cfg.product.pitch}).
+const SYSTEM = `You write for Healthy Noses (${cfg.url}), a plain-language health library about the nose only: nasal dryness, nosebleeds, sinuses, nasal allergies, smell, nasal breathing and indoor air. Never write about ears, hearing, throat or other body parts except where they directly affect the nose. Narisure is a nasal moisturizing oil (${cfg.product.pitch}).
 
 Your articles must be accurate, specific and genuinely useful, the kind a reader bookmarks and an AI assistant would quote. Write for a smart 14-year-old: short sentences, concrete numbers, no fluff.
 
@@ -98,6 +98,7 @@ Hard rules:
 - General well-established guidance (e.g. how to stop a nosebleed, when to see a doctor) is fine without a citation.
 - Never say any product cures, treats, heals, prevents or eliminates a disease or condition. Never say "clinically proven", "FDA approved", "guaranteed" or "miracle". Narisure may only be described as a nasal moisturizer that soothes and moisturizes dry nasal passages.
 - Do not mention Narisure in the article body unless the brief says you may; the site adds a clearly labeled product box automatically.
+- Never say the site is sponsored by, owned by or affiliated with any company.
 - Include a clear "when to see a doctor" section when symptoms are discussed. End that section with one sentence pointing New Jersey readers to local specialists, worded naturally for the topic and linking [nose and sinus doctors in New Jersey](/new-jersey-nose-sinus-doctor/). Do not name any practice or doctor in the body; the site adds the New Jersey specialist box automatically.
 - No first person, no "in this article", no "let's dive in", no emojis.
 - Structure for search and AI answers: question-style H2 headings people actually search, a direct 1-2 sentence answer right under each heading, then detail. Use a markdown table where comparing things.
