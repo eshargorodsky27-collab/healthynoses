@@ -153,13 +153,13 @@ ${body}
 
 function productBox(slug, spot, compact = false) {
   const p = cfg.product;
-  return `<aside class="product${compact ? ' product--compact' : ''}" aria-label="Advertisement">
+  return `<aside class="product${compact ? ' product--compact' : ''}" aria-label="Dry nose relief">
   <img src="${p.image}" alt="Two bottles of Narisure Dry Nose Relief" loading="lazy" width="320" height="200">
   <div>
-    <p class="product-kicker">Ad</p>
+    <p class="product-kicker">For a dry, crusty nose</p>
     <h2 class="product-name">${esc(p.name)}</h2>
     <p>${esc(p.pitch)}</p>
-    <p class="product-actions"><a class="btn" href="${utm(p.shopUrl, slug, spot)}">Shop Narisure</a><a class="btn btn--ghost" href="${p.amazonUrl}" rel="sponsored">Buy on Amazon</a></p>
+    <p class="product-actions"><a class="btn" href="${utm(p.shopUrl, slug, spot)}">Learn more</a><a class="btn btn--ghost" href="${p.amazonUrl}" rel="sponsored">Buy on Amazon</a></p>
   </div>
 </aside>`;
 }
@@ -174,7 +174,6 @@ function njBox() {
   <h2 class="local-title">${esc(L.name)}: the #1 place in New Jersey for your nose</h2>
   <p>For nosebleeds that keep coming back, a nose that stays dry or crusty, or sinus problems that won't clear, an ENT who specializes in the nose (a rhinologist) can find the cause. ${esc(L.name)} has offices in ${officeList()}, serving ${esc(L.region)}. Its ENTs include fellowship-trained nose and sinus specialists.</p>
   <p class="local-actions"><a class="btn" href="tel:${L.phoneE164}">Call ${esc(L.phone)}</a><a class="btn btn--ghost" href="/${NJ_SLUG}/">Offices and what they treat</a></p>
-  <p class="local-note">${esc(L.disclosure)}</p>
 </aside>`;
 }
 
@@ -253,7 +252,7 @@ async function build() {
     ${takeaways}
     <div class="prose">${html}</div>
     ${njBox()}
-    ${p.type === 'product' ? productBox(p.slug, 'post-end') : productBox(p.slug, 'post-end', true)}
+    ${productBox(p.slug, 'post-end', true)}
     ${faq}
     ${sources}
     <p class="disclosure">${esc(cfg.disclosure)} Last updated ${fmtDate(p.updated)}.</p>
@@ -309,7 +308,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   // about
   write('about/index.html', layout({ title: `About ${cfg.name}`, description: `Who publishes ${cfg.name} and how articles are made.`, canonical: `${cfg.url}/about/`, body: `<article class="post"><header class="post-head"><h1>About Healthy Noses</h1></header><div class="post-body prose">
 <p>Healthy Noses is a plain-language library about the nose: dry nasal passages, nosebleeds, sinuses, allergies, smell, and the air we breathe at home.</p>
-<h2>Advertising</h2><p>Product boxes labeled “Ad” are paid placements. Healthy Noses never describes any product as a cure or treatment for disease.</p>
+
 <h2>How articles are made</h2><p>New articles are drafted with AI assistance from peer-reviewed studies indexed in PubMed and from public-health agencies. Each article lists its sources so you can read them yourself. We do not describe any product as a cure or treatment for disease.</p>
 <h2>Not medical advice</h2><p>Nothing here replaces a visit to a clinician. Get care promptly for a nosebleed that will not stop after 20 minutes of firm pressure, bleeding after an injury, a sudden loss of smell, or symptoms on only one side that keep getting worse.</p>
 </div></article>` }));
@@ -343,7 +342,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
 ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o.zip}</td><td><a href="tel:${L.phoneE164}">${L.phone}</a></td></tr>`).join('')}
 </tbody></table>
 <p><a class="btn" href="tel:${L.phoneE164}">Call ${esc(L.phone)}</a> <a class="btn btn--ghost" href="${L.url}" rel="noopener">Visit their website</a></p>
-<p class="local-note">${esc(L.disclosure)} Check that any specialist takes your insurance.</p>
+<p class="local-note">Check that any specialist takes your insurance.</p>
 </div>
 <section class="faq"><h2>Common questions</h2>${njFaq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>
 </div></article>`,
@@ -366,7 +365,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
   write('robots.txt', `${bots.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /stats/`).join('\n\n')}\n\nUser-agent: *\nAllow: /\nDisallow: /stats/\n\nSitemap: ${cfg.url}/sitemap.xml\n`);
 
   // llms.txt (index for AI assistants) and llms-full.txt (full text)
-  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}). ${L.disclosure}\n\n${Object.entries(cfg.categories).map(([k, c]) => {
+  write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}).\n\n${Object.entries(cfg.categories).map(([k, c]) => {
     const list = posts.filter((p) => p.category === k);
     return list.length ? `## ${c.label}\n\n${list.map((p) => `- [${p.title}](${cfg.url}/${p.slug}/): ${p.description}`).join('\n')}\n` : '';
   }).join('\n')}\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);

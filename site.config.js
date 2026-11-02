@@ -37,7 +37,6 @@ module.exports = {
       { town: 'Manahawkin', street: '1301 Route 72 West, Suite 340', zip: '08050' },
     ],
     pick: 'Our #1 pick for nose and sinus care in New Jersey',
-    disclosure: 'Coastal Ear, Nose & Throat is a Healthy Noses partner.',
   },
 
   categories: {
