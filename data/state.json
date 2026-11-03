@@ -1,18 +1,19 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
     "Nosebleeds in kids during winter: causes and what parents can do",
     "Why one nostril is always more blocked: the nasal cycle",
-    "Dry nose on airplanes: why cabin air dries you out"
+    "Dry nose on airplanes: why cabin air dries you out",
+    "What studies say about nasal irrigation for sinus symptoms"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa"
   ],
   "lastPost": {
-    "date": "2026-11-01",
-    "slug": "dry-nose-on-airplanes-cabin-air",
-    "topic": "Dry nose on airplanes: why cabin air dries you out"
+    "date": "2026-11-03",
+    "slug": "nasal-irrigation-sinus-symptoms-studies",
+    "topic": "What studies say about nasal irrigation for sinus symptoms"
   }
 }
