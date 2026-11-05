@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A">Saline Irrigation for Chronic Sinusitis:</text>
+  <text x="60" y="118" font-size="34" font-weight="bold" fill="#10253A">What the Trials Found</text>
+  <text x="60" y="152" font-size="20" fill="#4E5E6E">Larger trial: 76 adults, saline rinse vs usual care</text>
+
+  <!-- Chart card -->
+  <rect x="60" y="180" width="620" height="380" rx="16" fill="#F5F0E7"/>
+  <text x="90" y="214" font-size="18" font-weight="bold" fill="#10253A">Points better than usual care (0–100 scale)</text>
+  <line x1="90" y1="485" x2="650" y2="485" stroke="#D8CFBE" stroke-width="3"/>
+
+  <rect x="150" y="397" width="170" height="88" fill="#1F7AA3"/>
+  <text x="235" y="387" font-size="28" font-weight="bold" fill="#10253A" text-anchor="middle">+6.3</text>
+  <text x="235" y="447" font-size="17" fill="#FFFFFF" text-anchor="middle">CI 0.89–11.71</text>
+  <text x="235" y="512" font-size="18" font-weight="bold" fill="#10253A" text-anchor="middle">At 3 months</text>
+  <text x="235" y="538" font-size="17" fill="#4E5E6E" text-anchor="middle">Low quality evidence</text>
+
+  <rect x="410" y="296" width="170" height="189" fill="#1F7AA3"/>
+  <text x="495" y="286" font-size="28" font-weight="bold" fill="#10253A" text-anchor="middle">+13.5</text>
+  <text x="495" y="396" font-size="17" fill="#FFFFFF" text-anchor="middle">CI 9.63–17.37</text>
+  <text x="495" y="512" font-size="18" font-weight="bold" fill="#10253A" text-anchor="middle">At 6 months</text>
+  <text x="495" y="538" font-size="17" fill="#4E5E6E" text-anchor="middle">Very low quality evidence</text>
+
+  <!-- Card 1 -->
+  <rect x="710" y="180" width="430" height="115" rx="16" fill="#FFFFFF"/>
+  <rect x="710" y="180" width="8" height="115" fill="#1F7AA3"/>
+  <text x="740" y="226" font-size="36" font-weight="bold" fill="#1F7AA3">2 trials</text>
+  <text x="740" y="256" font-size="17" fill="#10253A">116 adults in total in the Cochrane</text>
+  <text x="740" y="278" font-size="17" fill="#10253A">review, so the evidence is thin</text>
+
+  <!-- Card 2 -->
+  <rect x="710" y="310" width="430" height="115" rx="16" fill="#FFFFFF"/>
+  <rect x="710" y="310" width="8" height="115" fill="#D9774B"/>
+  <text x="740" y="356" font-size="36" font-weight="bold" fill="#D9774B">23%</text>
+  <text x="740" y="386" font-size="17" fill="#10253A">of the saline group reported side effects,</text>
+  <text x="740" y="408" font-size="17" fill="#10253A">including nosebleeds</text>
+
+  <!-- Card 3 -->
+  <rect x="710" y="440" width="430" height="120" rx="16" fill="#FFFFFF"/>
+  <rect x="710" y="440" width="8" height="120" fill="#1F7AA3"/>
+  <text x="740" y="486" font-size="36" font-weight="bold" fill="#1F7AA3">14 studies</text>
+  <text x="740" y="516" font-size="17" fill="#10253A">747 people with allergic rhinitis; none</text>
+  <text x="740" y="538" font-size="17" fill="#10253A">followed them beyond 3 months</text>
+
+  <text x="60" y="591" font-size="17" fill="#4E5E6E">Source: Cochrane reviews of saline irrigation.</text>
+  <text x="60" y="614" font-size="17" fill="#4E5E6E">CI = 95% confidence interval. Higher score = better.</text>
+</svg>

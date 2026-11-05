@@ -1,12 +1,16 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
-    "How long does a sinus infection last, and when to worry"
+    "How long does a sinus infection last, and when to worry",
+    "Saline irrigation for chronic sinusitis: what the trials found"
   ],
-  "usedPhotos": [],
+  "usedPhotos": [
+    "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
+    "openverse:dabfcee2-d53e-4ae2-a636-2036fbbc29c8"
+  ],
   "lastPost": {
-    "date": "2026-11-04",
-    "slug": "how-long-sinus-infection-lasts-when-to-worry",
-    "topic": "How long does a sinus infection last, and when to worry"
+    "date": "2026-11-05",
+    "slug": "saline-irrigation-chronic-sinusitis-trials",
+    "topic": "Saline irrigation for chronic sinusitis: what the trials found"
   }
 }
