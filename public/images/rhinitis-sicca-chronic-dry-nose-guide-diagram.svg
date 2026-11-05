@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Rhinitis Sicca: What a Chronically Dry Nose Means</text>
+  <text x="60" y="110" font-size="20" fill="#536866">Five conditions grouped under the symptom "dry nose"</text>
+
+  <!-- Table header -->
+  <rect x="60" y="136" width="740" height="40" rx="10" fill="#12302E"/>
+  <rect x="60" y="156" width="740" height="20" fill="#12302E"/>
+  <text x="96" y="162" font-size="17" font-weight="bold" fill="#FFFFFF">Condition</text>
+  <text x="390" y="162" font-size="17" font-weight="bold" fill="#FFFFFF">What it is</text>
+
+  <!-- Rows -->
+  <rect x="60" y="176" width="740" height="64" fill="#FFFFFF"/>
+  <rect x="60" y="240" width="740" height="64" fill="#EEF4F3"/>
+  <rect x="60" y="304" width="740" height="64" fill="#FFFFFF"/>
+  <rect x="60" y="368" width="740" height="64" fill="#EEF4F3"/>
+  <rect x="60" y="432" width="740" height="64" fill="#FFFFFF"/>
+
+  <circle cx="78" cy="214" r="6" fill="#1FA5A0"/>
+  <text x="96" y="214" font-size="17" font-weight="bold" fill="#12302E">Rhinitis sicca anterior</text>
+  <text x="390" y="204" font-size="17" fill="#12302E">Dryness and crusting in the</text>
+  <text x="390" y="226" font-size="17" fill="#12302E">front of the nose</text>
+
+  <circle cx="78" cy="278" r="6" fill="#1FA5A0"/>
+  <text x="96" y="278" font-size="17" font-weight="bold" fill="#12302E">Primary atrophic rhinitis</text>
+  <text x="390" y="268" font-size="17" fill="#12302E">Thinning of the nasal lining</text>
+  <text x="390" y="290" font-size="17" fill="#12302E">with no clear cause</text>
+
+  <circle cx="78" cy="342" r="6" fill="#1FA5A0"/>
+  <text x="96" y="342" font-size="17" font-weight="bold" fill="#12302E">Secondary atrophic rhinitis</text>
+  <text x="390" y="332" font-size="17" fill="#12302E">Thinning that follows a cause,</text>
+  <text x="390" y="354" font-size="17" fill="#12302E">such as surgery or infection</text>
+
+  <circle cx="78" cy="400" r="6" fill="#C7607D"/>
+  <text x="96" y="396" font-size="17" font-weight="bold" fill="#12302E">Atrophic rhinitis with foetor</text>
+  <text x="96" y="418" font-size="17" font-weight="bold" fill="#12302E">(ozena)</text>
+  <text x="390" y="396" font-size="17" fill="#12302E">Atrophic rhinitis with a strong,</text>
+  <text x="390" y="418" font-size="17" fill="#12302E">unpleasant smell</text>
+
+  <circle cx="78" cy="470" r="6" fill="#1FA5A0"/>
+  <text x="96" y="470" font-size="17" font-weight="bold" fill="#12302E">Empty nose syndrome</text>
+  <text x="390" y="460" font-size="17" fill="#12302E">Dryness or poor airflow from a too-open nose,</text>
+  <text x="390" y="482" font-size="17" fill="#12302E">often after turbinate surgery</text>
+
+  <!-- Definition note -->
+  <rect x="60" y="512" width="740" height="68" rx="12" fill="#FFFFFF" stroke="#C9DAD7" stroke-width="2"/>
+  <text x="80" y="541" font-size="17" fill="#12302E">No single agreed definition exists, so doctors rely on</text>
+  <text x="80" y="565" font-size="17" fill="#536866">history, a nose exam and sometimes endoscopy.</text>
+
+  <!-- Red flag card -->
+  <rect x="824" y="136" width="316" height="214" rx="14" fill="#FFFFFF" stroke="#C7607D" stroke-width="3"/>
+  <text x="844" y="170" font-size="20" font-weight="bold" fill="#C7607D">See a doctor if there is:</text>
+  <circle cx="852" cy="200" r="6" fill="#C7607D"/>
+  <text x="870" y="206" font-size="17" fill="#12302E">Dryness with foul smell</text>
+  <circle cx="852" cy="232" r="6" fill="#C7607D"/>
+  <text x="870" y="238" font-size="17" fill="#12302E">Heavy crusting</text>
+  <circle cx="852" cy="264" r="6" fill="#C7607D"/>
+  <text x="870" y="270" font-size="17" fill="#12302E">Repeated bleeding</text>
+  <circle cx="852" cy="296" r="6" fill="#C7607D"/>
+  <text x="870" y="302" font-size="17" fill="#12302E">Loss of smell</text>
+  <text x="844" y="334" font-size="17" font-weight="bold" fill="#12302E">Not just home care.</text>
+
+  <!-- Surgery card -->
+  <rect x="824" y="366" width="316" height="214" rx="14" fill="#12302E"/>
+  <text x="844" y="400" font-size="20" font-weight="bold" fill="#1FA5A0">Surgery link</text>
+  <text x="844" y="436" font-size="17" fill="#FFFFFF">Past turbinate surgery is</text>
+  <text x="844" y="462" font-size="17" fill="#FFFFFF">described as a significant</text>
+  <text x="844" y="488" font-size="17" fill="#FFFFFF">and frequent factor in</text>
+  <text x="844" y="514" font-size="17" fill="#FFFFFF">long-term dry nose.</text>
+  <text x="844" y="552" font-size="17" fill="#C9DAD7">Ask how turbinates are protected.</text>
+
+  <text x="60" y="616" font-size="17" fill="#536866">Source: Hildenbrand et al., 2011 literature review</text>
+</svg>
