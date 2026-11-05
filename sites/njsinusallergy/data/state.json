@@ -1,12 +1,15 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
-    "Ragweed season in New Jersey: when it peaks and how to get through it"
+    "Ragweed season in New Jersey: when it peaks and how to get through it",
+    "Research on longer pollen seasons in the United States"
   ],
-  "usedPhotos": [],
+  "usedPhotos": [
+    "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1"
+  ],
   "lastPost": {
-    "date": "2026-11-04",
-    "slug": "ragweed-season-new-jersey-guide",
-    "topic": "Ragweed season in New Jersey: when it peaks and how to get through it"
+    "date": "2026-11-05",
+    "slug": "longer-pollen-seasons-us-research",
+    "topic": "Research on longer pollen seasons in the United States"
   }
 }

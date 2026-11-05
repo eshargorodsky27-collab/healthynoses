@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A" textLength="1040" lengthAdjust="spacingAndGlyphs">Longer Pollen Seasons in the US: What the Research Shows</text>
+  <text x="60" y="110" font-size="20" fill="#5A6455">Three studies, three angles, each with limits</text>
+
+  <!-- header -->
+  <rect x="60" y="128" width="1080" height="42" rx="10" fill="#1E2A1A"/>
+  <text x="80" y="156" font-size="18" font-weight="bold" fill="#FFFFFF">Study</text>
+  <text x="316" y="156" font-size="18" font-weight="bold" fill="#FFFFFF">What it found</text>
+  <text x="746" y="156" font-size="18" font-weight="bold" fill="#FFFFFF">Main limit</text>
+
+  <!-- row 1 -->
+  <rect x="60" y="180" width="1080" height="112" rx="12" fill="#FFFFFF" stroke="#D9D8C6"/>
+  <rect x="60" y="180" width="8" height="112" rx="4" fill="#4F7F23"/>
+  <text x="84" y="212" font-size="18" font-weight="bold" fill="#1E2A1A">Zhang &amp; Steiner, 2022</text>
+  <text x="84" y="238" font-size="17" fill="#5A6455">Computer simulation,</text>
+  <text x="84" y="262" font-size="17" fill="#5A6455">continental US</text>
+  <text x="316" y="212" font-size="17" fill="#1E2A1A">With 4-6 K warming by end of century:</text>
+  <text x="316" y="238" font-size="17" font-weight="bold" fill="#4F7F23">Spring pollen starts 10-40 days earlier</text>
+  <text x="316" y="262" font-size="17" font-weight="bold" fill="#4F7F23">Yearly emissions up 16-40%</text>
+  <text x="746" y="212" font-size="17" fill="#1E2A1A">Models plant emissions, not how</text>
+  <text x="746" y="238" font-size="17" fill="#1E2A1A">much pollen people breathe or</text>
+  <text x="746" y="262" font-size="17" fill="#1E2A1A">how many get symptoms</text>
+
+  <!-- row 2 -->
+  <rect x="60" y="302" width="1080" height="112" rx="12" fill="#FFFFFF" stroke="#D9D8C6"/>
+  <rect x="60" y="302" width="8" height="112" rx="4" fill="#4F7F23"/>
+  <text x="84" y="334" font-size="18" font-weight="bold" fill="#1E2A1A">Pershad et al., 2025</text>
+  <text x="84" y="360" font-size="17" fill="#5A6455">Scoping review,</text>
+  <text x="84" y="384" font-size="17" fill="#5A6455">30 studies, 2000-2023</text>
+  <text x="316" y="334" font-size="17" font-weight="bold" fill="#4F7F23">16 of 30 studies reported longer</text>
+  <text x="316" y="360" font-size="17" font-weight="bold" fill="#4F7F23">pollen seasons or higher pollen</text>
+  <text x="316" y="384" font-size="17" fill="#1E2A1A">levels tied to climate change</text>
+  <text x="746" y="334" font-size="17" fill="#1E2A1A">Maps the research; no pooled</text>
+  <text x="746" y="360" font-size="17" fill="#1E2A1A">estimate. Some figures may</text>
+  <text x="746" y="384" font-size="17" fill="#1E2A1A">overlap with the simulation</text>
+
+  <!-- row 3 -->
+  <rect x="60" y="424" width="1080" height="112" rx="12" fill="#FFFFFF" stroke="#D9D8C6"/>
+  <rect x="60" y="424" width="8" height="112" rx="4" fill="#C98A12"/>
+  <text x="84" y="456" font-size="18" font-weight="bold" fill="#1E2A1A">Michigan study, 2024</text>
+  <text x="84" y="482" font-size="17" fill="#5A6455">49 adults getting</text>
+  <text x="84" y="506" font-size="17" fill="#5A6455">allergy shots</text>
+  <text x="316" y="456" font-size="17" font-weight="bold" fill="#C98A12">Sleepiness peaked 2 days after</text>
+  <text x="316" y="482" font-size="17" font-weight="bold" fill="#C98A12">high ragweed pollen</text>
+  <text x="316" y="506" font-size="17" fill="#1E2A1A">No link to nose or asthma symptoms</text>
+  <text x="746" y="456" font-size="17" fill="#1E2A1A">Small group; pollen levels were</text>
+  <text x="746" y="482" font-size="17" fill="#1E2A1A">model estimates for 25 km areas;</text>
+  <text x="746" y="506" font-size="17" fill="#1E2A1A">the result is fragile</text>
+
+  <!-- bottom line -->
+  <circle cx="72" cy="568" r="7" fill="#4F7F23"/>
+  <text x="90" y="575" font-size="19" font-weight="bold" fill="#1E2A1A">A direction of change, not a forecast for any NJ town</text>
+  <text x="60" y="613" font-size="17" fill="#5A6455">Sources: 2022 simulation, 2025 scoping review, 2024 study</text>
+</svg>
