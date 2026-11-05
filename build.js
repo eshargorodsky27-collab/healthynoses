@@ -6,6 +6,7 @@ const path = require('path');
 const matter = require('gray-matter');
 const { marked } = require('marked');
 const cfg = require('./site.config');
+const net = require('./scripts/network');
 
 let sharp = null;
 try { sharp = require('sharp'); } catch { /* optional: PNG social images */ }
@@ -144,6 +145,7 @@ ${body}
     <p class="footer-brand">Healthy Noses</p>
     <p>${esc(cfg.disclosure)}</p>
     <p><a href="/about/">About &amp; editorial policy</a> <a href="/${NJ_SLUG}/">Nose &amp; sinus doctors in New Jersey</a> <a href="/rss.xml">RSS feed</a> <a href="${utm(cfg.product.url, 'footer', 'footer')}">Narisure</a></p>
+    <p class="sister-line">Sister sites: ${net.sisters(cfg.url).map((s) => `<a href="${s.url}/">${esc(s.name)}</a>`).join(' ')}</p>
     <p class="fine">© ${new Date().getFullYear()} ${esc(cfg.publisher)}</p>
   </div>
 </footer>
@@ -209,6 +211,8 @@ async function build() {
   if (fs.existsSync(pub)) fs.cpSync(pub, OUT, { recursive: true });
 
   const posts = loadPosts();
+  const sisterPool = await net.sisterArticles(cfg.url);
+  console.log(`Sister articles found: ${sisterPool.length}`);
   const imgs = {};
   for (const p of posts) imgs[p.slug] = await imagesFor(p);
 
@@ -226,13 +230,18 @@ async function build() {
       ? `<section class="faq"><h2>Common questions</h2>${p.faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>` : '';
     const sources = (p.sources || []).length
       ? `<section class="sources"><h2>Sources</h2><ol>${p.sources.map((s) => `<li><a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.title)}</a>${s.publisher ? `. <span>${esc(s.publisher)}${s.year ? `, ${esc(s.year)}` : ''}</span>` : ''}</li>`).join('')}</ol></section>` : '';
+    const trusted = (p.trusted || []).map((id) => net.TRUSTED.find((t) => t.id === id)).filter(Boolean);
+    const trustedHtml = trusted.length ? `<section class="sources trusted"><h2>Trusted resources</h2><ul>${trusted.map((t) => `<li><a href="${t.url}" rel="noopener">${esc(t.name)}</a></li>`).join('')}</ul></section>` : '';
+    const sis = net.related(p, sisterPool, 2);
+    const sisterHtml = sis.length ? `<section class="sister" aria-label="From our sister sites"><h2>From our sister sites</h2>${sis.map((a) => `<a class="sister-card" href="${esc(a.url)}"><span class="sister-site">${esc(a.site)}</span><span class="sister-title">${esc(a.title)}</span><span class="sister-dek">${esc(a.description)}</span></a>`).join('')}</section>` : '';
     const jsonld = [
       {
         '@context': 'https://schema.org', '@type': p.category === 'research' ? 'ScholarlyArticle' : 'MedicalWebPage',
         headline: p.title, description: p.description, image: [img.og], datePublished: iso(p.date), dateModified: iso(p.updated),
         mainEntityOfPage: url, inLanguage: cfg.language, keywords: (p.keywords || []).join(', '),
         author: orgLd, publisher: orgLd, about: p.keywords?.[0],
-        citation: (p.sources || []).map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })),
+        citation: (p.sources || []).map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })).concat(trusted.map((t) => ({ '@type': 'WebPage', name: t.name, url: t.url }))),
+        ...(sis.length ? { relatedLink: sis.map((a) => a.url) } : {}),
       },
       { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: cfg.name, item: cfg.url + '/' },
@@ -255,6 +264,8 @@ async function build() {
     ${productBox(p.slug, 'post-end', true)}
     ${faq}
     ${sources}
+    ${trustedHtml}
+    ${sisterHtml}
     <p class="disclosure">${esc(cfg.disclosure)} Last updated ${fmtDate(p.updated)}.</p>
   </div>
 </article>
@@ -368,7 +379,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
   write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}).\n\n${Object.entries(cfg.categories).map(([k, c]) => {
     const list = posts.filter((p) => p.category === k);
     return list.length ? `## ${c.label}\n\n${list.map((p) => `- [${p.title}](${cfg.url}/${p.slug}/): ${p.description}`).join('\n')}\n` : '';
-  }).join('\n')}\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);
+  }).join('\n')}\n## Sister sites\n\n${net.sisters(cfg.url).map((s) => `- [${s.name}](${s.url}/): ${s.about}`).join('\n')}\n\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);
   write('llms-full.txt', posts.map((p) => `# ${p.title}\n\nURL: ${cfg.url}/${p.slug}/\nPublished: ${p.date}\n\n${p.description}\n\n${(p.takeaways || []).map((t) => `- ${t}`).join('\n')}\n\n${p.body}\n\nSources:\n${(p.sources || []).map((s) => `- ${s.title}: ${s.url}`).join('\n')}`).join('\n\n---\n\n'));
 
   write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
