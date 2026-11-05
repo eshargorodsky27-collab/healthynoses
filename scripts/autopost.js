@@ -12,6 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const cfg = require('../site.config');
 const bank = require('./topics');
+const net = require('./network');
 
 const ROOT = path.join(__dirname, '..');
 const POSTS = path.join(ROOT, 'posts');
@@ -105,7 +106,7 @@ Hard rules:
 
 Return ONLY a JSON object, no prose before or after.`;
 
-function userPrompt(slotType, item, studies, existingTitles) {
+function userPrompt(slotType, item, studies, existingTitles, sisterList) {
   const mention = slotType === 'nose'
     ? 'You may mention Narisure by name at most once in the body, only where an oil-based nasal moisturizer is genuinely relevant, and only with the allowed wording.'
     : 'Do not mention Narisure in the body.';
@@ -120,6 +121,12 @@ Avoid duplicating these existing articles: ${existingTitles.join(' | ') || '(non
 Studies (cite only these, by pmid):
 ${studies.map((s) => `--- pmid ${s.pmid} | ${s.title} | ${s.journal} ${s.year}\n${s.abstract}`).join('\n')}
 
+Trusted resources you may recommend (pick 1-3 ids that genuinely match the topic, or none):
+${net.TRUSTED.map((t) => `- ${t.id}: ${t.name}`).join('\n')}
+
+Sister-site articles (if one is genuinely related, you may link to AT MOST ONE of them once in the body with a natural markdown link using its exact URL; otherwise link none):
+${sisterList.map((a) => `- ${a.site}: ${a.title} | ${a.url}`).join('\n') || '(none yet)'}
+
 Return JSON with exactly these keys:
 {
   "title": "Specific, search-friendly title, max 70 characters",
@@ -130,6 +137,7 @@ Return JSON with exactly these keys:
   "body": "Markdown article, 900-1400 words, starts with a 2-3 sentence intro paragraph (no H1), uses ## and ### headings",
   "faq": [{"q": "Real question people search", "a": "40-70 word direct answer"}],
   "pmids_cited": ["pmids you actually relied on"],
+  "trusted": ["ids from the trusted resources list"],
   "image_query": "2-4 word stock photo search for the cover (people, home, nature; no medical gore, no text, no brand logos)",
   "image_query_2": "a different 2-4 word stock photo search for a photo inside the article",
   "image_caption_2": "one-sentence caption for that second photo that ties it to the article",
@@ -140,7 +148,7 @@ Give 3-4 FAQ items.`;
 
 // ---------- claims check ----------
 const BANNED = [/\bcures?\b/i, /\bcured\b/i, /\bclinically proven\b/i, /\bfda[- ]approved\b/i, /\bguarantee[sd]?\b/i, /\bmiracle\b/i, /\bin this article\b/i, /\blet'?s dive\b/i];
-function claimsProblems(a, slotType) {
+function claimsProblems(a, slotType, sisterList = []) {
   const text = [a.title, a.description, a.body, ...(a.takeaways || []), ...(a.faq || []).flatMap((f) => [f.q, f.a])].join('\n');
   const probs = BANNED.filter((r) => r.test(text)).map((r) => `banned wording ${r}`);
   const mentions = (a.body.match(/narisure/gi) || []).length;
@@ -149,6 +157,9 @@ function claimsProblems(a, slotType) {
     if (/narisure/i.test(sentence) && /\b(treat|treats|heal|heals|prevent|prevents|stops?|eliminat\w*)\b/i.test(sentence)) probs.push(`medical claim about Narisure: "${sentence.slice(0, 120)}"`);
   }
   if (a.body.split(/\s+/).length < 600) probs.push('article too short');
+  const netLinks = [...a.body.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((m) => m[1]).filter((u) => net.NETWORK.some((n) => u.startsWith(n.url)));
+  if (netLinks.length > 1) probs.push('link to at most one sister-site article');
+  for (const u of netLinks) if (!sisterList.some((x) => x.url === u)) probs.push(`sister link ${u} is not in the list; use an exact URL from the list or none`);
   if (/\b(hearing|earbuds?|headphones|tinnitus|earwax|decibels?|ear canal|eardrum)\b/i.test(text)) probs.push('off-topic: this site is about noses only, remove ear and hearing content');
   return probs;
 }
@@ -251,11 +262,13 @@ async function main() {
   log(`Found ${studies.length} PubMed studies`);
 
   let article, problems = [];
-  const prompt = userPrompt(slotType, item, studies, titles);
+  const sisterList = await net.sisterArticles(cfg.url, 20);
+  log(`Sister articles available: ${sisterList.length}`);
+  const prompt = userPrompt(slotType, item, studies, titles, sisterList);
   for (let attempt = 1; attempt <= 3; attempt++) {
     const extra = problems.length ? `\n\nYour previous draft was rejected for: ${problems.join('; ')}. Fix every issue.` : '';
     try { article = parseJson(await claude(SYSTEM, prompt + extra)); } catch (e) { problems = [String(e.message)]; continue; }
-    problems = claimsProblems(article, slotType);
+    problems = claimsProblems(article, slotType, sisterList);
     if (!problems.length) break;
     log(`Draft ${attempt} rejected:`, problems.join('; '));
   }
@@ -316,6 +329,7 @@ date: ${date}
 category: ${category}
 type: ${slotType === 'nose' ? 'product' : slotType === 'research' ? 'research' : 'general'}
 keywords: ${JSON.stringify(article.keywords || [])}
+trusted: ${JSON.stringify((article.trusted || []).filter((id) => net.TRUSTED.some((t) => t.id === id)).slice(0, 3))}
 ${imageLines}takeaways:
 ${(article.takeaways || []).map((t) => `  - ${yq(t)}`).join('\n')}
 faq:
