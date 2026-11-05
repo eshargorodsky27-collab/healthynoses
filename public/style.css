@@ -171,3 +171,14 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
   .row { grid-template-columns: 1fr; gap: 12px; }
   .masthead nav { gap: 4px 14px; font-size: 0.9rem; }
 }
+
+/* trusted resources + sister sites */
+.trusted ul { padding-left: 1.1em; }
+.sister { margin: 40px 0 0; padding-top: 24px; border-top: 1px solid var(--line); }
+.sister h2 { font-size: 1.15rem; margin: 0 0 14px; }
+.sister-card { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; color: var(--ink); text-decoration: none; }
+.sister-card:hover { border-color: var(--teal); }
+.sister-site { display: block; font: 700 0.78rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--teal-ink); }
+.sister-title { display: block; margin-top: 6px; font: 700 1.05rem/1.3 var(--sans); }
+.sister-dek { display: block; margin-top: 4px; font-size: 0.92rem; line-height: 1.5; color: var(--muted); }
+.sister-line a { margin-right: 14px; }
