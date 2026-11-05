@@ -3,6 +3,9 @@ name: Publish site
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'sites/**'
+      - '.github/workflows/sites.yml'
   schedule:
     # Every other day at about 9:15am New York time (13:17 UTC)
     - cron: '17 13 */2 * *'
@@ -50,7 +53,7 @@ jobs:
           git config user.email "bot@healthynoses.com"
           git add posts public/images data
           git commit -m "New article $(date +%F)" || echo "Nothing to commit"
-          git push
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
 
       - run: node build.js
 

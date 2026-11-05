@@ -1,0 +1,68 @@
+name: Write articles for sister sites
+
+# Writes a new article for NJ Sinus & Allergy and Coastal Sinus every other day.
+# Cloudflare Pages rebuilds and publishes each site automatically when the article is pushed.
+on:
+  schedule:
+    # Every other day at about 11:40am New York time (15:43 UTC), offset from Healthy Noses
+    - cron: '43 15 */2 * *'
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Which site'
+        type: choice
+        options: [both, njsinusallergy, coastalsinus]
+        default: both
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sister-sites
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        site: [njsinusallergy, coastalsinus]
+    steps:
+      - name: Skip sites not picked
+        id: pick
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.site }}" != "both" ] && [ "${{ inputs.site }}" != "${{ matrix.site }}" ]; then echo "run=no" >> $GITHUB_OUTPUT; else echo "run=yes" >> $GITHUB_OUTPUT; fi
+
+      - uses: actions/checkout@v4
+        if: steps.pick.outputs.run == 'yes'
+
+      - uses: actions/setup-node@v4
+        if: steps.pick.outputs.run == 'yes'
+        with:
+          node-version: 22
+
+      - run: npm install --no-audit --no-fund
+        if: steps.pick.outputs.run == 'yes'
+
+      - name: Write new article
+        if: steps.pick.outputs.run == 'yes'
+        env:
+          SITE_DIR: sites/${{ matrix.site }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          node engine/autopost.js
+          git config user.name "autopost-bot"
+          git config user.email "autopost-bot@users.noreply.github.com"
+          git add sites/${{ matrix.site }}/posts sites/${{ matrix.site }}/public/images sites/${{ matrix.site }}/data
+          git commit -m "New ${{ matrix.site }} article $(date +%F)" || echo "Nothing to commit"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+
+      - name: Notify search engines (IndexNow)
+        if: steps.pick.outputs.run == 'yes'
+        env:
+          SITE_DIR: sites/${{ matrix.site }}
+        run: sleep 120 && node engine/indexnow.js
