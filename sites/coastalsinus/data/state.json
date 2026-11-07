@@ -1,16 +1,18 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
-    "Saline irrigation for chronic sinusitis: what the trials found"
+    "Saline irrigation for chronic sinusitis: what the trials found",
+    "Summer humidity, mold and sinus flare-ups at the shore"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
-    "openverse:dabfcee2-d53e-4ae2-a636-2036fbbc29c8"
+    "openverse:dabfcee2-d53e-4ae2-a636-2036fbbc29c8",
+    "openverse:b4de72bd-c764-44cf-ac86-1b704bc60c5e"
   ],
   "lastPost": {
-    "date": "2026-11-05",
-    "slug": "saline-irrigation-chronic-sinusitis-trials",
-    "topic": "Saline irrigation for chronic sinusitis: what the trials found"
+    "date": "2026-11-07",
+    "slug": "summer-humidity-mold-sinus-flare-ups-shore",
+    "topic": "Summer humidity, mold and sinus flare-ups at the shore"
   }
 }

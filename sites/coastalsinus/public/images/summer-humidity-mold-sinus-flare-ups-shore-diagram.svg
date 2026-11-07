@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A">Summer Humidity, Mold and Sinus Flare-Ups at the Shore</text>
+  <text x="60" y="112" font-size="20" fill="#4E5E6E">Damp homes and sinus trouble: what a Swedish survey found</text>
+
+  <!-- Chart card -->
+  <rect x="60" y="140" width="640" height="390" rx="16" fill="#FFFFFF"/>
+  <text x="84" y="174" font-size="20" font-weight="bold" fill="#10253A">Odds ratio with home dampness</text>
+
+  <line x1="480" y1="188" x2="480" y2="486" stroke="#4E5E6E" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Rows: scale 180px per 1.0, start x=300 -->
+  <text x="84" y="223" font-size="17" fill="#10253A" font-weight="bold">Chronic rhinosinusitis</text>
+  <rect x="300" y="200" width="308" height="32" rx="6" fill="#D9774B"/>
+  <text x="620" y="223" font-size="20" font-weight="bold" fill="#10253A">1.71</text>
+
+  <text x="84" y="281" font-size="17" fill="#10253A">Chronic bronchitis</text>
+  <rect x="300" y="258" width="295" height="32" rx="6" fill="#1F7AA3"/>
+  <text x="607" y="281" font-size="20" font-weight="bold" fill="#10253A">1.64</text>
+
+  <text x="84" y="339" font-size="17" fill="#10253A">Wheeze</text>
+  <rect x="300" y="316" width="247" height="32" rx="6" fill="#1F7AA3"/>
+  <text x="559" y="339" font-size="20" font-weight="bold" fill="#10253A">1.37</text>
+
+  <text x="84" y="397" font-size="17" fill="#10253A">Allergic rhinitis</text>
+  <rect x="300" y="374" width="223" height="32" rx="6" fill="#1F7AA3"/>
+  <text x="535" y="397" font-size="20" font-weight="bold" fill="#10253A">1.24</text>
+
+  <text x="84" y="455" font-size="17" fill="#10253A">Current asthma</text>
+  <rect x="300" y="432" width="218" height="32" rx="6" fill="#1F7AA3"/>
+  <text x="530" y="455" font-size="20" font-weight="bold" fill="#10253A">1.21</text>
+
+  <text x="480" y="510" font-size="17" fill="#4E5E6E" text-anchor="middle">1.0 = same odds as dry homes</text>
+
+  <!-- Right cards -->
+  <rect x="730" y="140" width="410" height="120" rx="16" fill="#F5F0E7"/>
+  <rect x="730" y="140" width="8" height="120" rx="4" fill="#D9774B"/>
+  <text x="758" y="176" font-size="28" font-weight="bold" fill="#D9774B">48 hours</text>
+  <text x="758" y="208" font-size="17" fill="#10253A">Mold can grow within 48 hours of</text>
+  <text x="758" y="232" font-size="17" fill="#10253A">water entering building materials.</text>
+
+  <rect x="730" y="275" width="410" height="120" rx="16" fill="#F5F0E7"/>
+  <rect x="730" y="275" width="8" height="120" rx="4" fill="#1F7AA3"/>
+  <text x="758" y="311" font-size="28" font-weight="bold" fill="#1F7AA3">30–50% humidity</text>
+  <text x="758" y="343" font-size="17" fill="#10253A">Keeping indoor air in this range</text>
+  <text x="758" y="367" font-size="17" fill="#10253A">makes mold harder to grow.</text>
+
+  <rect x="730" y="410" width="410" height="120" rx="16" fill="#F5F0E7"/>
+  <rect x="730" y="410" width="8" height="120" rx="4" fill="#1F7AA3"/>
+  <text x="758" y="444" font-size="24" font-weight="bold" fill="#10253A">Watch the pattern</text>
+  <text x="758" y="472" font-size="17" fill="#10253A">Symptoms start or worsen in one</text>
+  <text x="758" y="494" font-size="17" fill="#10253A">building, then ease when you leave?</text>
+  <text x="758" y="516" font-size="17" fill="#10253A">Check for an indoor cause.</text>
+
+  <!-- Footer -->
+  <text x="60" y="570" font-size="17" fill="#4E5E6E">Self-reported survey: association, not proof of cause.</text>
+  <text x="60" y="598" font-size="17" fill="#4E5E6E">Source: Ahlroth Pind et al. 2017, 26,577 adults in Sweden</text>
+</svg>
