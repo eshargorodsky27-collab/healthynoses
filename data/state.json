@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -7,14 +7,15 @@
     "Why one nostril is always more blocked: the nasal cycle",
     "Dry nose on airplanes: why cabin air dries you out",
     "What studies say about nasal irrigation for sinus symptoms",
-    "Rhinitis sicca: what a chronically dry nose means"
+    "Rhinitis sicca: what a chronically dry nose means",
+    "Nasal saline rinses: how to do them safely"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa"
   ],
   "lastPost": {
-    "date": "2026-11-05",
-    "slug": "rhinitis-sicca-chronic-dry-nose-guide",
-    "topic": "Rhinitis sicca: what a chronically dry nose means"
+    "date": "2026-11-07",
+    "slug": "nasal-saline-rinse-safety-guide",
+    "topic": "Nasal saline rinses: how to do them safely"
   }
 }
