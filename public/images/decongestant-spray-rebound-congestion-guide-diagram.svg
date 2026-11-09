@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Decongestant Spray Rebound Congestion:</text>
+<text x="60" y="118" font-size="34" font-weight="bold" fill="#12302E">How Long Is Too Long?</text>
+<text x="60" y="150" font-size="20" fill="#536866">Days of use studied, compared with the US label limit</text>
+<rect x="60" y="168" width="1080" height="284" rx="14" fill="#FFFFFF"/>
+<g stroke="#C9DAD7" stroke-width="2" stroke-dasharray="4 5">
+<line x1="350" y1="178" x2="350" y2="422"/>
+<line x1="490" y1="178" x2="490" y2="422"/>
+<line x1="630" y1="178" x2="630" y2="422"/>
+<line x1="770" y1="178" x2="770" y2="422"/>
+<line x1="910" y1="178" x2="910" y2="422"/>
+</g>
+<g font-size="17" fill="#536866" text-anchor="middle">
+<text x="350" y="443">0</text>
+<text x="490" y="443">7</text>
+<text x="630" y="443">14</text>
+<text x="770" y="443">21</text>
+<text x="910" y="443">28 days</text>
+</g>
+<g font-size="18" fill="#12302E">
+<text x="80" y="210">US label limit</text>
+<text x="80" y="272">Oxymetazoline review</text>
+<text x="80" y="334">Xylometazoline review</text>
+<text x="80" y="396">Oxymetazoline, best studies</text>
+</g>
+<rect x="350" y="184" width="60" height="40" rx="6" fill="#12302E"/>
+<rect x="350" y="246" width="140" height="40" rx="6" fill="#1FA5A0"/>
+<rect x="350" y="308" width="200" height="40" rx="6" fill="#1FA5A0"/>
+<rect x="350" y="370" width="560" height="40" rx="6" fill="#1FA5A0"/>
+<g font-size="18" font-weight="bold" fill="#12302E">
+<text x="422" y="210">3 days, then stop</text>
+<text x="502" y="272">7 days, no rebound seen</text>
+<text x="562" y="334">up to 10 days, no rebound seen</text>
+<text x="922" y="396">up to 4 weeks</text>
+</g>
+<rect x="60" y="472" width="1080" height="96" rx="14" fill="#EEF4F3"/>
+<rect x="60" y="472" width="10" height="96" rx="5" fill="#C7607D"/>
+<text x="90" y="509" font-size="18" fill="#12302E">Rebound sign: relief fades faster, so you spray more often.</text>
+<text x="90" y="545" font-size="18" fill="#12302E">Blocked for weeks and only spray helps? Ask a doctor.</text>
+<text x="60" y="606" font-size="17" fill="#536866">Source: 2026 review of 18 articles (J Pharm Pract)</text>
+</svg>
