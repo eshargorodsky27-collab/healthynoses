@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Spring Tree Pollen in NJ: Oak, Birch, Maple</text>
+  <text x="60" y="110" font-size="20" fill="#5A6455">Trees bloom in turns, so symptoms can last for weeks</text>
+
+  <rect x="60" y="130" width="1080" height="290" rx="16" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+
+  <g font-size="17" fill="#5A6455" text-anchor="middle">
+    <text x="365" y="168">Late winter</text>
+    <text x="575" y="168">Early spring</text>
+    <text x="785" y="168">Mid spring</text>
+    <text x="995" y="168">Late spring</text>
+  </g>
+  <g stroke="#D9D8C6" stroke-width="2" stroke-dasharray="5 5">
+    <line x1="260" y1="182" x2="260" y2="385"/>
+    <line x1="470" y1="182" x2="470" y2="385"/>
+    <line x1="680" y1="182" x2="680" y2="385"/>
+    <line x1="890" y1="182" x2="890" y2="385"/>
+    <line x1="1100" y1="182" x2="1100" y2="385"/>
+  </g>
+
+  <g font-size="22" font-weight="bold" fill="#1E2A1A">
+    <text x="85" y="226">Maple</text>
+    <text x="85" y="291">Birch</text>
+    <text x="85" y="356">Oak</text>
+  </g>
+
+  <rect x="260" y="195" width="420" height="44" rx="22" fill="#4F7F23"/>
+  <text x="284" y="223" font-size="17" fill="#FFFFFF">Among the first to bloom</text>
+
+  <rect x="470" y="260" width="420" height="44" rx="22" fill="#C98A12"/>
+  <text x="494" y="288" font-size="17" fill="#1E2A1A">Linked to cross-reactions</text>
+
+  <rect x="680" y="325" width="420" height="44" rx="22" fill="#1E2A1A"/>
+  <text x="704" y="353" font-size="17" fill="#FFFFFF">Heavy pollen producer</text>
+
+  <text x="85" y="404" font-size="17" fill="#5A6455">General pattern only. Dates shift with the weather each year.</text>
+
+  <rect x="60" y="440" width="340" height="140" rx="16" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="2"/>
+  <text x="80" y="472" font-size="20" font-weight="bold" fill="#4F7F23">Shared allergy proteins</text>
+  <g font-size="17" fill="#1E2A1A">
+    <text x="80" y="498">Birch, oak, beech, hazel, alder</text>
+    <text x="80" y="520">and chestnut look alike to the</text>
+    <text x="80" y="542">immune system. Birch allergy</text>
+    <text x="80" y="564">often means oak reactions too.</text>
+  </g>
+
+  <rect x="430" y="440" width="340" height="140" rx="16" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="2"/>
+  <text x="450" y="472" font-size="20" font-weight="bold" fill="#C98A12">Raw fruit and vegetables</text>
+  <g font-size="17" fill="#1E2A1A">
+    <text x="450" y="498">Many people with birch allergy</text>
+    <text x="450" y="520">get an itchy mouth from some</text>
+    <text x="450" y="542">raw produce. This is called</text>
+    <text x="450" y="564">pollen food syndrome.</text>
+  </g>
+
+  <rect x="800" y="440" width="340" height="140" rx="16" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="2"/>
+  <text x="820" y="472" font-size="20" font-weight="bold" fill="#4F7F23">25.2% positive to trees</text>
+  <g font-size="17" fill="#1E2A1A">
+    <text x="820" y="498">Korean schoolchildren (14,678):</text>
+    <text x="820" y="520">trees were the most common</text>
+    <text x="820" y="542">pollen type. Rates differed</text>
+    <text x="820" y="564">by region.</text>
+  </g>
+
+  <text x="60" y="612" font-size="17" fill="#5A6455">Sources: European review, 2019; Korean study, 2017</text>
+</svg>

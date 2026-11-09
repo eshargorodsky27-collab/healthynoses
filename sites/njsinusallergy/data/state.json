@@ -1,16 +1,18 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
-    "Sinus pressure from allergies: why it happens and what helps"
+    "Sinus pressure from allergies: why it happens and what helps",
+    "Spring tree pollen in New Jersey: oak, birch and maple allergies"
   ],
   "usedPhotos": [
-    "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1"
+    "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
+    "openverse:66272c72-776f-4c39-838f-31e715317ff3"
   ],
   "lastPost": {
-    "date": "2026-11-07",
-    "slug": "sinus-pressure-from-allergies-what-helps",
-    "topic": "Sinus pressure from allergies: why it happens and what helps"
+    "date": "2026-11-09",
+    "slug": "nj-spring-tree-pollen-oak-birch-maple",
+    "topic": "Spring tree pollen in New Jersey: oak, birch and maple allergies"
   }
 }
