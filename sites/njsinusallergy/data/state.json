@@ -1,18 +1,19 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
     "Sinus pressure from allergies: why it happens and what helps",
-    "Spring tree pollen in New Jersey: oak, birch and maple allergies"
+    "Spring tree pollen in New Jersey: oak, birch and maple allergies",
+    "Antihistamines and a dry nose: why allergy pills dry you out"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
     "openverse:66272c72-776f-4c39-838f-31e715317ff3"
   ],
   "lastPost": {
-    "date": "2026-11-09",
-    "slug": "nj-spring-tree-pollen-oak-birch-maple",
-    "topic": "Spring tree pollen in New Jersey: oak, birch and maple allergies"
+    "date": "2026-11-11",
+    "slug": "antihistamines-dry-nose-allergy-pills",
+    "topic": "Antihistamines and a dry nose: why allergy pills dry you out"
   }
 }

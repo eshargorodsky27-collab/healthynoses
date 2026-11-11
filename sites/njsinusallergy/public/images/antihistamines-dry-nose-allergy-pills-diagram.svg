@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect width="1200" height="640" rx="24" fill="#ECEBDF"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Why Allergy Pills Can Dry Out Your Nose</text>
+<text x="60" y="108" font-size="20" fill="#5A6455">Some drying is how they work, but not the only cause</text>
+
+<rect x="60" y="130" width="1080" height="360" rx="14" fill="#FFFFFF"/>
+<path d="M60 144 a14 14 0 0 1 14 -14 H1126 a14 14 0 0 1 14 14 V166 H60 Z" fill="#1E2A1A"/>
+<rect x="60" y="150" width="1080" height="20" fill="#1E2A1A"/>
+<text x="80" y="158" font-size="17" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">What can dry the nose</text>
+<text x="500" y="158" font-size="17" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Drying chance</text>
+<text x="780" y="158" font-size="17" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Notes</text>
+
+<rect x="60" y="174" width="1080" height="52" fill="#F6F5EE"/>
+<rect x="60" y="278" width="1080" height="52" fill="#F6F5EE"/>
+<rect x="60" y="382" width="1080" height="52" fill="#F6F5EE"/>
+<g font-size="18" fill="#1E2A1A" font-weight="bold">
+<text x="80" y="206">First-generation pill</text>
+<text x="80" y="258">Second-generation pill</text>
+<text x="80" y="310">Antihistamine nose spray</text>
+<text x="80" y="362">Steroid nose spray</text>
+<text x="80" y="414">Decongestant pill or spray</text>
+<text x="80" y="466">Heated or air-conditioned air</text>
+</g>
+
+<rect x="500" y="184" width="150" height="32" rx="16" fill="#C98A12"/>
+<text x="575" y="206" font-size="17" font-weight="bold" fill="#1E2A1A" text-anchor="middle">More likely</text>
+<rect x="500" y="236" width="150" height="32" rx="16" fill="#4F7F23"/>
+<text x="575" y="258" font-size="17" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Less likely</text>
+<rect x="500" y="288" width="150" height="32" rx="16" fill="#D9D8C6"/>
+<text x="575" y="310" font-size="17" font-weight="bold" fill="#1E2A1A" text-anchor="middle">Possible</text>
+<rect x="500" y="340" width="150" height="32" rx="16" fill="#D9D8C6"/>
+<text x="575" y="362" font-size="17" font-weight="bold" fill="#1E2A1A" text-anchor="middle">Possible</text>
+<rect x="500" y="392" width="150" height="32" rx="16" fill="#D9D8C6"/>
+<text x="575" y="414" font-size="17" font-weight="bold" fill="#1E2A1A" text-anchor="middle">Possible</text>
+<rect x="500" y="444" width="150" height="32" rx="16" fill="#C98A12"/>
+<text x="575" y="466" font-size="17" font-weight="bold" fill="#1E2A1A" text-anchor="middle">Common</text>
+
+<g font-size="17" fill="#5A6455">
+<text x="780" y="206">Also causes sleepiness</text>
+<text x="780" y="258">Dry mouth rare: 0.04% in one study</text>
+<text x="780" y="310">Local irritation can happen</text>
+<text x="780" y="362">Spray direction and dose matter</text>
+<text x="780" y="414">Overused sprays can rebound</text>
+<text x="780" y="466">Not a drug, but adds to dryness</text>
+</g>
+
+<rect x="60" y="504" width="530" height="86" rx="14" fill="#FFFFFF"/>
+<rect x="60" y="504" width="10" height="86" fill="#4F7F23"/>
+<text x="90" y="560" font-size="40" font-weight="bold" fill="#4F7F23">0.37%</text>
+<text x="230" y="543" font-size="17" fill="#1E2A1A">reported any side effect on a newer pill</text>
+<text x="230" y="568" font-size="17" fill="#5A6455">(77,880 people); dry mouth was 0.04%</text>
+
+<rect x="610" y="504" width="530" height="86" rx="14" fill="#FFFFFF"/>
+<rect x="610" y="504" width="10" height="86" fill="#C98A12"/>
+<text x="640" y="539" font-size="18" font-weight="bold" fill="#1E2A1A">Repeated nosebleeds, crusting or pain?</text>
+<text x="640" y="566" font-size="17" fill="#5A6455">Talk to a doctor. Don't just keep taking the same pill.</text>
+
+<text x="60" y="616" font-size="17" fill="#5A6455">Source: German desloratadine surveillance program, 77,880 people.</text>
+</svg>
