@@ -1,5 +1,5 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -9,14 +9,17 @@
     "What studies say about nasal irrigation for sinus symptoms",
     "Rhinitis sicca: what a chronically dry nose means",
     "Nasal saline rinses: how to do them safely",
-    "Overusing decongestant nasal sprays and rebound congestion"
+    "Overusing decongestant nasal sprays and rebound congestion",
+    "Recent findings on loss of smell and what affects recovery"
   ],
   "usedPhotos": [
-    "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa"
+    "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
+    "openverse:3a8df005-00b9-4a93-9f63-ee7079a1978e",
+    "openverse:fe4c17b7-2d8c-404d-91ec-1e85e047fb40"
   ],
   "lastPost": {
-    "date": "2026-11-09",
-    "slug": "decongestant-spray-rebound-congestion-guide",
-    "topic": "Overusing decongestant nasal sprays and rebound congestion"
+    "date": "2026-11-11",
+    "slug": "smell-loss-recovery-covid-research-findings",
+    "topic": "Recent findings on loss of smell and what affects recovery"
   }
 }

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Smell Loss After COVID: What Affects Recovery</text>
+<text x="60" y="112" font-size="20" fill="#536866">Findings from three research reviews (2022–2023)</text>
+
+<!-- Left panel -->
+<rect x="60" y="140" width="340" height="410" rx="16" fill="#FFFFFF"/>
+<text x="84" y="176" font-size="19" font-weight="bold" fill="#12302E">How many stay without smell?</text>
+<g fill="#C9DAD7">
+<circle cx="113" cy="236" r="9"/><circle cx="139" cy="236" r="9"/><circle cx="165" cy="236" r="9"/><circle cx="191" cy="236" r="9"/><circle cx="217" cy="236" r="9"/><circle cx="243" cy="236" r="9"/><circle cx="269" cy="236" r="9"/><circle cx="295" cy="236" r="9"/><circle cx="321" cy="236" r="9"/><circle cx="347" cy="236" r="9"/>
+<circle cx="113" cy="262" r="9"/><circle cx="139" cy="262" r="9"/><circle cx="165" cy="262" r="9"/><circle cx="191" cy="262" r="9"/><circle cx="217" cy="262" r="9"/><circle cx="243" cy="262" r="9"/><circle cx="269" cy="262" r="9"/><circle cx="295" cy="262" r="9"/><circle cx="321" cy="262" r="9"/><circle cx="347" cy="262" r="9"/>
+<circle cx="113" cy="288" r="9"/><circle cx="139" cy="288" r="9"/><circle cx="165" cy="288" r="9"/><circle cx="191" cy="288" r="9"/><circle cx="217" cy="288" r="9"/><circle cx="243" cy="288" r="9"/><circle cx="269" cy="288" r="9"/><circle cx="295" cy="288" r="9"/><circle cx="321" cy="288" r="9"/><circle cx="347" cy="288" r="9"/>
+<circle cx="113" cy="314" r="9"/><circle cx="139" cy="314" r="9"/><circle cx="165" cy="314" r="9"/><circle cx="191" cy="314" r="9"/><circle cx="217" cy="314" r="9"/><circle cx="243" cy="314" r="9"/><circle cx="269" cy="314" r="9"/><circle cx="295" cy="314" r="9"/><circle cx="321" cy="314" r="9"/><circle cx="347" cy="314" r="9"/>
+<circle cx="113" cy="340" r="9"/><circle cx="139" cy="340" r="9"/><circle cx="165" cy="340" r="9"/><circle cx="191" cy="340" r="9"/><circle cx="217" cy="340" r="9"/><circle cx="243" cy="340" r="9"/><circle cx="269" cy="340" r="9"/><circle cx="295" cy="340" r="9"/><circle cx="321" cy="340" r="9"/><circle cx="347" cy="340" r="9"/>
+<circle cx="113" cy="366" r="9"/><circle cx="139" cy="366" r="9"/><circle cx="165" cy="366" r="9"/><circle cx="191" cy="366" r="9"/><circle cx="217" cy="366" r="9"/><circle cx="243" cy="366" r="9"/><circle cx="269" cy="366" r="9"/><circle cx="295" cy="366" r="9"/><circle cx="321" cy="366" r="9"/><circle cx="347" cy="366" r="9"/>
+<circle cx="113" cy="392" r="9"/><circle cx="139" cy="392" r="9"/><circle cx="165" cy="392" r="9"/><circle cx="191" cy="392" r="9"/><circle cx="217" cy="392" r="9"/><circle cx="243" cy="392" r="9"/><circle cx="269" cy="392" r="9"/><circle cx="295" cy="392" r="9"/><circle cx="321" cy="392" r="9"/><circle cx="347" cy="392" r="9"/>
+<circle cx="113" cy="418" r="9"/><circle cx="139" cy="418" r="9"/><circle cx="165" cy="418" r="9"/><circle cx="191" cy="418" r="9"/><circle cx="217" cy="418" r="9"/><circle cx="243" cy="418" r="9"/><circle cx="269" cy="418" r="9"/><circle cx="295" cy="418" r="9"/><circle cx="321" cy="418" r="9"/><circle cx="347" cy="418" r="9"/>
+<circle cx="113" cy="444" r="9"/><circle cx="139" cy="444" r="9"/><circle cx="165" cy="444" r="9"/><circle cx="191" cy="444" r="9"/><circle cx="217" cy="444" r="9"/><circle cx="243" cy="444" r="9"/><circle cx="269" cy="444" r="9"/><circle cx="295" cy="444" r="9"/><circle cx="321" cy="444" r="9"/><circle cx="347" cy="444" r="9"/>
+</g>
+<g fill="#C7607D">
+<circle cx="113" cy="210" r="9"/><circle cx="139" cy="210" r="9"/><circle cx="165" cy="210" r="9"/><circle cx="191" cy="210" r="9"/><circle cx="217" cy="210" r="9"/><circle cx="243" cy="210" r="9"/><circle cx="269" cy="210" r="9"/>
+<circle cx="90" cy="480" r="8"/>
+</g>
+<text x="106" y="486" font-size="17" fill="#12302E">Up to 7 of 100 patients still</text>
+<text x="106" y="508" font-size="17" fill="#12302E">anosmic after 12+ months</text>
+<text x="84" y="534" font-size="17" fill="#536866">Many regain smell in 2–4 weeks</text>
+
+<!-- Middle panel -->
+<rect x="420" y="140" width="400" height="410" rx="16" fill="#FFFFFF"/>
+<text x="444" y="176" font-size="19" font-weight="bold" fill="#12302E">Linked to longer-lasting loss</text>
+<g>
+<rect x="444" y="194" width="352" height="52" rx="10" fill="#EEF4F3"/>
+<circle cx="472" cy="220" r="9" fill="#C7607D"/>
+<text x="496" y="226" font-size="19" fill="#12302E">Female sex</text>
+<rect x="444" y="256" width="352" height="52" rx="10" fill="#EEF4F3"/>
+<circle cx="472" cy="282" r="9" fill="#C7607D"/>
+<text x="496" y="288" font-size="19" fill="#12302E">More severe initial loss</text>
+<rect x="444" y="318" width="352" height="52" rx="10" fill="#EEF4F3"/>
+<circle cx="472" cy="344" r="9" fill="#C7607D"/>
+<text x="496" y="350" font-size="19" fill="#12302E">Nasal congestion</text>
+<rect x="444" y="380" width="352" height="52" rx="10" fill="#EEF4F3"/>
+<circle cx="472" cy="406" r="9" fill="#C7607D"/>
+<text x="496" y="412" font-size="19" fill="#12302E">Distress or depression</text>
+<rect x="444" y="442" width="352" height="52" rx="10" fill="#EEF4F3"/>
+<circle cx="472" cy="468" r="9" fill="#C7607D"/>
+<text x="496" y="474" font-size="19" fill="#12302E">Virus variant</text>
+</g>
+<text x="444" y="528" font-size="17" fill="#536866">A link, not proof of cause (2023 review)</text>
+
+<!-- Right panel -->
+<rect x="840" y="140" width="300" height="410" rx="16" fill="#FFFFFF"/>
+<text x="864" y="176" font-size="19" font-weight="bold" fill="#12302E">Early treatment evidence</text>
+<text x="864" y="236" font-size="44" font-weight="bold" fill="#1FA5A0">5 trials</text>
+<text x="864" y="266" font-size="17" fill="#536866">691 people (Cochrane review)</text>
+<rect x="864" y="292" width="252" height="86" rx="12" fill="#EEF4F3" stroke="#C7607D" stroke-width="2"/>
+<text x="880" y="322" font-size="17" fill="#12302E">Early nasal steroid spray:</text>
+<text x="880" y="352" font-size="22" font-weight="bold" fill="#C7607D">very uncertain</text>
+<text x="864" y="418" font-size="17" fill="#12302E">No early drug option has</text>
+<text x="864" y="442" font-size="17" fill="#12302E">been shown to speed</text>
+<text x="864" y="466" font-size="17" fill="#12302E">recovery.</text>
+<text x="864" y="518" font-size="17" fill="#536866">Olfactory training: first option</text>
+
+<text x="60" y="598" font-size="17" fill="#536866">Sources: Karamali 2022, Liao 2023, Webster 2022 (Cochrane)</text>
+</svg>
