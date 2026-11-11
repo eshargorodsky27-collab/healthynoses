@@ -1,21 +1,23 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
     "Summer humidity, mold and sinus flare-ups at the shore",
-    "Balloon sinuplasty: what it is and who it helps"
+    "Balloon sinuplasty: what it is and who it helps",
+    "Chronic sinusitis explained: symptoms that last 12 weeks"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
     "openverse:dabfcee2-d53e-4ae2-a636-2036fbbc29c8",
     "openverse:b4de72bd-c764-44cf-ac86-1b704bc60c5e",
     "openverse:1a08a3e8-6dc0-4fc9-909a-1333686786dd",
-    "openverse:f78c51b5-f7ed-4462-8627-7ee7ac07f1aa"
+    "openverse:f78c51b5-f7ed-4462-8627-7ee7ac07f1aa",
+    "openverse:704a813f-6778-4e80-9aec-11a8830f7d8b"
   ],
   "lastPost": {
-    "date": "2026-11-09",
-    "slug": "balloon-sinuplasty-what-it-is-who-it-helps",
-    "topic": "Balloon sinuplasty: what it is and who it helps"
+    "date": "2026-11-11",
+    "slug": "chronic-sinusitis-symptoms-12-weeks",
+    "topic": "Chronic sinusitis explained: symptoms that last 12 weeks"
   }
 }

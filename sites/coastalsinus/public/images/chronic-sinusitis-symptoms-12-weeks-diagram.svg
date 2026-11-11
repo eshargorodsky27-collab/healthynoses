@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A" textLength="1060" lengthAdjust="spacingAndGlyphs">Chronic Sinusitis: Symptoms, Causes and the 12-Week Rule</text>
+  <text x="60" y="112" font-size="20" fill="#4E5E6E">How long symptoms last decides the label</text>
+
+  <!-- header -->
+  <rect x="60" y="140" width="1080" height="44" rx="10" fill="#10253A"/>
+  <text x="84" y="169" font-size="18" font-weight="bold" fill="#FFFFFF">Type</text>
+  <text x="340" y="169" font-size="18" font-weight="bold" fill="#FFFFFF">Typical length</text>
+  <text x="730" y="169" font-size="18" font-weight="bold" fill="#FFFFFF">Usual picture</text>
+
+  <!-- row 1 -->
+  <rect x="60" y="194" width="1080" height="96" rx="12" fill="#FFFFFF"/>
+  <circle cx="90" cy="242" r="9" fill="#1F7AA3"/>
+  <text x="112" y="250" font-size="22" font-weight="bold" fill="#10253A">Acute</text>
+  <text x="340" y="228" font-size="18" fill="#10253A">Under 4 weeks</text>
+  <rect x="340" y="242" width="360" height="18" rx="9" fill="#D8CFBE"/>
+  <rect x="340" y="242" width="90" height="18" rx="9" fill="#1F7AA3"/>
+  <text x="730" y="236" font-size="18" fill="#10253A">Often follows a cold;</text>
+  <text x="730" y="262" font-size="18" fill="#4E5E6E">symptoms rise and then fade</text>
+
+  <!-- row 2 -->
+  <rect x="60" y="300" width="1080" height="96" rx="12" fill="#FFFFFF"/>
+  <circle cx="90" cy="348" r="9" fill="#1F7AA3"/>
+  <text x="112" y="356" font-size="22" font-weight="bold" fill="#10253A">Subacute</text>
+  <text x="340" y="334" font-size="18" fill="#10253A">4 to 12 weeks</text>
+  <rect x="340" y="348" width="360" height="18" rx="9" fill="#D8CFBE"/>
+  <rect x="430" y="348" width="180" height="18" rx="9" fill="#1F7AA3"/>
+  <text x="730" y="342" font-size="18" fill="#10253A">In between; worth a doctor visit</text>
+  <text x="730" y="368" font-size="18" fill="#4E5E6E">if not improving</text>
+
+  <!-- row 3 (highlight) -->
+  <rect x="60" y="406" width="1080" height="96" rx="12" fill="#F5F0E7" stroke="#D9774B" stroke-width="3"/>
+  <circle cx="90" cy="454" r="9" fill="#D9774B"/>
+  <text x="112" y="462" font-size="22" font-weight="bold" fill="#10253A">Chronic</text>
+  <text x="340" y="440" font-size="18" font-weight="bold" fill="#D9774B">More than 12 weeks</text>
+  <rect x="340" y="454" width="360" height="18" rx="9" fill="#D8CFBE"/>
+  <rect x="610" y="454" width="90" height="18" rx="9" fill="#D9774B"/>
+  <path d="M700 446 L716 463 L700 480 Z" fill="#D9774B"/>
+  <text x="730" y="448" font-size="18" fill="#10253A">Ongoing inflammation; symptoms may</text>
+  <text x="730" y="474" font-size="18" fill="#4E5E6E">rise and fall but never fully go away</text>
+
+  <!-- 12 week line -->
+  <line x1="610" y1="188" x2="610" y2="498" stroke="#D9774B" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- takeaway strip -->
+  <rect x="60" y="518" width="1080" height="64" rx="12" fill="#1F7AA3"/>
+  <text x="84" y="547" font-size="20" font-weight="bold" fill="#FFFFFF">The 12-week mark is only half the test</text>
+  <text x="84" y="571" font-size="18" fill="#FFFFFF">Diagnosis also needs proof: nasal endoscopy or a CT scan</text>
+
+  <text x="60" y="613" font-size="17" fill="#4E5E6E">Sources: reviews cited in the article (PMID 27393770, 39173076)</text>
+</svg>
