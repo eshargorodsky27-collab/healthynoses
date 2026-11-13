@@ -1,5 +1,5 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -10,7 +10,8 @@
     "Rhinitis sicca: what a chronically dry nose means",
     "Nasal saline rinses: how to do them safely",
     "Overusing decongestant nasal sprays and rebound congestion",
-    "Recent findings on loss of smell and what affects recovery"
+    "Recent findings on loss of smell and what affects recovery",
+    "Dry nose and nasal oxygen tubes in older adults"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
@@ -18,8 +19,8 @@
     "openverse:fe4c17b7-2d8c-404d-91ec-1e85e047fb40"
   ],
   "lastPost": {
-    "date": "2026-11-11",
-    "slug": "smell-loss-recovery-covid-research-findings",
-    "topic": "Recent findings on loss of smell and what affects recovery"
+    "date": "2026-11-13",
+    "slug": "dry-nose-oxygen-tubing-older-adults",
+    "topic": "Dry nose and nasal oxygen tubes in older adults"
   }
 }

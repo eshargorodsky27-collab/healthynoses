@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Dry Nose From Oxygen Tubing in Older Adults: What Helps</text>
+  <text x="60" y="112" font-size="20" fill="#536866">Dry oxygen inside the nostrils lowers nasal humidity</text>
+
+  <!-- Chart panel -->
+  <rect x="60" y="140" width="700" height="410" rx="16" fill="#FFFFFF"/>
+  <text x="90" y="178" font-size="18" font-weight="bold" fill="#12302E">Nasal humidity by dry oxygen flow (12 people)</text>
+
+  <line x1="90" y1="248" x2="730" y2="248" stroke="#C9DAD7" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="90" y1="490" x2="730" y2="490" stroke="#536866" stroke-width="2"/>
+
+  <rect x="110" y="248" width="110" height="242" rx="6" fill="#1FA5A0"/>
+  <rect x="270" y="278" width="110" height="212" rx="6" fill="#C7607D"/>
+  <rect x="430" y="298" width="110" height="192" rx="6" fill="#C7607D"/>
+  <rect x="590" y="316" width="110" height="174" rx="6" fill="#C7607D"/>
+
+  <g font-size="24" font-weight="bold" fill="#12302E" text-anchor="middle">
+    <text x="165" y="226" dy="0">40.3%</text>
+    <text x="325" y="266">35.3%</text>
+    <text x="485" y="286">32%</text>
+    <text x="645" y="304">29.0%</text>
+  </g>
+  <g font-size="17" fill="#536866" text-anchor="middle">
+    <text x="165" y="517">Before oxygen</text>
+    <text x="325" y="517">1 L/min</text>
+    <text x="485" y="517">2 L/min</text>
+    <text x="645" y="517">3 L/min</text>
+  </g>
+
+  <!-- Card 1 -->
+  <rect x="790" y="140" width="350" height="190" rx="16" fill="#EEF4F3"/>
+  <rect x="790" y="140" width="8" height="190" rx="4" fill="#1FA5A0"/>
+  <text x="818" y="172" font-size="18" font-weight="bold" fill="#12302E">Humidifier bottles: mixed results</text>
+  <g font-size="17" fill="#12302E">
+    <text x="818" y="204">2026 review of 12 studies: no</text>
+    <text x="818" y="228">general call for or against.</text>
+    <text x="818" y="262">31 healthy adults: lining</text>
+    <text x="818" y="286">moisture unchanged, yet people</text>
+    <text x="818" y="310">reported less dryness.</text>
+  </g>
+
+  <!-- Card 2 -->
+  <rect x="790" y="350" width="350" height="200" rx="16" fill="#EEF4F3"/>
+  <rect x="790" y="350" width="8" height="200" rx="4" fill="#C7607D"/>
+  <text x="818" y="384" font-size="18" font-weight="bold" fill="#C7607D">Fire safety near oxygen</text>
+  <g font-size="17" fill="#12302E">
+    <text x="818" y="418">Oil- and petroleum-based products</text>
+    <text x="818" y="444">near oxygen are a fire concern.</text>
+    <text x="818" y="480">Ask the oxygen supplier before</text>
+    <text x="818" y="506">using anything on or in the nose.</text>
+  </g>
+
+  <text x="60" y="580" font-size="17" fill="#536866">Sources: 2013 study of 12 people on dry oxygen;</text>
+  <text x="60" y="604" font-size="17" fill="#536866">2026 scoping review; 2021 study of 31 healthy adults.</text>
+</svg>
