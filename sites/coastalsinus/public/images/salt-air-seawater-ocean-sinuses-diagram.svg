@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A" textLength="1040" lengthAdjust="spacingAndGlyphs">Salt Air and Seawater: Does the Ocean Help Your Sinuses?</text>
+  <text x="60" y="110" font-size="20" fill="#4E5E6E">Three ways salt water meets your nose, compared</text>
+
+  <!-- Header -->
+  <rect x="60" y="135" width="1080" height="46" fill="#10253A"/>
+  <text x="84" y="165" font-size="18" font-weight="bold" fill="#FFFFFF">Option</text>
+  <text x="340" y="165" font-size="18" font-weight="bold" fill="#FFFFFF">Salt level</text>
+  <text x="600" y="165" font-size="18" font-weight="bold" fill="#FFFFFF">Sterile?</text>
+  <text x="830" y="165" font-size="18" font-weight="bold" fill="#FFFFFF">Best use</text>
+
+  <!-- Row 1 -->
+  <rect x="60" y="181" width="1080" height="88" fill="#FFFFFF"/>
+  <rect x="60" y="181" width="10" height="88" fill="#D9774B"/>
+  <text x="84" y="231" font-size="20" font-weight="bold" fill="#10253A">Raw ocean water</text>
+  <text x="340" y="231" font-size="18" fill="#10253A">Varies</text>
+  <text x="600" y="231" font-size="20" font-weight="bold" fill="#D9774B">No</text>
+  <text x="830" y="231" font-size="18" font-weight="bold" fill="#D9774B">Not for the nose</text>
+
+  <!-- Row 2 -->
+  <rect x="60" y="269" width="1080" height="88" fill="#F5F0E7"/>
+  <rect x="60" y="269" width="10" height="88" fill="#1F7AA3"/>
+  <text x="84" y="311" font-size="20" font-weight="bold" fill="#10253A">Isotonic saline</text>
+  <text x="84" y="335" font-size="17" fill="#4E5E6E">(rinse or spray)</text>
+  <text x="340" y="319" font-size="18" fill="#10253A">Matches body fluids</text>
+  <text x="600" y="311" font-size="18" fill="#10253A">Yes, if made with</text>
+  <text x="600" y="335" font-size="18" fill="#10253A">safe water</text>
+  <text x="830" y="311" font-size="18" fill="#10253A">Everyday rinsing,</text>
+  <text x="830" y="335" font-size="18" fill="#10253A">mild congestion</text>
+
+  <!-- Row 3 -->
+  <rect x="60" y="357" width="1080" height="88" fill="#FFFFFF"/>
+  <rect x="60" y="357" width="10" height="88" fill="#1F7AA3"/>
+  <text x="84" y="399" font-size="20" font-weight="bold" fill="#10253A">Hypertonic</text>
+  <text x="84" y="423" font-size="20" font-weight="bold" fill="#10253A">seawater spray</text>
+  <text x="340" y="407" font-size="18" fill="#10253A">Saltier than body fluids</text>
+  <text x="600" y="407" font-size="18" fill="#10253A">Yes, if sold sterile</text>
+  <text x="830" y="399" font-size="18" fill="#10253A">Short-term congestion;</text>
+  <text x="830" y="423" font-size="18" fill="#10253A">may sting more</text>
+
+  <line x1="60" y1="269" x2="1140" y2="269" stroke="#D8CFBE" stroke-width="2"/>
+  <line x1="60" y1="357" x2="1140" y2="357" stroke="#D8CFBE" stroke-width="2"/>
+  <line x1="60" y1="445" x2="1140" y2="445" stroke="#D8CFBE" stroke-width="2"/>
+
+  <!-- Callouts -->
+  <rect x="60" y="468" width="530" height="102" rx="14" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+  <circle cx="92" cy="502" r="10" fill="#1F7AA3"/>
+  <text x="114" y="509" font-size="20" font-weight="bold" fill="#10253A">Beach air: still unproven</text>
+  <text x="84" y="538" font-size="17" fill="#4E5E6E">No study in this review tested breathing</text>
+  <text x="84" y="559" font-size="17" fill="#4E5E6E">sea air for sinus relief.</text>
+
+  <rect x="610" y="468" width="530" height="102" rx="14" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+  <circle cx="642" cy="502" r="10" fill="#D9774B"/>
+  <text x="664" y="509" font-size="20" font-weight="bold" fill="#10253A">Never rinse with raw ocean water</text>
+  <text x="634" y="538" font-size="17" fill="#4E5E6E">Use a sold spray, or a rinse made with</text>
+  <text x="634" y="559" font-size="17" fill="#4E5E6E">distilled or boiled-then-cooled water.</text>
+
+  <text x="60" y="607" font-size="17" fill="#4E5E6E">Source: article's review of seawater sprays, rinses and ocean water.</text>
+</svg>
