@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Sinus Headache or Migraine? How to Tell the Difference</text>
+<text x="60" y="110" font-size="20" fill="#5A6455">A 2021 review found most "sinus headaches" are migraine</text>
+
+<!-- header -->
+<rect x="60" y="134" width="280" height="46" fill="#1E2A1A"/>
+<rect x="340" y="134" width="380" height="46" fill="#C98A12"/>
+<rect x="720" y="134" width="420" height="46" fill="#4F7F23"/>
+<text x="78" y="165" font-size="20" font-weight="bold" fill="#FFFFFF">Clue</text>
+<text x="358" y="165" font-size="20" font-weight="bold" fill="#1E2A1A">Points to sinus infection</text>
+<text x="738" y="165" font-size="20" font-weight="bold" fill="#FFFFFF">Points to migraine</text>
+
+<!-- rows -->
+<rect x="60" y="180" width="1080" height="52" fill="#FFFFFF"/>
+<rect x="60" y="232" width="1080" height="52" fill="#F6F5EE"/>
+<rect x="60" y="284" width="1080" height="52" fill="#FFFFFF"/>
+<rect x="60" y="336" width="1080" height="52" fill="#F6F5EE"/>
+<rect x="60" y="388" width="1080" height="52" fill="#FFFFFF"/>
+<rect x="60" y="440" width="1080" height="52" fill="#F6F5EE"/>
+<line x1="60" y1="232" x2="1140" y2="232" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="60" y1="284" x2="1140" y2="284" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="60" y1="336" x2="1140" y2="336" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="60" y1="388" x2="1140" y2="388" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="60" y1="440" x2="1140" y2="440" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="60" y1="492" x2="1140" y2="492" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="340" y1="180" x2="340" y2="492" stroke="#D9D8C6" stroke-width="1"/>
+<line x1="720" y1="180" x2="720" y2="492" stroke="#D9D8C6" stroke-width="1"/>
+
+<g font-size="18" fill="#1E2A1A">
+<text x="78" y="212" font-weight="bold">Nasal discharge</text>
+<text x="358" y="212">Thick, yellow or green</text>
+<text x="738" y="212">Clear and watery, or none</text>
+
+<text x="78" y="264" font-weight="bold">Pain feel</text>
+<text x="358" y="264">Dull, deep pressure</text>
+<text x="738" y="264">Throbbing or pulsing</text>
+
+<text x="78" y="316" font-weight="bold">Fever</text>
+<text x="358" y="316">Possible</text>
+<text x="738" y="316">Not expected</text>
+
+<text x="78" y="368" font-weight="bold">Nausea or vomiting</text>
+<text x="358" y="368">Uncommon</text>
+<text x="738" y="368">Common</text>
+
+<text x="78" y="420" font-weight="bold">Light or noise bother</text>
+<text x="358" y="420">Uncommon</text>
+<text x="738" y="420">Common</text>
+
+<text x="78" y="472" font-weight="bold">Duration</text>
+<text x="358" y="472">Days to weeks, builds with a cold</text>
+<text x="738" y="472">Episodes, often 4 to 72 hours</text>
+</g>
+
+<!-- callout -->
+<rect x="60" y="506" width="1080" height="66" rx="12" fill="#FFFFFF" stroke="#4F7F23" stroke-width="2"/>
+<rect x="60" y="506" width="10" height="66" fill="#4F7F23"/>
+<text x="90" y="532" font-size="18" font-weight="bold" fill="#1E2A1A">Pain relievers over 2 to 3 days a week can backfire.</text>
+<text x="90" y="558" font-size="18" fill="#5A6455">Frequent headaches need a doctor's plan.</text>
+
+<text x="60" y="610" font-size="17" fill="#5A6455">Source: Robblee &amp; Secora, 2021 neurology review</text>
+</svg>

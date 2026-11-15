@@ -1,20 +1,22 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
     "Sinus pressure from allergies: why it happens and what helps",
     "Spring tree pollen in New Jersey: oak, birch and maple allergies",
     "Antihistamines and a dry nose: why allergy pills dry you out",
-    "Do HEPA air purifiers help allergy symptoms? What trials found"
+    "Do HEPA air purifiers help allergy symptoms? What trials found",
+    "Sinus headache or migraine? How to tell"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
-    "openverse:66272c72-776f-4c39-838f-31e715317ff3"
+    "openverse:66272c72-776f-4c39-838f-31e715317ff3",
+    "openverse:be6890a2-d86d-429a-ae8f-c664a087c833"
   ],
   "lastPost": {
-    "date": "2026-11-13",
-    "slug": "hepa-air-purifiers-allergy-trials",
-    "topic": "Do HEPA air purifiers help allergy symptoms? What trials found"
+    "date": "2026-11-15",
+    "slug": "sinus-headache-or-migraine-difference",
+    "topic": "Sinus headache or migraine? How to tell"
   }
 }
