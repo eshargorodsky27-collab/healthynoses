@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E" textLength="1060" lengthAdjust="spacingAndGlyphs">Stuffy Nose With No Cold: Causes of Nonallergic Rhinitis</text>
+  <text x="60" y="110" font-size="20" fill="#536866">Compared side by side; mixed cases often overlap</text>
+
+  <!-- header row -->
+  <rect x="60" y="136" width="230" height="52" fill="#C9DAD7"/>
+  <rect x="290" y="136" width="283" height="52" fill="#C7607D"/>
+  <rect x="573" y="136" width="283" height="52" fill="#1FA5A0"/>
+  <rect x="856" y="136" width="284" height="52" fill="#536866"/>
+  <text x="76" y="168" font-size="20" font-weight="bold" fill="#12302E">Feature</text>
+  <text x="431" y="168" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Allergic rhinitis</text>
+  <text x="714" y="168" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Nonallergic rhinitis</text>
+  <text x="998" y="168" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Cold (infectious)</text>
+
+  <!-- row backgrounds -->
+  <rect x="60" y="188" width="1080" height="66" fill="#FFFFFF"/>
+  <rect x="60" y="254" width="1080" height="66" fill="#EEF4F3"/>
+  <rect x="60" y="320" width="1080" height="66" fill="#FFFFFF"/>
+  <rect x="60" y="386" width="1080" height="66" fill="#EEF4F3"/>
+  <line x1="290" y1="188" x2="290" y2="452" stroke="#C9DAD7" stroke-width="2"/>
+  <line x1="856" y1="188" x2="856" y2="452" stroke="#C9DAD7" stroke-width="2"/>
+  <rect x="573" y="136" width="283" height="316" fill="none" stroke="#1FA5A0" stroke-width="4"/>
+
+  <!-- row 1 -->
+  <text x="76" y="226" font-size="17" font-weight="bold" fill="#12302E">Main symptoms</text>
+  <text x="431" y="216" font-size="17" fill="#12302E" text-anchor="middle">Congestion, runny nose,</text>
+  <text x="431" y="238" font-size="17" fill="#12302E" text-anchor="middle">sneezing, itching</text>
+  <text x="714" y="216" font-size="17" fill="#12302E" text-anchor="middle">Congestion and</text>
+  <text x="714" y="238" font-size="17" fill="#12302E" text-anchor="middle">postnasal drainage</text>
+  <text x="998" y="216" font-size="17" fill="#12302E" text-anchor="middle">Congestion, runny nose,</text>
+  <text x="998" y="238" font-size="17" fill="#12302E" text-anchor="middle">sore throat, cough</text>
+
+  <!-- row 2 -->
+  <text x="76" y="292" font-size="17" font-weight="bold" fill="#12302E">Itchy eyes and nose</text>
+  <text x="431" y="292" font-size="17" fill="#12302E" text-anchor="middle">Common</text>
+  <text x="714" y="292" font-size="17" fill="#12302E" text-anchor="middle">Not typical</text>
+  <text x="998" y="292" font-size="17" fill="#12302E" text-anchor="middle">Not typical</text>
+
+  <!-- row 3 -->
+  <text x="76" y="350" font-size="17" font-weight="bold" fill="#12302E">Allergy test</text>
+  <text x="76" y="372" font-size="17" font-weight="bold" fill="#12302E">(specific IgE)</text>
+  <text x="431" y="362" font-size="17" font-weight="bold" fill="#C7607D" text-anchor="middle">Positive</text>
+  <text x="714" y="362" font-size="17" font-weight="bold" fill="#1FA5A0" text-anchor="middle">Negative</text>
+  <text x="998" y="362" font-size="17" fill="#536866" text-anchor="middle">Not relevant</text>
+
+  <!-- row 4 -->
+  <text x="76" y="424" font-size="17" font-weight="bold" fill="#12302E">How long it lasts</text>
+  <text x="431" y="424" font-size="17" fill="#12302E" text-anchor="middle">Seasonal or year-round</text>
+  <text x="714" y="424" font-size="17" fill="#12302E" text-anchor="middle">Can be long-lasting</text>
+  <text x="998" y="414" font-size="17" fill="#12302E" text-anchor="middle">Usually clears in</text>
+  <text x="998" y="436" font-size="17" fill="#12302E" text-anchor="middle">about 7 to 10 days</text>
+
+  <!-- cards -->
+  <rect x="60" y="468" width="530" height="94" rx="12" fill="#FFFFFF"/>
+  <rect x="60" y="468" width="8" height="94" fill="#C7607D"/>
+  <text x="86" y="495" font-size="18" font-weight="bold" fill="#12302E">Triggers listed in reviews</text>
+  <text x="86" y="520" font-size="17" fill="#12302E">Infections, allergies, inhaled irritants,</text>
+  <text x="86" y="543" font-size="17" fill="#12302E">medications, hormone changes, nerve problems</text>
+
+  <rect x="610" y="468" width="530" height="94" rx="12" fill="#FFFFFF"/>
+  <rect x="610" y="468" width="8" height="94" fill="#1FA5A0"/>
+  <text x="636" y="495" font-size="18" font-weight="bold" fill="#12302E">First-line therapy (guideline summary)</text>
+  <text x="636" y="520" font-size="17" fill="#12302E">Intranasal antihistamine spray, alone or</text>
+  <text x="636" y="543" font-size="17" fill="#12302E">with a nasal steroid spray</text>
+
+  <!-- source -->
+  <text x="60" y="594" font-size="17" fill="#536866">Sources: Journal of Clinical Medicine 2021; JAMA 2024.</text>
+  <text x="60" y="616" font-size="17" fill="#536866">The table is a guide, not a diagnosis.</text>
+</svg>
