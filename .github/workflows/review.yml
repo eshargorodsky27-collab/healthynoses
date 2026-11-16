@@ -1,0 +1,55 @@
+name: Mark article reviewed
+
+# Dr. Shargorodsky (or anyone with access) runs this after reading an article.
+# Leave "slug" empty to see the list of articles still waiting for review.
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Which site'
+        type: choice
+        options: [healthynoses, njsinusallergy, coastalsinus]
+      slug:
+        description: 'Article slug or full link (leave empty to list articles waiting for review)'
+        required: false
+        default: ''
+      date:
+        description: 'Review date YYYY-MM-DD (empty = today)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Mark reviewed (or list waiting)
+        env:
+          SITE: ${{ inputs.site }}
+          SLUG: ${{ inputs.slug }}
+          DATE: ${{ inputs.date }}
+        run: node scripts/mark-reviewed.js
+      - name: Save
+        if: inputs.slug != ''
+        run: |
+          git config user.name "review-bot"
+          git config user.email "review-bot@users.noreply.github.com"
+          git add -A posts sites
+          git commit -m "Medical review: ${{ inputs.site }} ${{ inputs.slug }}" || echo "Nothing to commit"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+      - name: Republish Healthy Noses
+        if: inputs.slug != '' && inputs.site == 'healthynoses'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run site.yml -f new_post=false
