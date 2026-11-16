@@ -166,6 +166,7 @@ function claimsProblems(a, slotType, sisterList = []) {
 }
 
 // ---------- images ----------
+const UA = `${cfg.domain} blog (${cfg.url})`;
 async function findPhoto(query, used) {
   if (process.env.PEXELS_API_KEY) {
     const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=landscape&per_page=15`, { headers: { Authorization: process.env.PEXELS_API_KEY } });
@@ -185,17 +186,39 @@ async function findPhoto(query, used) {
       }
     } else log('Unsplash error', r.status);
   }
-  // Free fallback, no key needed: Openverse (openly licensed images, commercial use allowed)
-  try {
-    const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(query)}&license_type=commercial&aspect_ratio=wide&mature=false&page_size=20`, { headers: { 'User-Agent': `${cfg.domain} blog (${cfg.url})` } });
-    if (r.ok) {
-      const photo = (await r.json()).results?.find((p) => !used.includes(`openverse:${p.id}`) && (p.width || 0) >= 1000 && /\.(jpe?g|png)(\?|$)/i.test(p.url) && p.license !== 'pdm');
-      if (photo) {
-        const lic = `${String(photo.license).toUpperCase()}${photo.license_version ? ' ' + photo.license_version : ''}`;
-        return { id: `openverse:${photo.id}`, download: photo.url, credit: `${photo.creator || 'Unknown'} (${lic})`, creditUrl: photo.foreign_landing_url || photo.url };
-      }
-    } else log('Openverse error', r.status);
-  } catch (e) { log('Openverse lookup failed', e.message); }
+  // Free fallbacks, no key needed. Try the full query, then a shorter one, on two open-licence libraries.
+  const queries = [...new Set([query, query.split(/\s+/).slice(0, 2).join(' ')])];
+  for (const q of queries) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const r = await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&license_type=commercial&aspect_ratio=wide&mature=false&page_size=20`, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+        if (r.ok) {
+          const photo = (await r.json()).results?.find((p) => !used.includes(`openverse:${p.id}`) && (p.width || 0) >= 1000 && /\.(jpe?g|png)(\?|$)/i.test(p.url) && p.license !== 'pdm');
+          if (photo) {
+            const lic = `${String(photo.license).toUpperCase()}${photo.license_version ? ' ' + photo.license_version : ''}`;
+            return { id: `openverse:${photo.id}`, download: photo.url, credit: `${photo.creator || 'Unknown'} (${lic})`, creditUrl: photo.foreign_landing_url || photo.url };
+          }
+          break;
+        }
+        log('Openverse error', r.status);
+      } catch (e) { log('Openverse lookup failed', e.message); }
+      await new Promise((res) => setTimeout(res, 3000));
+    }
+    try {
+      const api = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=${encodeURIComponent('filetype:bitmap ' + q)}&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1400`;
+      const r = await fetch(api, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+      if (r.ok) {
+        const pages = Object.values((await r.json()).query?.pages || {});
+        const ok = (m) => /^(cc0|public domain|cc by(-sa)? [0-9.]+)$/i.test(((m.LicenseShortName || {}).value || '').trim());
+        const pick = pages.map((p) => ({ p, ii: (p.imageinfo || [])[0] })).find(({ p, ii }) => ii && !used.includes(`commons:${p.pageid}`) && ii.width >= 1000 && ii.width > ii.height && /\.(jpe?g|png)$/i.test(ii.url) && ok(ii.extmetadata || {}));
+        if (pick) {
+          const m = pick.ii.extmetadata || {};
+          const who = String((m.Artist || {}).value || 'Wikimedia Commons').replace(/<[^>]+>/g, '').trim().slice(0, 80);
+          return { id: `commons:${pick.p.pageid}`, download: pick.ii.thumburl || pick.ii.url, credit: `${who} (${(m.LicenseShortName || {}).value}, Wikimedia Commons)`, creditUrl: pick.ii.descriptionurl };
+        }
+      } else log('Wikimedia error', r.status);
+    } catch (e) { log('Wikimedia lookup failed', e.message); }
+  }
   return null;
 }
 
@@ -249,12 +272,23 @@ async function main() {
   const posts = existingPosts();
   const titles = posts.map((p) => p.title);
 
+  // Skip any bank topic that is too close to an article already published
+  const STOPW = new Set('the a an and or of for to in on at your you how what why when does is are with from by vs its it can do this that'.split(' '));
+  const wordsOf = (t) => new Set(String(t).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length > 2 && !STOPW.has(w)));
+  const similar = (a, b) => { const A = wordsOf(a), B = wordsOf(b); const inter = [...A].filter((w) => B.has(w)).length; return inter / Math.max(1, Math.min(A.size, B.size)); };
+  const tooClose = (t) => titles.concat(state.usedTopics).some((x) => similar(t, x) >= 0.6);
+  for (const t of bank[slotType]) if (!state.usedTopics.includes(t.topic) && tooClose(t.topic)) { log(`Skipping near-duplicate topic: ${t.topic}`); state.usedTopics.push(t.topic); }
   let item = bank[slotType].find((t) => !state.usedTopics.includes(t.topic));
   if (!item) {
     log(`Topic bank "${slotType}" used up, asking the writer for a fresh topic`);
-    const fresh = parseJson(await claude(`You plan articles for ${cfg.name}, ${cfg.writer.focus} Return only JSON.`,
-      `Existing titles: ${titles.join(' | ')}\nUsed topics: ${state.usedTopics.join(' | ')}\nPropose ONE new ${cfg.writer.slotIdeas[slotType] || slotType} topic people actively search for, not overlapping the above. JSON: {"topic": "...", "pubmed": "3-5 word PubMed search", "category": one of ${JSON.stringify(Object.keys(cfg.categories))}}`));
-    item = fresh;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const fresh = parseJson(await claude(`You plan articles for ${cfg.name}, ${cfg.writer.focus} Return only JSON.`,
+        `Existing titles: ${titles.join(' | ')}\nUsed topics: ${state.usedTopics.join(' | ')}\nPropose ONE new ${cfg.writer.slotIdeas[slotType] || slotType} topic people actively search for. It must cover a clearly different question from every existing title above (not a rewording or a narrower version of one). JSON: {"topic": "...", "pubmed": "3-5 word PubMed search", "category": one of ${JSON.stringify(Object.keys(cfg.categories))}}`));
+      item = fresh;
+      if (!tooClose(fresh.topic)) break;
+      log(`Fresh topic too close to an existing article, retrying: ${fresh.topic}`);
+      state.usedTopics.push(fresh.topic);
+    }
   }
   log(`Slot "${slotType}", topic: ${item.topic}`);
 
