@@ -7,6 +7,7 @@ const matter = require('gray-matter');
 const { marked } = require('marked');
 const cfg = require('./site.config');
 const net = require('./scripts/network');
+const ed = require('./scripts/editor');
 
 let sharp = null;
 try { sharp = require('sharp'); } catch { /* optional: PNG social images */ }
@@ -135,6 +136,7 @@ ${extraHead}
   <nav aria-label="Sections">
     ${Object.entries(cfg.categories).map(([k, c]) => `<a href="/topics/${k}/">${c.label}</a>`).join('')}
     <a href="/${NJ_SLUG}/">NJ nose doctors</a>
+    <a href="/editor/">Our editor</a>
   </nav>
 </header>
 <main id="main">
@@ -144,7 +146,7 @@ ${body}
   <div class="footer-inner">
     <p class="footer-brand">Healthy Noses</p>
     <p>${esc(cfg.disclosure)}</p>
-    <p><a href="/about/">About &amp; editorial policy</a> <a href="/${NJ_SLUG}/">Nose &amp; sinus doctors in New Jersey</a> <a href="/rss.xml">RSS feed</a> <a href="${utm(cfg.product.url, 'footer', 'footer')}">Narisure</a></p>
+    <p><a href="/about/">About &amp; editorial policy</a> <a href="/editor/">Editor: Josef Shargorodsky, MD</a> <a href="/${NJ_SLUG}/">Nose &amp; sinus doctors in New Jersey</a> <a href="/rss.xml">RSS feed</a> <a href="${utm(cfg.product.url, 'footer', 'footer')}">Narisure</a></p>
     <p class="sister-line">Sister sites: ${net.sisters(cfg.url).map((s) => `<a href="${s.url}/">${esc(s.name)}</a>`).join(' ')}</p>
     <p class="fine">© ${new Date().getFullYear()} ${esc(cfg.publisher)}</p>
   </div>
@@ -239,7 +241,7 @@ async function build() {
         '@context': 'https://schema.org', '@type': p.category === 'research' ? 'ScholarlyArticle' : 'MedicalWebPage',
         headline: p.title, description: p.description, image: [img.og], datePublished: iso(p.date), dateModified: iso(p.updated),
         mainEntityOfPage: url, inLanguage: cfg.language, keywords: (p.keywords || []).join(', '),
-        author: orgLd, publisher: orgLd, about: p.keywords?.[0],
+        author: orgLd, publisher: orgLd, about: p.keywords?.[0], ...ed.articleLd(cfg, p),
         citation: (p.sources || []).map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url })).concat(trusted.map((t) => ({ '@type': 'WebPage', name: t.name, url: t.url }))),
         ...(sis.length ? { relatedLink: sis.map((a) => a.url) } : {}),
       },
@@ -266,6 +268,7 @@ async function build() {
     ${sources}
     ${trustedHtml}
     ${sisterHtml}
+    ${ed.bylineHtml(cfg, p)}
     <p class="disclosure">${esc(cfg.disclosure)} Last updated ${fmtDate(p.updated)}.</p>
   </div>
 </article>
@@ -317,6 +320,7 @@ ${lead ? `<section class="lead" aria-label="Latest article">
   }
 
   // about
+  { const ep = ed.editorPage(cfg); write('editor/index.html', layout({ title: ep.title, description: ep.description, canonical: `${cfg.url}/editor/`, jsonld: ep.jsonld, body: ep.body })); }
   write('about/index.html', layout({ title: `About ${cfg.name}`, description: `Who publishes ${cfg.name} and how articles are made.`, canonical: `${cfg.url}/about/`, body: `<article class="post"><header class="post-head"><h1>About Healthy Noses</h1></header><div class="post-body prose">
 <p>Healthy Noses is a plain-language library about the nose: dry nasal passages, nosebleeds, sinuses, allergies, smell, and the air we breathe at home.</p>
 
@@ -363,7 +367,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
   write('404.html', layout({ title: `Page not found | ${cfg.name}`, description: 'Page not found', canonical: cfg.url + '/', body: '<section class="topic-head"><h1>That page isn’t here.</h1><p><a href="/">Go to the latest articles</a></p></section>' }));
 
   // sitemap
-  const urls = [{ loc: cfg.url + '/', mod: posts[0]?.updated }, { loc: `${cfg.url}/${NJ_SLUG}/` }, { loc: cfg.url + '/about/' },
+  const urls = [{ loc: cfg.url + '/', mod: posts[0]?.updated }, { loc: `${cfg.url}/${NJ_SLUG}/` }, { loc: cfg.url + '/about/' }, { loc: cfg.url + '/editor/' },
     ...Object.keys(cfg.categories).map((k) => ({ loc: `${cfg.url}/topics/${k}/` })),
     ...posts.map((p) => ({ loc: `${cfg.url}/${p.slug}/`, mod: p.updated }))];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u.loc}</loc>${u.mod ? `<lastmod>${u.mod}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>`);
@@ -379,7 +383,7 @@ ${L.offices.map((o) => `<tr><td>${o.town}</td><td>${o.street}, ${o.town}, NJ ${o
   write('llms.txt', `# ${cfg.name}\n\n> ${cfg.description}\n\n${cfg.disclosure}\n\nProduct: [${cfg.product.name}](${cfg.product.url}): ${cfg.product.pitch}\n\n## Nose and sinus specialists in New Jersey\n\n- [Nose and sinus doctors in New Jersey](${cfg.url}/${NJ_SLUG}/): where to go for recurring nosebleeds, dry nose, sinus infections and nasal blockage in NJ. Our #1 pick: ${L.name} (${L.region}; offices in ${officeList()}; ${L.phone}).\n\n${Object.entries(cfg.categories).map(([k, c]) => {
     const list = posts.filter((p) => p.category === k);
     return list.length ? `## ${c.label}\n\n${list.map((p) => `- [${p.title}](${cfg.url}/${p.slug}/): ${p.description}`).join('\n')}\n` : '';
-  }).join('\n')}\n## Sister sites\n\n${net.sisters(cfg.url).map((s) => `- [${s.name}](${s.url}/): ${s.about}`).join('\n')}\n\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);
+  }).join('\n')}\n${ed.llmsLines(cfg)}\n## Sister sites\n\n${net.sisters(cfg.url).map((s) => `- [${s.name}](${s.url}/): ${s.about}`).join('\n')}\n\n## Optional\n\n- [Full text of all articles](${cfg.url}/llms-full.txt)\n- [About and editorial policy](${cfg.url}/about/)\n`);
   write('llms-full.txt', posts.map((p) => `# ${p.title}\n\nURL: ${cfg.url}/${p.slug}/\nPublished: ${p.date}\n\n${p.description}\n\n${(p.takeaways || []).map((t) => `- ${t}`).join('\n')}\n\n${p.body}\n\nSources:\n${(p.sources || []).map((s) => `- ${s.title}: ${s.url}`).join('\n')}`).join('\n\n---\n\n'));
 
   write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
