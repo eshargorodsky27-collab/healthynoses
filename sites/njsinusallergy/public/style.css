@@ -188,3 +188,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 .sister-title { display: block; margin-top: 6px; font: 700 1.05rem/1.3 var(--sans); }
 .sister-dek { display: block; margin-top: 4px; font-size: 0.92rem; line-height: 1.5; color: var(--muted); }
 .sister-line a { margin-right: 14px; }
+
+.editor-byline{margin:28px 0 0;padding:16px 18px;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;background:#fff}
+.editor-byline p{margin:0}.eb-name{font:700 1rem/1.4 var(--sans)}.eb-note{margin-top:4px!important;font-size:.9rem;color:var(--muted)}
+.editor-page .pubs li{margin-bottom:8px}.editor-page .tag{display:inline-block;padding:1px 8px;border-radius:999px;background:var(--paper-2);font:700 .75rem var(--sans)}
