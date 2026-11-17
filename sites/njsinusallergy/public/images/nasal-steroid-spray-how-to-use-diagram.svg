@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Nasal Steroid Sprays: How to Use Them the Right Way</text>
+  <text x="60" y="110" font-size="20" fill="#5A6455">Five habits that help the medicine reach the right spot</text>
+
+  <!-- Diagram panel -->
+  <rect x="60" y="136" width="350" height="352" rx="16" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <text x="80" y="168" font-size="17" font-weight="bold" fill="#5A6455">Front view of the nose</text>
+  <path d="M235 196 L300 320 Q335 345 325 385 Q300 410 235 410 Q170 410 145 385 Q135 345 170 320 Z" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="3"/>
+  <ellipse cx="195" cy="365" rx="32" ry="22" fill="#D9D8C6"/>
+  <ellipse cx="275" cy="365" rx="32" ry="22" fill="#D9D8C6"/>
+  <rect x="232" y="335" width="6" height="62" rx="3" fill="#C98A12"/>
+  <line x1="210" y1="365" x2="176" y2="365" stroke="#4F7F23" stroke-width="5" stroke-linecap="round"/>
+  <path d="M170 365 L184 356 L184 374 Z" fill="#4F7F23"/>
+  <line x1="260" y1="365" x2="294" y2="365" stroke="#4F7F23" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 365 L286 356 L286 374 Z" fill="#4F7F23"/>
+  <text x="80" y="446" font-size="17" fill="#4F7F23" font-weight="bold">Green arrow: aim at the outer wall</text>
+  <text x="80" y="472" font-size="17" fill="#C98A12" font-weight="bold">Amber bar: septum, avoid it</text>
+
+  <!-- Step 1 -->
+  <rect x="440" y="136" width="700" height="64" rx="12" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <circle cx="476" cy="168" r="20" fill="#4F7F23"/>
+  <text x="476" y="175" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="515" y="164" font-size="20" font-weight="bold" fill="#1E2A1A">Blow your nose gently first</text>
+  <text x="515" y="187" font-size="17" fill="#5A6455">Mucus can block the medicine from reaching the lining.</text>
+
+  <!-- Step 2 -->
+  <rect x="440" y="208" width="700" height="64" rx="12" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <circle cx="476" cy="240" r="20" fill="#4F7F23"/>
+  <text x="476" y="247" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="515" y="236" font-size="20" font-weight="bold" fill="#1E2A1A">Head slightly forward, opposite hand</text>
+  <text x="515" y="259" font-size="17" fill="#5A6455">Right hand for the left nostril, and the reverse.</text>
+
+  <!-- Step 3 -->
+  <rect x="440" y="280" width="700" height="64" rx="12" fill="#FFFFFF" stroke="#4F7F23" stroke-width="3"/>
+  <circle cx="476" cy="312" r="20" fill="#4F7F23"/>
+  <text x="476" y="319" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="515" y="308" font-size="20" font-weight="bold" fill="#1E2A1A">Aim away from the center wall</text>
+  <text x="515" y="331" font-size="17" fill="#5A6455">Point toward the outer side, roughly toward the ear.</text>
+
+  <!-- Step 4 -->
+  <rect x="440" y="352" width="700" height="64" rx="12" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <circle cx="476" cy="384" r="20" fill="#4F7F23"/>
+  <text x="476" y="391" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="515" y="380" font-size="20" font-weight="bold" fill="#1E2A1A">Sniff gently, not hard</text>
+  <text x="515" y="403" font-size="17" fill="#5A6455">A hard sniff pulls the medicine down the throat.</text>
+
+  <!-- Step 5 -->
+  <rect x="440" y="424" width="700" height="64" rx="12" fill="#FFFFFF" stroke="#C98A12" stroke-width="3"/>
+  <circle cx="476" cy="456" r="20" fill="#C98A12"/>
+  <text x="476" y="463" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="515" y="452" font-size="20" font-weight="bold" fill="#1E2A1A">Use it daily, not only on bad days</text>
+  <text x="515" y="475" font-size="17" fill="#5A6455">Many start a week or two before their trigger season.</text>
+
+  <!-- Evidence boxes -->
+  <rect x="60" y="504" width="530" height="88" rx="12" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="2"/>
+  <rect x="60" y="504" width="8" height="88" rx="4" fill="#4F7F23"/>
+  <text x="84" y="530" font-size="17" font-weight="bold" fill="#4F7F23">Safety: 2020 review</text>
+  <text x="84" y="554" font-size="17" fill="#1E2A1A">Over-the-counter sprays rarely cause serious</text>
+  <text x="84" y="576" font-size="17" fill="#1E2A1A">local effects, such as severe, lasting nosebleeds.</text>
+
+  <rect x="610" y="504" width="530" height="88" rx="12" fill="#F6F5EE" stroke="#D9D8C6" stroke-width="2"/>
+  <rect x="610" y="504" width="8" height="88" rx="4" fill="#C98A12"/>
+  <text x="634" y="530" font-size="17" font-weight="bold" fill="#C98A12">Saline rinse: 14 trials, 747 people</text>
+  <text x="634" y="554" font-size="17" fill="#1E2A1A">May ease allergic rhinitis symptoms for up to</text>
+  <text x="634" y="576" font-size="17" fill="#1E2A1A">four weeks, but the evidence was low quality.</text>
+
+  <text x="60" y="620" font-size="17" fill="#5A6455">Sources: 2020 intranasal steroid safety review; Cochrane saline review.</text>
+</svg>

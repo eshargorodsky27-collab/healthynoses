@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
@@ -7,16 +7,19 @@
     "Spring tree pollen in New Jersey: oak, birch and maple allergies",
     "Antihistamines and a dry nose: why allergy pills dry you out",
     "Do HEPA air purifiers help allergy symptoms? What trials found",
-    "Sinus headache or migraine? How to tell"
+    "Sinus headache or migraine? How to tell",
+    "Nasal steroid sprays: how to use them the right way"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
     "openverse:66272c72-776f-4c39-838f-31e715317ff3",
-    "openverse:be6890a2-d86d-429a-ae8f-c664a087c833"
+    "openverse:be6890a2-d86d-429a-ae8f-c664a087c833",
+    "openverse:1ce1ec4a-da7e-4868-9d1e-eb63699d0223",
+    "openverse:a5733bee-824b-4e36-ac73-0f2666f49690"
   ],
   "lastPost": {
-    "date": "2026-11-15",
-    "slug": "sinus-headache-or-migraine-difference",
-    "topic": "Sinus headache or migraine? How to tell"
+    "date": "2026-11-17",
+    "slug": "nasal-steroid-spray-how-to-use",
+    "topic": "Nasal steroid sprays: how to use them the right way"
   }
 }
