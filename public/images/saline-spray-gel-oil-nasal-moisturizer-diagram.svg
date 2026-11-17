@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Saline Spray, Gel or Oil: Which Nasal Moisturizer?</text>
+<text x="60" y="106" font-size="20" fill="#536866">Match the product to how dry your nose is and when</text>
+
+<!-- headers -->
+<rect x="212" y="122" width="300" height="48" rx="10" fill="#1FA5A0"/>
+<rect x="524" y="122" width="300" height="48" rx="10" fill="#1FA5A0"/>
+<rect x="836" y="122" width="300" height="48" rx="10" fill="#1FA5A0"/>
+<text x="362" y="153" font-size="21" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Saline spray</text>
+<text x="674" y="153" font-size="21" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Saline or Ringer's gel</text>
+<text x="986" y="153" font-size="21" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Nasal oil</text>
+
+<!-- row labels -->
+<rect x="60" y="178" width="140" height="54" rx="10" fill="#C9DAD7"/>
+<rect x="60" y="238" width="140" height="54" rx="10" fill="#C9DAD7"/>
+<rect x="60" y="298" width="140" height="54" rx="10" fill="#C9DAD7"/>
+<rect x="60" y="358" width="140" height="54" rx="10" fill="#C9DAD7"/>
+<text x="76" y="211" font-size="18" font-weight="bold" fill="#12302E">Feels like</text>
+<text x="76" y="271" font-size="18" font-weight="bold" fill="#12302E">Lasts</text>
+<text x="76" y="331" font-size="18" font-weight="bold" fill="#12302E">Best for</text>
+<text x="76" y="391" font-size="18" font-weight="bold" fill="#12302E">Good to know</text>
+
+<!-- cells row 1 -->
+<rect x="212" y="178" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="524" y="178" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="836" y="178" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<text x="228" y="211" font-size="17" fill="#12302E">Light, wet, quick</text>
+<text x="540" y="211" font-size="17" fill="#12302E">Thicker, slightly cool</text>
+<text x="852" y="211" font-size="17" fill="#12302E">Smooth, soft coating</text>
+
+<!-- row 2 -->
+<rect x="212" y="238" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="524" y="238" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="836" y="238" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<text x="228" y="271" font-size="17" fill="#12302E">Short; reapplied through the day</text>
+<text x="540" y="271" font-size="17" fill="#12302E">Longer than spray</text>
+<text x="852" y="271" font-size="17" fill="#12302E">Often the longest</text>
+
+<!-- row 3 -->
+<rect x="212" y="298" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="524" y="298" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<rect x="836" y="298" width="300" height="54" rx="10" fill="#FFFFFF"/>
+<text x="228" y="331" font-size="17" fill="#12302E">Mild dryness, daytime use</text>
+<text x="540" y="331" font-size="17" fill="#12302E">Crusting, dry rooms</text>
+<text x="852" y="331" font-size="17" fill="#12302E">Dry nights, winter heating</text>
+
+<!-- row 4 -->
+<rect x="212" y="358" width="300" height="54" rx="10" fill="#EEF4F3"/>
+<rect x="524" y="358" width="300" height="54" rx="10" fill="#EEF4F3"/>
+<rect x="836" y="358" width="300" height="54" rx="10" fill="#EEF4F3"/>
+<text x="228" y="391" font-size="17" fill="#536866">Evaporates fast in heated rooms</text>
+<text x="540" y="391" font-size="17" fill="#536866">Formulation changes comfort</text>
+<text x="852" y="391" font-size="17" fill="#536866">Use a thin film at the front</text>
+
+<!-- study box -->
+<rect x="60" y="430" width="530" height="118" rx="14" fill="#FFFFFF" stroke="#1FA5A0" stroke-width="3"/>
+<text x="80" y="460" font-size="19" font-weight="bold" fill="#1FA5A0">What one small gel study found</text>
+<text x="80" y="487" font-size="17" fill="#12302E">Brazilian study, 60 people: 6.0 mg/g Ringer's lactate gel</text>
+<text x="80" y="510" font-size="17" fill="#12302E">was more comfortable, stung less than 4.5 mg/g saline gel.</text>
+<text x="80" y="533" font-size="17" fill="#12302E">Both moisturized equally well.</text>
+
+<!-- doctor box -->
+<rect x="610" y="430" width="530" height="118" rx="14" fill="#FFFFFF" stroke="#C7607D" stroke-width="3"/>
+<circle cx="646" cy="489" r="20" fill="#C7607D"/>
+<rect x="643" y="475" width="6" height="18" rx="3" fill="#FFFFFF"/>
+<circle cx="646" cy="502" r="3.5" fill="#FFFFFF"/>
+<text x="682" y="460" font-size="19" font-weight="bold" fill="#C7607D">Needs a doctor's exam, not a new product</text>
+<text x="682" y="492" font-size="17" fill="#12302E">Dryness that bleeds often, smells bad or</text>
+<text x="682" y="515" font-size="17" fill="#12302E">lasts more than a few weeks.</text>
+
+<text x="60" y="592" font-size="17" fill="#536866">Source: 2019 Brazilian ENT journal trial, 60 adults, about 7 days per gel.</text>
+</svg>
