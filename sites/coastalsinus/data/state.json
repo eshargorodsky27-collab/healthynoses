@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -7,7 +7,9 @@
     "Balloon sinuplasty: what it is and who it helps",
     "Chronic sinusitis explained: symptoms that last 12 weeks",
     "Balloon dilation vs endoscopic sinus surgery: the evidence",
-    "Salt air and seawater: does the ocean help your sinuses?"
+    "Salt air and seawater: does the ocean help your sinuses?",
+    "Endoscopic sinus surgery: what to expect",
+    "Nasal polyps: symptoms, causes and treatment options"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -17,11 +19,13 @@
     "openverse:f78c51b5-f7ed-4462-8627-7ee7ac07f1aa",
     "openverse:704a813f-6778-4e80-9aec-11a8830f7d8b",
     "openverse:e8696e1c-5ef2-4dbd-a255-97696da411c5",
-    "openverse:cc68a264-b198-409b-891b-eda8562a5eac"
+    "openverse:cc68a264-b198-409b-891b-eda8562a5eac",
+    "openverse:c1ae83d3-0dfd-4606-8cd4-374380a9eee5",
+    "openverse:629c6e8d-d88d-4f3b-8973-548dab745cfa"
   ],
   "lastPost": {
-    "date": "2026-11-15",
-    "slug": "salt-air-seawater-ocean-sinuses",
-    "topic": "Salt air and seawater: does the ocean help your sinuses?"
+    "date": "2026-11-17",
+    "slug": "nasal-polyps-symptoms-causes-treatment",
+    "topic": "Nasal polyps: symptoms, causes and treatment options"
   }
 }

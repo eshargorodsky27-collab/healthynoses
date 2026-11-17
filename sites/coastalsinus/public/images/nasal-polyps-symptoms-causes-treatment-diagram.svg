@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+<text x="60" y="78" font-size="34" font-weight="700" fill="#10253A">Nasal Polyps: Symptoms, Causes and Treatment Options</text>
+<text x="60" y="112" font-size="20" fill="#4E5E6E">Care moves up in steps, only if the step before is not enough</text>
+
+<!-- Step 1 -->
+<rect x="60" y="310" width="255" height="190" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+<rect x="60" y="310" width="255" height="8" rx="4" fill="#1F7AA3"/>
+<circle cx="92" cy="346" r="16" fill="#1F7AA3"/>
+<text x="92" y="352" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="80" y="392" font-size="20" font-weight="700" fill="#10253A">Spray + saline</text>
+<text x="80" y="420" font-size="17" fill="#4E5E6E">Daily steroid nasal spray</text>
+<text x="80" y="444" font-size="17" fill="#4E5E6E">Saline rinses often added</text>
+<text x="80" y="468" font-size="17" fill="#4E5E6E">Use safe water, not tap</text>
+
+<!-- Step 2 -->
+<rect x="335" y="260" width="255" height="240" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+<rect x="335" y="260" width="255" height="8" rx="4" fill="#1F7AA3"/>
+<circle cx="367" cy="296" r="16" fill="#1F7AA3"/>
+<text x="367" y="302" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="355" y="342" font-size="20" font-weight="700" fill="#10253A">Oral steroids</text>
+<text x="355" y="370" font-size="17" fill="#4E5E6E">Short course of pills</text>
+<text x="355" y="394" font-size="17" fill="#4E5E6E">for a bad flare</text>
+<text x="355" y="418" font-size="17" fill="#4E5E6E">Can shrink polyps fast</text>
+<text x="355" y="442" font-size="17" fill="#4E5E6E">Limit repeat courses</text>
+
+<!-- Step 3 -->
+<rect x="610" y="210" width="255" height="290" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+<rect x="610" y="210" width="255" height="8" rx="4" fill="#1F7AA3"/>
+<circle cx="642" cy="246" r="16" fill="#1F7AA3"/>
+<text x="642" y="252" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="630" y="292" font-size="20" font-weight="700" fill="#10253A">Sinus surgery</text>
+<text x="630" y="320" font-size="17" fill="#4E5E6E">Endoscopic, via nostrils</text>
+<text x="630" y="344" font-size="17" fill="#4E5E6E">No outside cuts</text>
+<text x="630" y="368" font-size="17" fill="#4E5E6E">Removes polyps, not the</text>
+<text x="630" y="392" font-size="17" fill="#4E5E6E">inflammation behind them</text>
+<text x="630" y="416" font-size="17" fill="#4E5E6E">Polyps can grow back</text>
+
+<!-- Step 4 -->
+<rect x="885" y="160" width="255" height="340" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+<rect x="885" y="160" width="255" height="8" rx="4" fill="#D9774B"/>
+<circle cx="917" cy="196" r="16" fill="#D9774B"/>
+<text x="917" y="202" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="905" y="242" font-size="20" font-weight="700" fill="#10253A">Biologic medicines</text>
+<text x="905" y="270" font-size="17" fill="#4E5E6E">Injected drugs that block</text>
+<text x="905" y="294" font-size="17" fill="#4E5E6E">specific immune signals</text>
+<text x="905" y="318" font-size="17" fill="#4E5E6E">For severe polyps that</text>
+<text x="905" y="342" font-size="17" fill="#4E5E6E">keep returning despite</text>
+<text x="905" y="366" font-size="17" fill="#4E5E6E">sprays and surgery</text>
+<text x="905" y="390" font-size="17" fill="#4E5E6E">Given by specialists</text>
+
+<!-- Evidence strip -->
+<rect x="60" y="518" width="1080" height="80" rx="14" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+<rect x="80" y="538" width="120" height="40" rx="20" fill="#D9774B"/>
+<text x="140" y="564" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">Evidence</text>
+<text x="226" y="543" font-size="17" font-weight="700" fill="#10253A">2025 meta-analysis: 64 studies, 3,921 patients</text>
+<text x="226" y="565" font-size="17" fill="#10253A">Four biologics improved polyp size and quality of life,</text>
+<text x="226" y="587" font-size="17" fill="#4E5E6E">but the studies had limits.</text>
+
+<text x="60" y="624" font-size="17" fill="#4E5E6E">Source: 2025 real-world biologic meta-analysis, Allergy</text>
+</svg>
