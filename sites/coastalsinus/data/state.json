@@ -1,5 +1,5 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -9,7 +9,8 @@
     "Balloon dilation vs endoscopic sinus surgery: the evidence",
     "Salt air and seawater: does the ocean help your sinuses?",
     "Endoscopic sinus surgery: what to expect",
-    "Nasal polyps: symptoms, causes and treatment options"
+    "Nasal polyps: symptoms, causes and treatment options",
+    "Sinus rinse bottles vs neti pots: how to rinse safely"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -21,11 +22,13 @@
     "openverse:e8696e1c-5ef2-4dbd-a255-97696da411c5",
     "openverse:cc68a264-b198-409b-891b-eda8562a5eac",
     "openverse:c1ae83d3-0dfd-4606-8cd4-374380a9eee5",
-    "openverse:629c6e8d-d88d-4f3b-8973-548dab745cfa"
+    "openverse:629c6e8d-d88d-4f3b-8973-548dab745cfa",
+    "openverse:933a4c95-66e2-4d7c-b849-806a4de66c77",
+    "openverse:c800bdc6-7183-4d53-b7c5-4e640e595047"
   ],
   "lastPost": {
-    "date": "2026-11-17",
-    "slug": "nasal-polyps-symptoms-causes-treatment",
-    "topic": "Nasal polyps: symptoms, causes and treatment options"
+    "date": "2026-11-19",
+    "slug": "sinus-rinse-bottle-vs-neti-pot-safety",
+    "topic": "Sinus rinse bottles vs neti pots: how to rinse safely"
   }
 }

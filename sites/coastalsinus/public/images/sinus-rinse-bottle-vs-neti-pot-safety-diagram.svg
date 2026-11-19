@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A">Sinus Rinse Bottle vs Neti Pot: How to Rinse Safely</text>
+  <text x="60" y="110" font-size="20" fill="#4E5E6E">The water matters more than the device you choose</text>
+
+  <!-- Water panel -->
+  <rect x="60" y="132" width="1080" height="100" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <text x="80" y="162" font-size="19" font-weight="bold" fill="#1F7AA3">Use only safe water:</text>
+  <rect x="80" y="176" width="170" height="40" rx="20" fill="#1F7AA3"/>
+  <text x="165" y="202" font-size="18" fill="#FFFFFF" text-anchor="middle">Distilled water</text>
+  <rect x="262" y="176" width="160" height="40" rx="20" fill="#1F7AA3"/>
+  <text x="342" y="202" font-size="18" fill="#FFFFFF" text-anchor="middle">Sterile water</text>
+  <rect x="434" y="176" width="280" height="40" rx="20" fill="#1F7AA3"/>
+  <text x="574" y="202" font-size="18" fill="#FFFFFF" text-anchor="middle">Tap water boiled 1+ min, cooled</text>
+  <line x1="740" y1="146" x2="740" y2="218" stroke="#D8CFBE" stroke-width="2"/>
+  <text x="764" y="162" font-size="19" font-weight="bold" fill="#D9774B">Never use:</text>
+  <rect x="764" y="176" width="356" height="40" rx="20" fill="#F5F0E7" stroke="#D9774B" stroke-width="2"/>
+  <text x="942" y="202" font-size="18" fill="#10253A" text-anchor="middle">Straight tap water or seawater</text>
+
+  <!-- Table -->
+  <rect x="60" y="248" width="1080" height="216" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="60" y="248" width="280" height="40" fill="#10253A"/>
+  <rect x="340" y="248" width="400" height="40" fill="#1F7AA3"/>
+  <rect x="740" y="248" width="400" height="40" fill="#D9774B"/>
+  <text x="80" y="275" font-size="19" font-weight="bold" fill="#FFFFFF">Feature</text>
+  <text x="360" y="275" font-size="19" font-weight="bold" fill="#FFFFFF">Neti pot</text>
+  <text x="760" y="275" font-size="19" font-weight="bold" fill="#FFFFFF">Squeeze bottle</text>
+
+  <rect x="60" y="332" width="1080" height="44" fill="#F5F0E7"/>
+  <rect x="60" y="420" width="1080" height="44" fill="#F5F0E7"/>
+
+  <g font-size="18" fill="#10253A">
+    <text x="80" y="317" font-weight="bold">How water moves</text>
+    <text x="360" y="317">Gravity, as you tilt your head</text>
+    <text x="760" y="317">You squeeze it</text>
+
+    <text x="80" y="361" font-weight="bold">Pressure</text>
+    <text x="360" y="361">Gentle, set by your tilt</text>
+    <text x="760" y="361">Adjustable, easy to overdo</text>
+
+    <text x="80" y="405" font-weight="bold">Learning curve</text>
+    <text x="360" y="405">Takes a few tries for the angle</text>
+    <text x="760" y="405">Most people find it easier</text>
+
+    <text x="80" y="449" font-weight="bold">Cleaning</text>
+    <text x="360" y="449">Wide opening, easy to wash</text>
+    <text x="760" y="449">Narrow tube and cap need care</text>
+  </g>
+
+  <!-- Footer boxes -->
+  <rect x="60" y="486" width="530" height="116" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="60" y="486" width="10" height="116" rx="5" fill="#1F7AA3"/>
+  <text x="92" y="520" font-size="20" font-weight="bold" fill="#1F7AA3">After every use</text>
+  <text x="92" y="553" font-size="18" fill="#10253A">Wash the device with soap and clean water,</text>
+  <text x="92" y="580" font-size="18" fill="#10253A">then let it air dry.</text>
+
+  <rect x="610" y="486" width="530" height="116" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="610" y="486" width="10" height="116" rx="5" fill="#D9774B"/>
+  <text x="642" y="520" font-size="20" font-weight="bold" fill="#D9774B">Stop and call a doctor if you have</text>
+  <text x="642" y="553" font-size="18" fill="#10253A">pain, nosebleeds that keep coming back,</text>
+  <text x="642" y="580" font-size="18" fill="#10253A">or symptoms that get worse.</text>
+</svg>
