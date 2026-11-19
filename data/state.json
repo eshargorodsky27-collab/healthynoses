@@ -1,5 +1,5 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -14,18 +14,22 @@
     "Dry nose and nasal oxygen tubes in older adults",
     "Stuffy nose with no cold: causes of nonallergic rhinitis",
     "How to stop a nosebleed the right way",
-    "Saline spray, gel or oil: choosing a nasal moisturizer"
+    "Saline spray, gel or oil: choosing a nasal moisturizer",
+    "Studies on air pollution and nasal symptoms",
+    "Research on vitamin E and skin and mucosal barrier health"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
     "openverse:3a8df005-00b9-4a93-9f63-ee7079a1978e",
     "openverse:fe4c17b7-2d8c-404d-91ec-1e85e047fb40",
     "openverse:ec67a1c1-ab55-400c-9295-e849bb92820f",
-    "openverse:17acab3c-3951-417b-9065-9734b6986e24"
+    "openverse:17acab3c-3951-417b-9065-9734b6986e24",
+    "openverse:052c6def-4bf9-4700-8a8c-d4192b8f5754",
+    "openverse:3936eeb6-cbd9-4c61-be88-e20f9a2142c0"
   ],
   "lastPost": {
-    "date": "2026-11-17",
-    "slug": "saline-spray-gel-oil-nasal-moisturizer",
-    "topic": "Saline spray, gel or oil: choosing a nasal moisturizer"
+    "date": "2026-11-19",
+    "slug": "vitamin-e-skin-nose-barrier-research",
+    "topic": "Research on vitamin E and skin and mucosal barrier health"
   }
 }

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Vitamin E and the Nose's Barrier: What Research Can Say</text>
+  <text x="60" y="110" font-size="20" fill="#536866">Four papers reviewed: none tested skin or nasal lining</text>
+
+  <rect x="60" y="128" width="1080" height="36" rx="10" fill="#12302E"/>
+  <text x="80" y="152" font-size="17" font-weight="bold" fill="#FFFFFF">Paper</text>
+  <text x="330" y="152" font-size="17" font-weight="bold" fill="#FFFFFF">Type and subjects</text>
+  <text x="580" y="152" font-size="17" font-weight="bold" fill="#FFFFFF">Main point</text>
+  <text x="1060" y="152" font-size="17" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Skin/nose tested?</text>
+
+  <rect x="60" y="170" width="1080" height="72" rx="12" fill="#FFFFFF" stroke="#C9DAD7"/>
+  <rect x="60" y="170" width="8" height="72" rx="4" fill="#1FA5A0"/>
+  <text x="80" y="200" font-size="18" font-weight="bold" fill="#12302E">Yellow nail syndrome</text>
+  <text x="80" y="224" font-size="17" fill="#536866">2010</text>
+  <text x="330" y="200" font-size="17" fill="#12302E">Case report</text>
+  <text x="330" y="224" font-size="17" fill="#536866">1 child</text>
+  <text x="580" y="200" font-size="17" fill="#12302E">Improved on fluconazole plus vitamin E</text>
+  <text x="580" y="224" font-size="17" fill="#536866">Two drugs together, no control group</text>
+  <rect x="1020" y="189" width="80" height="34" rx="17" fill="#C7607D"/>
+  <text x="1060" y="212" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No</text>
+
+  <rect x="60" y="248" width="1080" height="72" rx="12" fill="#EEF4F3" stroke="#C9DAD7"/>
+  <rect x="60" y="248" width="8" height="72" rx="4" fill="#1FA5A0"/>
+  <text x="80" y="278" font-size="18" font-weight="bold" fill="#12302E">Vitamin E and nerves</text>
+  <text x="80" y="302" font-size="17" fill="#536866">2015</text>
+  <text x="330" y="278" font-size="17" fill="#12302E">Narrative review</text>
+  <text x="330" y="302" font-size="17" fill="#536866">Human and animal studies</text>
+  <text x="580" y="278" font-size="17" fill="#12302E">Protects nervous tissue from</text>
+  <text x="580" y="302" font-size="17" fill="#536866">oxidative damage</text>
+  <rect x="1020" y="267" width="80" height="34" rx="17" fill="#C7607D"/>
+  <text x="1060" y="290" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No</text>
+
+  <rect x="60" y="326" width="1080" height="72" rx="12" fill="#FFFFFF" stroke="#C9DAD7"/>
+  <rect x="60" y="326" width="8" height="72" rx="4" fill="#1FA5A0"/>
+  <text x="80" y="356" font-size="18" font-weight="bold" fill="#12302E">Plastochromanol-8</text>
+  <text x="80" y="380" font-size="17" fill="#536866">2014</text>
+  <text x="330" y="356" font-size="17" fill="#12302E">Plant biochemistry review</text>
+  <text x="330" y="380" font-size="17" fill="#536866">Plants, lab tests</text>
+  <text x="580" y="356" font-size="17" fill="#12302E">Antioxidant strength rises in</text>
+  <text x="580" y="380" font-size="17" fill="#536866">oily (hydrophobic) settings</text>
+  <rect x="1020" y="345" width="80" height="34" rx="17" fill="#C7607D"/>
+  <text x="1060" y="368" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No</text>
+
+  <rect x="60" y="404" width="1080" height="72" rx="12" fill="#EEF4F3" stroke="#C9DAD7"/>
+  <rect x="60" y="404" width="8" height="72" rx="4" fill="#1FA5A0"/>
+  <text x="80" y="434" font-size="18" font-weight="bold" fill="#12302E">Yeast engineering</text>
+  <text x="80" y="458" font-size="17" fill="#536866">2026</text>
+  <text x="330" y="434" font-size="17" fill="#12302E">Methods review</text>
+  <text x="330" y="458" font-size="17" fill="#536866">Yeast cells</text>
+  <text x="580" y="434" font-size="17" fill="#12302E">Ways to make vitamin E forms in yeast</text>
+  <text x="580" y="458" font-size="17" fill="#536866">No health findings</text>
+  <rect x="1020" y="423" width="80" height="34" rx="17" fill="#C7607D"/>
+  <text x="1060" y="446" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No</text>
+
+  <rect x="60" y="492" width="1080" height="48" rx="12" fill="#12302E"/>
+  <circle cx="90" cy="516" r="9" fill="#1FA5A0"/>
+  <text x="112" y="523" font-size="19" font-weight="bold" fill="#FFFFFF">Bottom line: none tested skin or nasal lining.</text>
+
+  <text x="60" y="580" font-size="17" fill="#536866">Source: four reviewed papers, 2010 to 2026</text>
+</svg>
