@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Dust Mite Allergy in NJ Homes: What Works</text>
+  <text x="60" y="112" font-size="20" fill="#5A6455">Where mites hide, and the fix for each spot</text>
+
+  <!-- Table -->
+  <rect x="60" y="140" width="740" height="412" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <rect x="60" y="140" width="740" height="40" fill="#4F7F23"/>
+  <text x="100" y="166" font-size="18" font-weight="bold" fill="#FFFFFF">Where</text>
+  <text x="330" y="166" font-size="18" font-weight="bold" fill="#FFFFFF">What to do</text>
+
+  <rect x="61" y="242" width="738" height="62" fill="#F6F5EE"/>
+  <rect x="61" y="366" width="738" height="62" fill="#F6F5EE"/>
+  <rect x="61" y="490" width="738" height="62" fill="#F6F5EE"/>
+  <line x1="60" y1="242" x2="800" y2="242" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="304" x2="800" y2="304" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="366" x2="800" y2="366" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="428" x2="800" y2="428" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="490" x2="800" y2="490" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="316" y1="180" x2="316" y2="552" stroke="#D9D8C6" stroke-width="1"/>
+
+  <circle cx="80" cy="211" r="7" fill="#4F7F23"/>
+  <circle cx="80" cy="273" r="7" fill="#4F7F23"/>
+  <circle cx="80" cy="335" r="7" fill="#4F7F23"/>
+  <circle cx="80" cy="397" r="7" fill="#C98A12"/>
+  <circle cx="80" cy="459" r="7" fill="#4F7F23"/>
+  <circle cx="80" cy="521" r="7" fill="#4F7F23"/>
+
+  <g font-size="17" font-weight="bold" fill="#1E2A1A">
+    <text x="100" y="217">Mattress, pillows</text>
+    <text x="100" y="279">Sheets, blankets</text>
+    <text x="100" y="341">Carpet and rugs</text>
+    <text x="100" y="403">Basement, shore house</text>
+    <text x="100" y="465">Toys, upholstery</text>
+    <text x="100" y="527">Curtains, clutter</text>
+  </g>
+  <g font-size="17" fill="#1E2A1A">
+    <text x="330" y="217">Use zippered allergen-proof covers</text>
+    <text x="330" y="279">Wash weekly in hot water (about 130°F / 54°C)</text>
+    <text x="330" y="341">Choose hard flooring in the bedroom if possible</text>
+    <text x="330" y="403">Run a dehumidifier</text>
+    <text x="330" y="465">Wash toys hot; wipe or vacuum furniture</text>
+    <text x="330" y="527">Use washable curtains; keep surfaces clear</text>
+  </g>
+
+  <!-- Humidity panel -->
+  <rect x="830" y="140" width="310" height="412" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+  <text x="858" y="178" font-size="20" font-weight="bold" fill="#1E2A1A">Humidity target</text>
+  <text x="858" y="244" font-size="56" font-weight="bold" fill="#C98A12">30–50%</text>
+  <rect x="858" y="266" width="254" height="22" rx="11" fill="#D9D8C6"/>
+  <rect x="934" y="266" width="51" height="22" fill="#C98A12"/>
+  <text x="858" y="316" font-size="17" fill="#5A6455">0%</text>
+  <text x="1112" y="316" font-size="17" text-anchor="end" fill="#5A6455">100%</text>
+  <g font-size="17" fill="#1E2A1A">
+    <text x="858" y="356">Mites thrive in muggy air and</text>
+    <text x="858" y="380">damp basements. A hygrometer</text>
+    <text x="858" y="404">shows where a room stands.</text>
+  </g>
+  <line x1="858" y1="428" x2="1112" y2="428" stroke="#D9D8C6" stroke-width="2"/>
+  <g font-size="17" fill="#5A6455">
+    <text x="858" y="460">The allergy is a reaction to</text>
+    <text x="858" y="484">mite droppings, so symptoms</text>
+    <text x="858" y="508">can flare in any season.</text>
+  </g>
+
+  <text x="60" y="596" font-size="17" fill="#5A6455">Source: StatPearls review (PMID 32809553).</text>
+</svg>
