@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Saline Rinses for Allergies: What 2 Major Reviews Found</text>
+  <text x="60" y="110" font-size="20" fill="#5A6455">Promising results, but low-quality and short-term evidence</text>
+
+  <!-- header -->
+  <rect x="300" y="130" width="420" height="50" fill="#4F7F23"/>
+  <rect x="720" y="130" width="420" height="50" fill="#C98A12"/>
+  <text x="320" y="162" font-size="20" font-weight="bold" fill="#FFFFFF">Cochrane review, 2018</text>
+  <text x="740" y="162" font-size="20" font-weight="bold" fill="#1E2A1A">Meta-analysis, 2025</text>
+
+  <!-- rows -->
+  <rect x="60" y="180" width="1080" height="66" fill="#FFFFFF"/>
+  <rect x="60" y="246" width="1080" height="66" fill="#F6F5EE"/>
+  <rect x="60" y="312" width="1080" height="66" fill="#FFFFFF"/>
+  <rect x="60" y="378" width="1080" height="66" fill="#F6F5EE"/>
+  <rect x="60" y="444" width="1080" height="66" fill="#FFFFFF"/>
+  <rect x="60" y="444" width="8" height="66" fill="#C98A12"/>
+  <line x1="60" y1="246" x2="1140" y2="246" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="312" x2="1140" y2="312" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="378" x2="1140" y2="378" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="444" x2="1140" y2="444" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="60" y1="510" x2="1140" y2="510" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="300" y1="180" x2="300" y2="510" stroke="#D9D8C6" stroke-width="1"/>
+  <line x1="720" y1="180" x2="720" y2="510" stroke="#D9D8C6" stroke-width="1"/>
+
+  <!-- labels -->
+  <text x="80" y="218" font-size="18" font-weight="bold" fill="#1E2A1A">Size</text>
+  <text x="80" y="284" font-size="18" font-weight="bold" fill="#1E2A1A">Question</text>
+  <text x="80" y="350" font-size="18" font-weight="bold" fill="#1E2A1A">Follow-up</text>
+  <text x="80" y="416" font-size="18" font-weight="bold" fill="#1E2A1A">Main result</text>
+  <text x="80" y="482" font-size="18" font-weight="bold" fill="#1E2A1A">Key caution</text>
+
+  <!-- col 2 -->
+  <text x="320" y="209" font-size="18" font-weight="bold" fill="#1E2A1A">14 trials, 747 people</text>
+  <text x="320" y="233" font-size="17" fill="#5A6455">499 children, 248 adults</text>
+  <text x="320" y="275" font-size="17" fill="#1E2A1A">Does saline rinsing help?</text>
+  <text x="320" y="299" font-size="17" fill="#5A6455">Versus no saline or other treatments</text>
+  <text x="320" y="341" font-size="18" font-weight="bold" fill="#1E2A1A">Up to 3 months</text>
+  <text x="320" y="365" font-size="17" fill="#5A6455">No trial went longer</text>
+  <text x="320" y="407" font-size="17" fill="#1E2A1A">Milder symptoms up to 4 weeks</text>
+  <text x="320" y="431" font-size="17" fill="#5A6455">SMD -1.32 (6 studies)</text>
+  <text x="320" y="473" font-size="18" font-weight="bold" fill="#1E2A1A">Low-quality evidence</text>
+  <text x="320" y="497" font-size="17" fill="#5A6455">Nothing past three months</text>
+
+  <!-- col 3 -->
+  <text x="740" y="209" font-size="18" font-weight="bold" fill="#1E2A1A">9 trials, 645 people</text>
+  <text x="740" y="233" font-size="17" fill="#5A6455">Adults and children</text>
+  <text x="740" y="275" font-size="17" fill="#1E2A1A">Does 3% hypertonic saline help?</text>
+  <text x="740" y="299" font-size="17" fill="#5A6455">Versus 0.9% saline or no saline</text>
+  <text x="740" y="341" font-size="18" font-weight="bold" fill="#1E2A1A">4 weeks to 2 months</text>
+  <text x="740" y="365" font-size="17" fill="#5A6455">Short trials</text>
+  <text x="740" y="407" font-size="17" fill="#1E2A1A">Lower symptom scores in both groups</text>
+  <text x="740" y="431" font-size="17" fill="#5A6455">Less antihistamine use overall</text>
+  <text x="740" y="473" font-size="18" font-weight="bold" fill="#1E2A1A">Adult results varied hugely</text>
+  <text x="740" y="497" font-size="17" fill="#5A6455">I² = 97% between adult trials</text>
+
+  <!-- takeaway -->
+  <rect x="60" y="524" width="1080" height="50" rx="12" fill="#1E2A1A"/>
+  <circle cx="90" cy="549" r="8" fill="#C98A12"/>
+  <text x="112" y="556" font-size="20" font-weight="bold" fill="#FFFFFF">Extra salt not proven better than 0.9% saline alone</text>
+
+  <text x="60" y="612" font-size="17" fill="#5A6455">Sources: Head et al. 2018 (Cochrane); Singh et al. 2025</text>
+</svg>

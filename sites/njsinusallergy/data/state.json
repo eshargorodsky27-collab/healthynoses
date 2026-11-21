@@ -1,5 +1,5 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
@@ -9,7 +9,10 @@
     "Do HEPA air purifiers help allergy symptoms? What trials found",
     "Sinus headache or migraine? How to tell",
     "Nasal steroid sprays: how to use them the right way",
-    "Dust mite allergy in New Jersey homes"
+    "Dust mite allergy in New Jersey homes",
+    "Thunderstorm asthma and pollen: what research shows",
+    "Probiotics for seasonal allergies: what trials found",
+    "Studies on nasal saline irrigation for allergic rhinitis"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
@@ -18,11 +21,13 @@
     "openverse:1ce1ec4a-da7e-4868-9d1e-eb63699d0223",
     "openverse:a5733bee-824b-4e36-ac73-0f2666f49690",
     "openverse:36d003cc-bfca-49b9-8076-7e765d570097",
-    "openverse:15d7fc47-51fb-4e9b-adc5-46ecfc03cff4"
+    "openverse:15d7fc47-51fb-4e9b-adc5-46ecfc03cff4",
+    "openverse:66c99963-eeef-46d2-96b3-f5b63c784781",
+    "openverse:71446e11-89fc-4ed2-bad2-b1418aa929c7"
   ],
   "lastPost": {
-    "date": "2026-11-19",
-    "slug": "dust-mite-allergy-nj-homes",
-    "topic": "Dust mite allergy in New Jersey homes"
+    "date": "2026-11-21",
+    "slug": "saline-irrigation-allergic-rhinitis-studies",
+    "topic": "Studies on nasal saline irrigation for allergic rhinitis"
   }
 }
