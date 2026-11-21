@@ -1,5 +1,5 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -10,7 +10,8 @@
     "Salt air and seawater: does the ocean help your sinuses?",
     "Endoscopic sinus surgery: what to expect",
     "Nasal polyps: symptoms, causes and treatment options",
-    "Sinus rinse bottles vs neti pots: how to rinse safely"
+    "Sinus rinse bottles vs neti pots: how to rinse safely",
+    "Do antibiotics help sinus infections? Research explained"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -24,11 +25,13 @@
     "openverse:c1ae83d3-0dfd-4606-8cd4-374380a9eee5",
     "openverse:629c6e8d-d88d-4f3b-8973-548dab745cfa",
     "openverse:933a4c95-66e2-4d7c-b849-806a4de66c77",
-    "openverse:c800bdc6-7183-4d53-b7c5-4e640e595047"
+    "openverse:c800bdc6-7183-4d53-b7c5-4e640e595047",
+    "openverse:41cc3395-e3e2-4ee1-bf00-8ab5e5730ab8",
+    "openverse:5913abd7-85f6-4de7-b2a3-102980a6b803"
   ],
   "lastPost": {
-    "date": "2026-11-19",
-    "slug": "sinus-rinse-bottle-vs-neti-pot-safety",
-    "topic": "Sinus rinse bottles vs neti pots: how to rinse safely"
+    "date": "2026-11-21",
+    "slug": "do-antibiotics-help-sinus-infections",
+    "topic": "Do antibiotics help sinus infections? Research explained"
   }
 }

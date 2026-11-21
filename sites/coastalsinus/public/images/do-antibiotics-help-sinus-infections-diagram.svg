@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A" textLength="1060" lengthAdjust="spacingAndGlyphs">Do Antibiotics Help Sinus Infections? What Guidelines Say</text>
+  <text x="60" y="112" font-size="20" fill="#4E5E6E">2016 ACP/CDC advice for acute sinusitis in healthy adults</text>
+
+  <!-- Left panel -->
+  <rect x="60" y="136" width="470" height="366" rx="16" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+  <path d="M60 152 a16 16 0 0 1 16 -16 h438 a16 16 0 0 1 16 16 v34 h-470 z" fill="#D9774B"/>
+  <text x="84" y="170" font-size="22" font-weight="bold" fill="#FFFFFF">Usually wait: no antibiotics</text>
+
+  <rect x="80" y="206" width="430" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="114" cy="251" r="18" fill="#D9774B"/>
+  <path d="M105 251 l7 7 l12 -14" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  <text x="148" y="236" font-size="19" font-weight="bold" fill="#10253A">Common cold</text>
+  <text x="148" y="260" font-size="17" fill="#4E5E6E">A few days of runny nose</text>
+  <text x="148" y="282" font-size="17" fill="#4E5E6E">and cough</text>
+
+  <rect x="80" y="304" width="430" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="114" cy="349" r="18" fill="#D9774B"/>
+  <path d="M105 349 l7 7 l12 -14" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  <text x="148" y="334" font-size="19" font-weight="bold" fill="#10253A">Improving after 5 to 7 days</text>
+  <text x="148" y="358" font-size="17" fill="#4E5E6E">Symptoms are getting better</text>
+
+  <rect x="80" y="402" width="430" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="114" cy="447" r="18" fill="#D9774B"/>
+  <path d="M105 447 l7 7 l12 -14" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  <text x="148" y="432" font-size="19" font-weight="bold" fill="#10253A">Watchful waiting</text>
+  <text x="148" y="456" font-size="17" fill="#4E5E6E">Option widened in the 2015 guideline;</text>
+  <text x="148" y="478" font-size="17" fill="#4E5E6E">2025 update replaces that version</text>
+
+  <!-- Right panel -->
+  <rect x="560" y="136" width="580" height="366" rx="16" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+  <path d="M560 152 a16 16 0 0 1 16 -16 h548 a16 16 0 0 1 16 16 v34 h-580 z" fill="#1F7AA3"/>
+  <text x="584" y="170" font-size="22" font-weight="bold" fill="#FFFFFF">Consider antibiotics: any one of three</text>
+
+  <rect x="580" y="206" width="540" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="618" cy="251" r="18" fill="#1F7AA3"/>
+  <text x="618" y="258" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="656" y="244" font-size="19" font-weight="bold" fill="#10253A">More than 10 days of symptoms</text>
+  <text x="656" y="270" font-size="17" fill="#4E5E6E">Lasting that long without improvement</text>
+
+  <rect x="580" y="304" width="540" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="618" cy="349" r="18" fill="#1F7AA3"/>
+  <text x="618" y="356" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="656" y="332" font-size="19" font-weight="bold" fill="#10253A">Severe onset, at least 3 days in a row</text>
+  <text x="656" y="356" font-size="17" fill="#4E5E6E">Fever above 39 °C (102.2 °F) plus pus-like</text>
+  <text x="656" y="378" font-size="17" fill="#4E5E6E">nasal discharge or facial pain</text>
+
+  <rect x="580" y="402" width="540" height="90" rx="12" fill="#FFFFFF"/>
+  <circle cx="618" cy="447" r="18" fill="#1F7AA3"/>
+  <text x="618" y="454" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="656" y="430" font-size="19" font-weight="bold" fill="#10253A">'Double sickening'</text>
+  <text x="656" y="454" font-size="17" fill="#4E5E6E">A cold of about 5 days was improving,</text>
+  <text x="656" y="476" font-size="17" fill="#4E5E6E">then got worse again</text>
+
+  <!-- Caveat strip -->
+  <rect x="60" y="516" width="1080" height="64" rx="12" fill="#10253A"/>
+  <text x="84" y="543" font-size="17" fill="#FFFFFF">These are guidelines and reviews, not a single trial.</text>
+  <text x="84" y="566" font-size="17" fill="#FFFFFF">ACP/CDC advice applies to otherwise healthy adults.</text>
+
+  <text x="60" y="612" font-size="17" fill="#4E5E6E">Source: ACP/CDC review, 2016 (Harris, Hicks, Qaseem)</text>
+</svg>
