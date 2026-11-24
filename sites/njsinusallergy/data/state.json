@@ -1,5 +1,5 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
@@ -12,7 +12,9 @@
     "Dust mite allergy in New Jersey homes",
     "Thunderstorm asthma and pollen: what research shows",
     "Probiotics for seasonal allergies: what trials found",
-    "Studies on nasal saline irrigation for allergic rhinitis"
+    "Studies on nasal saline irrigation for allergic rhinitis",
+    "Saline rinses for allergies and sinus congestion",
+    "When does a sinus infection need antibiotics?"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
@@ -26,8 +28,8 @@
     "openverse:71446e11-89fc-4ed2-bad2-b1418aa929c7"
   ],
   "lastPost": {
-    "date": "2026-11-21",
-    "slug": "saline-irrigation-allergic-rhinitis-studies",
-    "topic": "Studies on nasal saline irrigation for allergic rhinitis"
+    "date": "2026-11-23",
+    "slug": "when-sinus-infection-needs-antibiotics",
+    "topic": "When does a sinus infection need antibiotics?"
   }
 }
