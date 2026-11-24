@@ -1,5 +1,5 @@
 {
-  "slot": 2,
+  "slot": 3,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -11,7 +11,9 @@
     "Endoscopic sinus surgery: what to expect",
     "Nasal polyps: symptoms, causes and treatment options",
     "Sinus rinse bottles vs neti pots: how to rinse safely",
-    "Do antibiotics help sinus infections? Research explained"
+    "Do antibiotics help sinus infections? Research explained",
+    "Air conditioning and your sinuses",
+    "Swimming, chlorine and sinus problems"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -30,8 +32,8 @@
     "openverse:5913abd7-85f6-4de7-b2a3-102980a6b803"
   ],
   "lastPost": {
-    "date": "2026-11-21",
-    "slug": "do-antibiotics-help-sinus-infections",
-    "topic": "Do antibiotics help sinus infections? Research explained"
+    "date": "2026-11-23",
+    "slug": "swimming-chlorine-sinus-problems",
+    "topic": "Swimming, chlorine and sinus problems"
   }
 }

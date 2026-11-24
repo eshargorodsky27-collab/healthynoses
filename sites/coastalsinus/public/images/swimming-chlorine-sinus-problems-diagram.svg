@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A">Swimming, Chlorine and Sinus Problems: What to Know</text>
+  <text x="60" y="110" font-size="20" fill="#4E5E6E">Nose symptoms in a small study of elite swimmers and runners</text>
+
+  <!-- Left chart card -->
+  <rect x="60" y="140" width="520" height="410" rx="16" fill="#F5F0E7" stroke="#D8CFBE" stroke-width="2"/>
+  <text x="84" y="178" font-size="20" font-weight="bold" fill="#10253A">Exercise-induced rhinitis</text>
+  <text x="84" y="204" font-size="17" fill="#4E5E6E">Share of athletes with a nasal airflow drop above 20%</text>
+  <line x1="90" y1="500" x2="550" y2="500" stroke="#4E5E6E" stroke-width="2"/>
+  <rect x="120" y="290" width="160" height="210" rx="6" fill="#1F7AA3"/>
+  <rect x="360" y="270" width="160" height="230" rx="6" fill="#D9774B"/>
+  <text x="200" y="340" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">21%</text>
+  <text x="440" y="320" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">23%</text>
+  <text x="200" y="527" font-size="18" font-weight="bold" fill="#10253A" text-anchor="middle">Swimmers (n=19)</text>
+  <text x="440" y="527" font-size="18" font-weight="bold" fill="#10253A" text-anchor="middle">Runners (n=13)</text>
+
+  <!-- Right cards -->
+  <rect x="620" y="140" width="520" height="92" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="620" y="140" width="10" height="92" rx="5" fill="#D9774B"/>
+  <text x="650" y="172" font-size="20" font-weight="bold" fill="#10253A">Only swimmers had more postnasal drip</text>
+  <text x="650" y="204" font-size="17" fill="#4E5E6E">after training. Runners did not.</text>
+
+  <rect x="620" y="246" width="520" height="92" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="620" y="246" width="10" height="92" rx="5" fill="#1F7AA3"/>
+  <text x="650" y="278" font-size="20" font-weight="bold" fill="#10253A">By-products sit just above the water</text>
+  <text x="650" y="310" font-size="17" fill="#4E5E6E">Chloramines peak right where swimmers breathe.</text>
+
+  <rect x="620" y="352" width="520" height="92" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="620" y="352" width="10" height="92" rx="5" fill="#D9774B"/>
+  <text x="650" y="384" font-size="20" font-weight="bold" fill="#10253A">The evidence is thin</text>
+  <text x="650" y="416" font-size="17" fill="#4E5E6E">A 2022 review found 7 papers on 1,567 athletes.</text>
+
+  <rect x="620" y="458" width="520" height="92" rx="14" fill="#FFFFFF" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="620" y="458" width="10" height="92" rx="5" fill="#1F7AA3"/>
+  <text x="650" y="490" font-size="20" font-weight="bold" fill="#10253A">Low-level exposure may not be harmful</text>
+  <text x="650" y="522" font-size="17" fill="#4E5E6E">Symptoms ease when heavy training load drops.</text>
+
+  <text x="60" y="586" font-size="17" fill="#4E5E6E">Sources: Alves 2010; Kanikowska 2018; Bougault 2022;</text>
+  <text x="60" y="610" font-size="17" fill="#4E5E6E">Boraczyński 2025. Elite athletes only; small study.</text>
+</svg>
