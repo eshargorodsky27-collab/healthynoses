@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -17,7 +17,8 @@
     "Saline spray, gel or oil: choosing a nasal moisturizer",
     "Studies on air pollution and nasal symptoms",
     "Research on vitamin E and skin and mucosal barrier health",
-    "Why your nose gets crusty and how to clear it safely"
+    "Why your nose gets crusty and how to clear it safely",
+    "Nasal polyps: symptoms and what they mean"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
@@ -29,8 +30,8 @@
     "openverse:3936eeb6-cbd9-4c61-be88-e20f9a2142c0"
   ],
   "lastPost": {
-    "date": "2026-11-21",
-    "slug": "why-nose-gets-crusty-clear-safely",
-    "topic": "Why your nose gets crusty and how to clear it safely"
+    "date": "2026-11-23",
+    "slug": "nasal-polyp-symptoms-what-they-mean",
+    "topic": "Nasal polyps: symptoms and what they mean"
   }
 }

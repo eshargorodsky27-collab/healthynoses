@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">Nasal Polyp Symptoms:</text>
+<text x="60" y="116" font-size="34" font-weight="bold" fill="#12302E">What They Mean and When to Get Checked</text>
+<text x="60" y="152" font-size="20" fill="#536866">How polyp symptoms differ from a cold or allergies</text>
+
+<!-- header -->
+<rect x="60" y="176" width="1080" height="46" fill="#C9DAD7"/>
+<rect x="780" y="176" width="360" height="46" fill="#1FA5A0"/>
+<text x="76" y="206" font-size="18" font-weight="bold" fill="#12302E">Feature</text>
+<text x="306" y="206" font-size="18" font-weight="bold" fill="#12302E">Cold</text>
+<text x="546" y="206" font-size="18" font-weight="bold" fill="#12302E">Allergies</text>
+<text x="796" y="206" font-size="18" font-weight="bold" fill="#FFFFFF">Nasal polyps</text>
+
+<!-- rows -->
+<rect x="60" y="222" width="1080" height="60" fill="#FFFFFF"/>
+<rect x="60" y="282" width="1080" height="60" fill="#EEF4F3"/>
+<rect x="60" y="342" width="1080" height="60" fill="#FFFFFF"/>
+<rect x="60" y="402" width="1080" height="60" fill="#EEF4F3"/>
+<rect x="60" y="462" width="1080" height="60" fill="#FFFFFF"/>
+
+<!-- labels -->
+<g font-size="17" font-weight="bold" fill="#12302E">
+<text x="76" y="258">How long it lasts</text>
+<text x="76" y="318">Main complaint</text>
+<text x="76" y="378">Itching and sneezing</text>
+<text x="76" y="438">Smell loss</text>
+<text x="76" y="498">Fever</text>
+</g>
+
+<!-- cold -->
+<g font-size="17" fill="#12302E">
+<text x="306" y="258">About 7-10 days</text>
+<text x="306" y="309">Runny nose,</text>
+<text x="306" y="331">sore throat</text>
+<text x="306" y="378">Sometimes</text>
+<text x="306" y="438">Short-term</text>
+<text x="306" y="498">Sometimes</text>
+</g>
+
+<!-- allergies -->
+<g font-size="17" fill="#12302E">
+<text x="546" y="258">While exposed to trigger</text>
+<text x="546" y="309">Sneezing, itchy</text>
+<text x="546" y="331">eyes and nose</text>
+<text x="546" y="378">Very common</text>
+<text x="546" y="438">Mild, comes and goes</text>
+<text x="546" y="498">No</text>
+</g>
+
+<!-- polyps -->
+<g font-size="17" font-weight="bold" fill="#12302E">
+<text x="796" y="249" fill="#C7607D">12+ weeks</text>
+<text x="796" y="271" font-weight="normal">often months or years</text>
+<text x="796" y="309">Constant blockage,</text>
+<text x="796" y="331">weak sense of smell</text>
+<text x="796" y="378">Less typical</text>
+<text x="796" y="438">Common and persistent</text>
+<text x="796" y="498">Not typical</text>
+</g>
+<rect x="780" y="176" width="360" height="346" fill="none" stroke="#1FA5A0" stroke-width="3"/>
+<circle cx="1110" cy="252" r="8" fill="#C7607D"/>
+
+<!-- callout -->
+<rect x="60" y="540" width="1080" height="46" rx="12" fill="#12302E"/>
+<circle cx="90" cy="563" r="9" fill="#1FA5A0"/>
+<text x="112" y="569" font-size="18" font-weight="bold" fill="#FFFFFF">A doctor confirms polyps with a thin camera in the nose</text>
+
+<text x="60" y="616" font-size="17" fill="#536866">Conditions can overlap; allergies and polyps can coexist.</text>
+</svg>
