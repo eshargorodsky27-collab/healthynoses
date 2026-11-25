@@ -1,5 +1,5 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -18,7 +18,8 @@
     "Studies on air pollution and nasal symptoms",
     "Research on vitamin E and skin and mucosal barrier health",
     "Why your nose gets crusty and how to clear it safely",
-    "Nasal polyps: symptoms and what they mean"
+    "Nasal polyps: symptoms and what they mean",
+    "Dry nose caused by antihistamines and allergy medicine"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
@@ -27,11 +28,13 @@
     "openverse:ec67a1c1-ab55-400c-9295-e849bb92820f",
     "openverse:17acab3c-3951-417b-9065-9734b6986e24",
     "openverse:052c6def-4bf9-4700-8a8c-d4192b8f5754",
-    "openverse:3936eeb6-cbd9-4c61-be88-e20f9a2142c0"
+    "openverse:3936eeb6-cbd9-4c61-be88-e20f9a2142c0",
+    "openverse:70ffea62-0ae6-4e5f-a90c-49c6d4f6694c",
+    "openverse:5229b018-4445-480d-88bf-634c8bd42a84"
   ],
   "lastPost": {
-    "date": "2026-11-23",
-    "slug": "nasal-polyp-symptoms-what-they-mean",
-    "topic": "Nasal polyps: symptoms and what they mean"
+    "date": "2026-11-25",
+    "slug": "antihistamine-dry-nose-allergy-medicine",
+    "topic": "Dry nose caused by antihistamines and allergy medicine"
   }
 }
