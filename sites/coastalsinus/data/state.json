@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -13,7 +13,8 @@
     "Sinus rinse bottles vs neti pots: how to rinse safely",
     "Do antibiotics help sinus infections? Research explained",
     "Air conditioning and your sinuses",
-    "Swimming, chlorine and sinus problems"
+    "Swimming, chlorine and sinus problems",
+    "Deviated septum and septoplasty"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -29,11 +30,13 @@
     "openverse:933a4c95-66e2-4d7c-b849-806a4de66c77",
     "openverse:c800bdc6-7183-4d53-b7c5-4e640e595047",
     "openverse:41cc3395-e3e2-4ee1-bf00-8ab5e5730ab8",
-    "openverse:5913abd7-85f6-4de7-b2a3-102980a6b803"
+    "openverse:5913abd7-85f6-4de7-b2a3-102980a6b803",
+    "openverse:9ca14cd8-3acf-4e74-8c42-74a8f950335b",
+    "openverse:c316ab1a-b775-4e91-8cec-9dbf7e25e5a4"
   ],
   "lastPost": {
-    "date": "2026-11-23",
-    "slug": "swimming-chlorine-sinus-problems",
-    "topic": "Swimming, chlorine and sinus problems"
+    "date": "2026-11-25",
+    "slug": "deviated-septum-septoplasty-guide",
+    "topic": "Deviated septum and septoplasty"
   }
 }
