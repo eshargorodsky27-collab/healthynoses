@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Mold Allergy After Rain, Storms and Flooding: A NJ Guide</text>
+<text x="60" y="112" font-size="20" fill="#5A6455">After a leak or flood: 6 steps, and speed matters most</text>
+
+<!-- Row 1 -->
+<rect x="60" y="135" width="344" height="150" rx="14" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+<circle cx="94" cy="169" r="18" fill="#4F7F23"/>
+<text x="94" y="176" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="124" y="176" font-size="19" font-weight="bold" fill="#1E2A1A">Stop the water source</text>
+<text x="84" y="216" font-size="17" fill="#5A6455">Fix the leak, pump out water,</text>
+<text x="84" y="240" font-size="17" fill="#5A6455">or clear the gutter or drain.</text>
+
+<rect x="428" y="135" width="344" height="150" rx="14" fill="#F6F5EE" stroke="#C98A12" stroke-width="4"/>
+<circle cx="462" cy="169" r="18" fill="#C98A12"/>
+<text x="462" y="176" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="492" y="176" font-size="19" font-weight="bold" fill="#1E2A1A">Dry in 24 to 48 hours</text>
+<text x="452" y="216" font-size="17" fill="#5A6455">Fans, dehumidifier, and open</text>
+<text x="452" y="240" font-size="17" fill="#5A6455">windows if outside air is drier.</text>
+
+<rect x="796" y="135" width="344" height="150" rx="14" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+<circle cx="830" cy="169" r="18" fill="#4F7F23"/>
+<text x="830" y="176" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="860" y="176" font-size="19" font-weight="bold" fill="#1E2A1A">Hold humidity 30–50%</text>
+<text x="820" y="216" font-size="17" fill="#5A6455">A cheap hygrometer shows</text>
+<text x="820" y="240" font-size="17" fill="#5A6455">the number.</text>
+
+<!-- Row 2 -->
+<rect x="60" y="305" width="344" height="150" rx="14" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+<circle cx="94" cy="339" r="18" fill="#4F7F23"/>
+<text x="94" y="346" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="124" y="346" font-size="19" font-weight="bold" fill="#1E2A1A">Clean hard surfaces</text>
+<text x="84" y="386" font-size="17" fill="#5A6455">Tile, metal, sealed wood: use</text>
+<text x="84" y="410" font-size="17" fill="#5A6455">detergent and water, then dry.</text>
+
+<rect x="428" y="305" width="344" height="150" rx="14" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+<circle cx="462" cy="339" r="18" fill="#4F7F23"/>
+<text x="462" y="346" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="492" y="346" font-size="19" font-weight="bold" fill="#1E2A1A">Throw out porous items</text>
+<text x="452" y="386" font-size="17" fill="#5A6455">Soaked carpet, ceiling tiles,</text>
+<text x="452" y="410" font-size="17" fill="#5A6455">insulation, stuffed items.</text>
+
+<rect x="796" y="305" width="344" height="150" rx="14" fill="#FFFFFF" stroke="#D9D8C6" stroke-width="2"/>
+<circle cx="830" cy="339" r="18" fill="#4F7F23"/>
+<text x="830" y="346" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="860" y="346" font-size="19" font-weight="bold" fill="#1E2A1A">Never mix cleaners</text>
+<text x="820" y="386" font-size="17" fill="#5A6455">Bleach plus ammonia or other</text>
+<text x="820" y="410" font-size="17" fill="#5A6455">cleaners gives dangerous fumes.</text>
+
+<!-- Bottom boxes -->
+<rect x="60" y="472" width="528" height="104" rx="14" fill="#1E2A1A"/>
+<text x="84" y="505" font-size="19" font-weight="bold" fill="#FFFFFF">Wear an N95, gloves and goggles</text>
+<text x="84" y="533" font-size="17" fill="#D9D8C6">People with asthma: ask someone else.</text>
+<text x="84" y="557" font-size="17" fill="#D9D8C6">Over about 10 sq ft, consider a pro.</text>
+
+<rect x="612" y="472" width="528" height="104" rx="14" fill="#4F7F23"/>
+<text x="636" y="505" font-size="19" font-weight="bold" fill="#FFFFFF">Fix moisture first, don't just test</text>
+<text x="636" y="533" font-size="17" fill="#FFFFFF">2011 review: evidence does not support</text>
+<text x="636" y="557" font-size="17" fill="#FFFFFF">measuring specific microbes in a home.</text>
+
+<text x="60" y="612" font-size="17" fill="#5A6455">Sources: EPA and CDC advice; Mendell et al., 2011 review.</text>
+</svg>

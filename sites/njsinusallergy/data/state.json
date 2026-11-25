@@ -1,5 +1,5 @@
 {
-  "slot": 3,
+  "slot": 0,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
@@ -14,7 +14,8 @@
     "Probiotics for seasonal allergies: what trials found",
     "Studies on nasal saline irrigation for allergic rhinitis",
     "Saline rinses for allergies and sinus congestion",
-    "When does a sinus infection need antibiotics?"
+    "When does a sinus infection need antibiotics?",
+    "Mold allergy after rain, storms and flooding"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
@@ -25,11 +26,13 @@
     "openverse:36d003cc-bfca-49b9-8076-7e765d570097",
     "openverse:15d7fc47-51fb-4e9b-adc5-46ecfc03cff4",
     "openverse:66c99963-eeef-46d2-96b3-f5b63c784781",
-    "openverse:71446e11-89fc-4ed2-bad2-b1418aa929c7"
+    "openverse:71446e11-89fc-4ed2-bad2-b1418aa929c7",
+    "openverse:adfb0120-d102-410c-bcbf-a9a10973215a",
+    "openverse:a1a5de49-dafa-4d68-8c74-ed9323ed7b1c"
   ],
   "lastPost": {
-    "date": "2026-11-23",
-    "slug": "when-sinus-infection-needs-antibiotics",
-    "topic": "When does a sinus infection need antibiotics?"
+    "date": "2026-11-25",
+    "slug": "mold-allergy-after-rain-storms-flooding",
+    "topic": "Mold allergy after rain, storms and flooding"
   }
 }
