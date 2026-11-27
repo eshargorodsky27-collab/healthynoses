@@ -1,5 +1,5 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "How long does a sinus infection last, and when to worry",
     "Saline irrigation for chronic sinusitis: what the trials found",
@@ -14,7 +14,8 @@
     "Do antibiotics help sinus infections? Research explained",
     "Air conditioning and your sinuses",
     "Swimming, chlorine and sinus problems",
-    "Deviated septum and septoplasty"
+    "Deviated septum and septoplasty",
+    "Tooth pain from your sinuses: how to tell"
   ],
   "usedPhotos": [
     "openverse:1440b90a-ee9b-45ea-ba2e-aa2c2795e6a5",
@@ -32,11 +33,13 @@
     "openverse:41cc3395-e3e2-4ee1-bf00-8ab5e5730ab8",
     "openverse:5913abd7-85f6-4de7-b2a3-102980a6b803",
     "openverse:9ca14cd8-3acf-4e74-8c42-74a8f950335b",
-    "openverse:c316ab1a-b775-4e91-8cec-9dbf7e25e5a4"
+    "openverse:c316ab1a-b775-4e91-8cec-9dbf7e25e5a4",
+    "openverse:2a56d716-df71-43a6-9c67-7a5ca19369fb",
+    "openverse:0714973e-5d94-415f-a1ad-b23b16fcf212"
   ],
   "lastPost": {
-    "date": "2026-11-25",
-    "slug": "deviated-septum-septoplasty-guide",
-    "topic": "Deviated septum and septoplasty"
+    "date": "2026-11-27",
+    "slug": "tooth-pain-from-sinuses-how-to-tell",
+    "topic": "Tooth pain from your sinuses: how to tell"
   }
 }

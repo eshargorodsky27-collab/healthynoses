@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#E9E2D4"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#10253A">Tooth Pain From Your Sinuses:</text>
+  <text x="60" y="118" font-size="34" font-weight="bold" fill="#10253A">How to Tell the Difference</text>
+  <text x="60" y="150" font-size="20" fill="#4E5E6E">General patterns, not a diagnosis</text>
+
+  <!-- Table header -->
+  <rect x="60" y="168" width="1080" height="42" fill="#10253A"/>
+  <rect x="270" y="168" width="435" height="42" fill="#1F7AA3"/>
+  <rect x="705" y="168" width="435" height="42" fill="#D9774B"/>
+  <text x="80" y="196" font-size="19" font-weight="bold" fill="#FFFFFF">Clue</text>
+  <text x="290" y="196" font-size="19" font-weight="bold" fill="#FFFFFF">More likely sinus</text>
+  <text x="725" y="196" font-size="19" font-weight="bold" fill="#FFFFFF">More likely dental</text>
+
+  <!-- Rows -->
+  <rect x="60" y="210" width="1080" height="50" fill="#FFFFFF"/>
+  <rect x="60" y="260" width="1080" height="50" fill="#F5F0E7"/>
+  <rect x="60" y="310" width="1080" height="50" fill="#FFFFFF"/>
+  <rect x="60" y="360" width="1080" height="50" fill="#F5F0E7"/>
+  <rect x="60" y="410" width="1080" height="50" fill="#FFFFFF"/>
+  <line x1="270" y1="210" x2="270" y2="460" stroke="#D8CFBE" stroke-width="2"/>
+  <line x1="705" y1="210" x2="705" y2="460" stroke="#D8CFBE" stroke-width="2"/>
+  <rect x="60" y="208" width="1080" height="2" fill="#D8CFBE"/>
+  <rect x="60" y="459" width="1080" height="2" fill="#D8CFBE"/>
+
+  <g font-size="18" fill="#10253A">
+    <text x="80" y="241" font-weight="bold">Which teeth</text>
+    <text x="290" y="241">Several upper back teeth</text>
+    <text x="725" y="241">One specific tooth</text>
+
+    <text x="80" y="291" font-weight="bold">Pain feel</text>
+    <text x="290" y="291">Dull pressure or ache</text>
+    <text x="725" y="291">Sharp, throbbing, or zinging</text>
+
+    <text x="80" y="341" font-weight="bold">Triggers</text>
+    <text x="290" y="341">Bending over, lying down</text>
+    <text x="725" y="341">Biting, chewing, hot or cold food</text>
+
+    <text x="80" y="391" font-weight="bold">Other signs</text>
+    <text x="290" y="391">Stuffy nose, thick drainage</text>
+    <text x="725" y="391">Tender gum, bad taste, cavity</text>
+
+    <text x="80" y="441" font-weight="bold">Lower teeth</text>
+    <text x="290" y="441">Rarely affected</text>
+    <text x="725" y="441">Can be affected</text>
+  </g>
+
+  <!-- Bottom callouts -->
+  <rect x="60" y="478" width="525" height="110" rx="12" fill="#FFFFFF"/>
+  <rect x="60" y="478" width="8" height="110" rx="4" fill="#1F7AA3"/>
+  <text x="86" y="552" font-size="52" font-weight="bold" fill="#1F7AA3">30%</text>
+  <text x="215" y="518" font-size="17" fill="#10253A">Close to 30% of one-sided maxillary</text>
+  <text x="215" y="542" font-size="17" fill="#10253A">sinusitis cases may have an</text>
+  <text x="215" y="566" font-size="17" fill="#10253A">underlying dental cause</text>
+
+  <rect x="615" y="478" width="525" height="110" rx="12" fill="#FFFFFF"/>
+  <rect x="615" y="478" width="8" height="110" rx="4" fill="#D9774B"/>
+  <text x="643" y="504" font-size="18" font-weight="bold" fill="#D9774B">Antibiotics alone are not the fix</text>
+  <text x="643" y="528" font-size="17" fill="#10253A">Oral antibiotics are generally ineffective when</text>
+  <text x="643" y="551" font-size="17" fill="#10253A">the dental cause is treatable. A dentist and an</text>
+  <text x="643" y="574" font-size="17" fill="#10253A">ENT doctor may both need to be involved.</text>
+
+  <text x="60" y="618" font-size="17" fill="#4E5E6E">Sources: Psillas et al., 2021; Whyte and Boeddinghaus, 2019 (reviews)</text>
+</svg>
