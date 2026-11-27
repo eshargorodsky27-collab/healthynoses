@@ -1,5 +1,5 @@
 {
-  "slot": 0,
+  "slot": 1,
   "usedTopics": [
     "Ragweed season in New Jersey: when it peaks and how to get through it",
     "Research on longer pollen seasons in the United States",
@@ -15,7 +15,8 @@
     "Studies on nasal saline irrigation for allergic rhinitis",
     "Saline rinses for allergies and sinus congestion",
     "When does a sinus infection need antibiotics?",
-    "Mold allergy after rain, storms and flooding"
+    "Mold allergy after rain, storms and flooding",
+    "Grass pollen allergies in late spring and early summer"
   ],
   "usedPhotos": [
     "openverse:ac01745d-6c98-4395-89ef-673197c5a1d1",
@@ -28,11 +29,13 @@
     "openverse:66c99963-eeef-46d2-96b3-f5b63c784781",
     "openverse:71446e11-89fc-4ed2-bad2-b1418aa929c7",
     "openverse:adfb0120-d102-410c-bcbf-a9a10973215a",
-    "openverse:a1a5de49-dafa-4d68-8c74-ed9323ed7b1c"
+    "openverse:a1a5de49-dafa-4d68-8c74-ed9323ed7b1c",
+    "openverse:65b25c97-14a8-4231-8631-af4e7f7471b6",
+    "openverse:f942fa7f-6b7c-489b-970a-03ed279882c1"
   ],
   "lastPost": {
-    "date": "2026-11-25",
-    "slug": "mold-allergy-after-rain-storms-flooding",
-    "topic": "Mold allergy after rain, storms and flooding"
+    "date": "2026-11-27",
+    "slug": "grass-pollen-allergy-nj-late-spring-summer",
+    "topic": "Grass pollen allergies in late spring and early summer"
   }
 }

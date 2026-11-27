@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="640" rx="24" fill="#ECEBDF"/>
+  <text x="60" y="78" font-size="34" font-weight="bold" fill="#1E2A1A">Grass Pollen Allergy in NJ:</text>
+  <text x="60" y="118" font-size="34" font-weight="bold" fill="#1E2A1A">Late Spring and Early Summer Guide</text>
+  <text x="60" y="152" font-size="20" fill="#5A6455">Grass allergy or a cold? Five clues to tell them apart</text>
+
+  <!-- header -->
+  <rect x="60" y="174" width="280" height="46" fill="#1E2A1A"/>
+  <rect x="340" y="174" width="420" height="46" fill="#4F7F23"/>
+  <rect x="760" y="174" width="380" height="46" fill="#C98A12"/>
+  <text x="80" y="204" font-size="20" font-weight="bold" fill="#FFFFFF">Clue</text>
+  <text x="360" y="204" font-size="20" font-weight="bold" fill="#FFFFFF">Grass pollen allergy</text>
+  <text x="780" y="204" font-size="20" font-weight="bold" fill="#FFFFFF">Common cold</text>
+
+  <!-- rows -->
+  <rect x="60" y="220" width="1080" height="60" fill="#FFFFFF"/>
+  <rect x="60" y="280" width="1080" height="60" fill="#F6F5EE"/>
+  <rect x="60" y="340" width="1080" height="60" fill="#FFFFFF"/>
+  <rect x="60" y="400" width="1080" height="60" fill="#F6F5EE"/>
+  <rect x="60" y="460" width="1080" height="64" fill="#FFFFFF"/>
+  <line x1="60" y1="280" x2="1140" y2="280" stroke="#D9D8C6" stroke-width="2"/>
+  <line x1="60" y1="340" x2="1140" y2="340" stroke="#D9D8C6" stroke-width="2"/>
+  <line x1="60" y1="400" x2="1140" y2="400" stroke="#D9D8C6" stroke-width="2"/>
+  <line x1="60" y1="460" x2="1140" y2="460" stroke="#D9D8C6" stroke-width="2"/>
+  <line x1="340" y1="220" x2="340" y2="524" stroke="#D9D8C6" stroke-width="2"/>
+  <line x1="760" y1="220" x2="760" y2="524" stroke="#D9D8C6" stroke-width="2"/>
+  <rect x="60" y="174" width="1080" height="350" fill="none" stroke="#D9D8C6" stroke-width="2"/>
+
+  <!-- row 1 -->
+  <text x="80" y="256" font-size="19" font-weight="bold" fill="#1E2A1A">Itchy eyes and nose</text>
+  <text x="360" y="256" font-size="18" font-weight="bold" fill="#4F7F23">Common</text>
+  <text x="780" y="256" font-size="18" fill="#5A6455">Uncommon</text>
+
+  <!-- row 2 -->
+  <text x="80" y="316" font-size="19" font-weight="bold" fill="#1E2A1A">Fever or body aches</text>
+  <text x="360" y="316" font-size="18" font-weight="bold" fill="#4F7F23">No</text>
+  <text x="780" y="316" font-size="18" fill="#5A6455">Possible</text>
+
+  <!-- row 3 -->
+  <text x="80" y="376" font-size="19" font-weight="bold" fill="#1E2A1A">Mucus</text>
+  <text x="360" y="376" font-size="18" fill="#1E2A1A">Usually clear and thin</text>
+  <text x="780" y="376" font-size="18" fill="#5A6455">Can turn thick or colored</text>
+
+  <!-- row 4 -->
+  <text x="80" y="436" font-size="19" font-weight="bold" fill="#1E2A1A">How long it lasts</text>
+  <text x="360" y="436" font-size="18" fill="#1E2A1A">Weeks, as long as pollen is around</text>
+  <text x="780" y="436" font-size="18" fill="#5A6455">Usually about a week or so</text>
+
+  <!-- row 5 -->
+  <text x="80" y="498" font-size="19" font-weight="bold" fill="#1E2A1A">Pattern</text>
+  <text x="360" y="487" font-size="18" fill="#1E2A1A">Worse outdoors, on dry windy days,</text>
+  <text x="360" y="510" font-size="18" fill="#1E2A1A">after mowing</text>
+  <text x="780" y="498" font-size="18" fill="#5A6455">Not tied to location</text>
+
+  <!-- note -->
+  <circle cx="72" cy="560" r="8" fill="#C98A12"/>
+  <text x="92" y="566" font-size="19" fill="#1E2A1A">Grass season overlaps the tail end of tree season.</text>
+  <text x="60" y="608" font-size="17" fill="#5A6455">Source: NJ Sinus &amp; Allergy guide, comparison table</text>
+</svg>
