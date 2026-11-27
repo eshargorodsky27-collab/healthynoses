@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="1200" height="640" rx="24" fill="#E3EEEC"/>
+<text x="60" y="78" font-size="34" font-weight="bold" fill="#12302E">The Nasal Microbiome: What Scientists Are Learning</text>
+<text x="60" y="108" font-size="20" fill="#536866">Three recent reviews, and what each says about the nose</text>
+
+<rect x="60" y="124" width="1080" height="40" rx="8" fill="#12302E"/>
+<text x="80" y="150" font-size="17" font-weight="bold" fill="#FFFFFF">Review</text>
+<text x="350" y="150" font-size="17" font-weight="bold" fill="#FFFFFF">Year</text>
+<text x="430" y="150" font-size="17" font-weight="bold" fill="#FFFFFF">Focus</text>
+<text x="610" y="150" font-size="17" font-weight="bold" fill="#FFFFFF">What it says about the nose or microbiome</text>
+
+<rect x="60" y="170" width="1080" height="100" rx="10" fill="#FFFFFF"/>
+<rect x="60" y="170" width="8" height="100" rx="4" fill="#1FA5A0"/>
+<text x="84" y="210" font-size="19" font-weight="bold" fill="#12302E">S. aureus pathogenesis</text>
+<text x="84" y="236" font-size="17" fill="#536866">Antibiotics</text>
+<text x="350" y="228" font-size="24" font-weight="bold" fill="#1FA5A0">2025</text>
+<text x="430" y="226" font-size="18" fill="#12302E">One bacterium</text>
+<text x="610" y="214" font-size="18" fill="#12302E">The nose is a colonization reservoir.</text>
+<text x="610" y="240" font-size="18" fill="#12302E">Single-site decolonization has fallen short.</text>
+
+<rect x="60" y="276" width="1080" height="100" rx="10" fill="#FFFFFF"/>
+<rect x="60" y="276" width="8" height="100" rx="4" fill="#1FA5A0"/>
+<text x="84" y="316" font-size="19" font-weight="bold" fill="#12302E">Severe RSV in children</text>
+<text x="84" y="342" font-size="17" fill="#536866">Lancet</text>
+<text x="350" y="334" font-size="24" font-weight="bold" fill="#1FA5A0">2024</text>
+<text x="430" y="332" font-size="18" fill="#12302E">One virus</text>
+<text x="610" y="306" font-size="18" fill="#12302E">About 33 million lower respiratory</text>
+<text x="610" y="330" font-size="18" fill="#12302E">infections a year in children under 5.</text>
+<text x="610" y="354" font-size="18" fill="#12302E">Microbiome is a gap for vaccine studies.</text>
+
+<rect x="60" y="382" width="1080" height="100" rx="10" fill="#FFFFFF"/>
+<rect x="60" y="382" width="8" height="100" rx="4" fill="#1FA5A0"/>
+<text x="84" y="422" font-size="19" font-weight="bold" fill="#12302E">Eosinophils</text>
+<text x="84" y="448" font-size="17" fill="#536866">Mayo Clin Proc</text>
+<text x="350" y="440" font-size="24" font-weight="bold" fill="#1FA5A0">2021</text>
+<text x="430" y="438" font-size="18" fill="#12302E">One immune cell</text>
+<text x="610" y="420" font-size="18" fill="#12302E">Immune system and microbiome influence</text>
+<text x="610" y="446" font-size="18" fill="#12302E">each other. A link worth studying.</text>
+
+<rect x="60" y="498" width="1080" height="80" rx="12" fill="#EEF4F3" stroke="#C7607D" stroke-width="2"/>
+<circle cx="96" cy="538" r="14" fill="#C7607D"/>
+<text x="96" y="545" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">!</text>
+<text x="128" y="530" font-size="19" font-weight="bold" fill="#12302E">None of these papers shows that a product or habit</text>
+<text x="128" y="558" font-size="19" font-weight="bold" fill="#12302E">can improve the nasal microbiome. Research is early.</text>
+
+<text x="60" y="612" font-size="17" fill="#536866">Sources: Antibiotics 2025, Lancet 2024, Mayo Clin Proc 2021 reviews</text>
+</svg>

@@ -1,5 +1,5 @@
 {
-  "slot": 1,
+  "slot": 2,
   "usedTopics": [
     "Dry nose from CPAP machines and how to stay comfortable",
     "New research on indoor humidity and respiratory infections",
@@ -19,7 +19,8 @@
     "Research on vitamin E and skin and mucosal barrier health",
     "Why your nose gets crusty and how to clear it safely",
     "Nasal polyps: symptoms and what they mean",
-    "Dry nose caused by antihistamines and allergy medicine"
+    "Dry nose caused by antihistamines and allergy medicine",
+    "The nasal microbiome: what scientists are learning"
   ],
   "usedPhotos": [
     "openverse:501a0cd2-56f7-4944-9b97-6f9a44eb71fa",
@@ -30,11 +31,13 @@
     "openverse:052c6def-4bf9-4700-8a8c-d4192b8f5754",
     "openverse:3936eeb6-cbd9-4c61-be88-e20f9a2142c0",
     "openverse:70ffea62-0ae6-4e5f-a90c-49c6d4f6694c",
-    "openverse:5229b018-4445-480d-88bf-634c8bd42a84"
+    "openverse:5229b018-4445-480d-88bf-634c8bd42a84",
+    "openverse:a46308bd-ec97-4b56-960b-a43542546efc",
+    "openverse:86f5759a-5436-4985-9465-f0c2e93247a0"
   ],
   "lastPost": {
-    "date": "2026-11-25",
-    "slug": "antihistamine-dry-nose-allergy-medicine",
-    "topic": "Dry nose caused by antihistamines and allergy medicine"
+    "date": "2026-11-27",
+    "slug": "nasal-microbiome-what-scientists-are-learning",
+    "topic": "The nasal microbiome: what scientists are learning"
   }
 }
